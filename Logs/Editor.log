@@ -1895,3 +1895,1536 @@ UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build
  
 (Filename: Assets/Plugins/GamePix/Editor/Builder.cs Line: 96)
 
+Archiving process started...
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GamePix.Editor.Builder:Archive() (at Assets\Plugins\GamePix\Editor\Builder.cs:209)
+GamePix.Editor.Builder:BuildArchive(String, Boolean) (at Assets\Plugins\GamePix\Editor\Builder.cs:53)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:21)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+ 
+(Filename: Assets/Plugins/GamePix/Editor/Builder.cs Line: 209)
+
+Archive created successfully: html5\DefaultCompany_New Unity Project_0.1.gpx
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:LogFormat(LogType, String, Object[])
+UnityEngine.Debug:LogFormat(String, Object[])
+GamePix.Editor.Builder:Archive() (at Assets\Plugins\GamePix\Editor\Builder.cs:255)
+GamePix.Editor.Builder:BuildArchive(String, Boolean) (at Assets\Plugins\GamePix\Editor\Builder.cs:53)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:21)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+ 
+(Filename: Assets/Plugins/GamePix/Editor/Builder.cs Line: 255)
+
+[00:00:08] Enlighten: Precompute started.
+[PathTracer] building lightmap data asset.
+[PathTracer] m_Clear = false;
+[00:00:08] Enlighten: Finished 1 Layout Systems job (0.00s execute, 0.00s integrate, 0.33s wallclock)
+[PathTracer] building lightmap data asset.
+[00:00:08] Enlighten: Finished 1 Tetrahedralize Probes job (0.00s execute, 0.00s integrate, 0.10s wallclock)
+[00:00:08] Enlighten: Precompute took 0.429995 seconds.
+Enlighten scene contents:   0 geometries.   0 instances.   0 systems.   0 probe groups.   0 cube maps. Scene is up-to-date.
+[00:00:08] Enlighten: Bake started.
+[00:00:08] Enlighten: Reflection Probes started.
+[00:00:08] Enlighten: Finished 1 Create Input Lighting job (0.00s execute, 0.00s integrate, 0.05s wallclock)
+[00:00:08] Enlighten: Finished 1 Bake Ambient Probe job (0.00s execute, 0.00s integrate, 0.05s wallclock)
+[00:00:08] Enlighten: Finished 1 Reflection System job (0.00s execute, 0.00s integrate, 0.05s wallclock)
+[00:00:08] Enlighten: Finished 1 Bake Runtime job (0.08s execute, 0.00s integrate, 0.10s wallclock)
+[00:00:08] Enlighten: Bake took 0.158970 seconds.
+[PathTracer] building lightmap data asset.
+[00:00:09] Enlighten: LightingDataAsset started.
+> Collecting Enlighten data
+<RI> Initialized touch support.
+<RI> Initialized touch support.
+<RI> Initialized touch support.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.023 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Updating Assets/Scenes/SampleScene.unity - GUID: 9fc0d4010bbf28b4594072e72b8655ab...
+ done. [Time: 1.697900 ms] 
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.027 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Updating Assets/Scenes/SampleScene.unity - GUID: 9fc0d4010bbf28b4594072e72b8655ab...
+ done. [Time: 1.634900 ms] 
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Refresh: detecting if any assets need to be imported or removed ...
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 0.16 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Refresh Completed time: 0.045585s
+	Asset Scan time: 0.014129s
+	Asset Hashing: 0.000000s [0 B, 0.000000 mb/s]
+	Asset Import (Scripting) time: 0.000000s (count: 0)
+	Post Processs Assets (Scripting) time: 0.000000s
+	Asset Rehashing: 0.000000s [0 B, 0.000000 mb/s]
+	Asset Import (Non Scripting) time: 0.000000s (count: 0)
+	Post Process Assets (Non Scripting) time: 0.000000s
+	Dependent Assets to Import Queue time: 0.000000s
+
+Set Player settings
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GamePix.Editor.UnityConfigurator:SetPlayerSettings(Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:95)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:18)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+ 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 95)
+
+Set WebGL memorySize: 128.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GamePix.Editor.UnityConfigurator:SetWebGLMemorySize(Int32) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:38)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:19)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+ 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 38)
+
+Set Emscripten arguments: -Oz --profiling-funcs -s GL_PREINITIALIZED_CONTEXT=1 -s USE_WEBGL2=1 -s MIN_WEBGL_VERSION=1 -s MAX_WEBGL_VERSION=2 -s PRECISE_F32=0 -s ALLOW_MEMORY_GROWTH=1 -s TOTAL_MEMORY=134217728 -s FORCE_FILESYSTEM=1 -s "EXTRA_EXPORTED_RUNTIME_METHODS=['getMemory','stackTrace','addRunDependency','removeRunDependency','FS_createPath','FS_createDataFile','FS_createPreloadedFile','ccall','cwrap','callMain','dynCall','lengthBytesUTF8','stringToUTF8','UTF8ToString','UTF16ToString','Pointer_stringify']".
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GamePix.Editor.Emscripten:SetArguments(Boolean) (at Assets\Plugins\GamePix\Editor\Emscripten.cs:61)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:20)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+ 
+(Filename: Assets/Plugins/GamePix/Editor/Emscripten.cs Line: 61)
+
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.014 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.analytics/DataPrivacy/DataPrivacyIcon.png has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.analytics/DataPrivacy/DataPrivacyIcon.png - GUID: 599a5fd92bab81a4ab02e52d0b1b1c60...
+ done. [Time: 25.364900 ms] 
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.005 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.analytics/Editor/AnalyticsEventTracker icon.png has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.analytics/Editor/AnalyticsEventTracker icon.png - GUID: 5e7c9ab97e5884e4eaa5967e9024f39d...
+ done. [Time: 6.420500 ms] 
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.120 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.ads/Editor/Resources/Editor/landscape.jpg has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.ads/Editor/Resources/Editor/landscape.jpg - GUID: 10bf81265ad87424d946598c575f45a0...
+ done. [Time: 196.743600 ms] 
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.115 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.ads/Editor/Resources/Editor/portrait.jpg has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.ads/Editor/Resources/Editor/portrait.jpg - GUID: 1b32bcce201b4494ea8848326290c5d5...
+ done. [Time: 183.435000 ms] 
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.004 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.package-manager-ui/Editor/Resources/Images/Dark/download.png has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.package-manager-ui/Editor/Resources/Images/Dark/download.png - GUID: 4dfd3f5da88944ec6ac5977d676c30c6...
+ done. [Time: 8.316800 ms] 
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.004 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.package-manager-ui/Editor/Resources/Images/Dark/error.png has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.package-manager-ui/Editor/Resources/Images/Dark/error.png - GUID: acc34040a66fe4170bc8885268860cfe...
+ done. [Time: 10.541700 ms] 
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.001 seconds
+  file read: 0.000 seconds (0.143 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.package-manager-ui/Editor/Resources/Images/Dark/loading.png has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.package-manager-ui/Editor/Resources/Images/Dark/loading.png - GUID: 3cf132d4fa07f4f0cb2883499c5c7dd0...
+ done. [Time: 13.683000 ms] 
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.004 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.package-manager-ui/Editor/Resources/Images/Light/download.png has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.package-manager-ui/Editor/Resources/Images/Light/download.png - GUID: f8eca3a711f4842eba0c52ea9885ef7f...
+ done. [Time: 11.389700 ms] 
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.004 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.package-manager-ui/Editor/Resources/Images/Light/error.png has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.package-manager-ui/Editor/Resources/Images/Light/error.png - GUID: 4c433abcdb28444ebb7bd395ba5c76fc...
+ done. [Time: 13.639800 ms] 
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.001 seconds
+  file read: 0.000 seconds (0.161 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.package-manager-ui/Editor/Resources/Images/Light/loading.png has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.package-manager-ui/Editor/Resources/Images/Light/loading.png - GUID: 01e02995805eb483690380a911a657e2...
+ done. [Time: 13.846900 ms] 
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.085 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Dropdown Icon.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Dropdown Icon.psd - GUID: a7ec9e7ad8b847b7ae4510af83c5d868...
+ done. [Time: 8.071500 ms] 
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.100 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Font Asset Icon.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Font Asset Icon.psd - GUID: ee148e281f3c41c5b4ff5f8a5afe5a6c...
+ done. [Time: 7.825000 ms] 
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.099 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Input Field Icon.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Input Field Icon.psd - GUID: 3ee40aa79cd242a5b53b0b0ca4f13f0f...
+ done. [Time: 7.946800 ms] 
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.100 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Sprite Asset Icon.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Sprite Asset Icon.psd - GUID: ec7c645d93308c04d8840982af12101e...
+ done. [Time: 7.813700 ms] 
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.087 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Text Component Icon.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Text Component Icon.psd - GUID: 2fd6421f253b4ef1a19526541f9ffc0c...
+ done. [Time: 7.771100 ms] 
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.043 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignBaseLine.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignBaseLine.psd - GUID: 8bc445bb79654bf496c92d0407840a92...
+ done. [Time: 5.678200 ms] 
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.043 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignBaseLine_Light.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignBaseLine_Light.psd - GUID: 18775b51e3bd42299fd30bd036ea982f...
+ done. [Time: 5.457400 ms] 
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.041 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignBottom.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignBottom.psd - GUID: ca51b19024094d1b87f3e07edb0a75fb...
+ done. [Time: 5.703500 ms] 
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.042 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignBottom_Light.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignBottom_Light.psd - GUID: 585b70cb75dd43efbfead809c30a1731...
+ done. [Time: 5.402000 ms] 
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.042 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCapLine.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCapLine.psd - GUID: 0d9a36012a224080966c7b55896aa0f9...
+ done. [Time: 5.516200 ms] 
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.043 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCapLine_Light.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCapLine_Light.psd - GUID: 49679f302ac6408697f6b9314a38985c...
+ done. [Time: 5.762500 ms] 
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.036 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCenter.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCenter.psd - GUID: 81ed8c76d2bc4a4c95d092c98af4e58f...
+ done. [Time: 5.558700 ms] 
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.041 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCenter_Light.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCenter_Light.psd - GUID: 6ace62d30f494c948b71d5594afce11d...
+ done. [Time: 5.459900 ms] 
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.034 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCenterGeo.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCenterGeo.psd - GUID: c76700ea0062413d9f69409b4e9e151b...
+ done. [Time: 5.413000 ms] 
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.040 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCenterGeo_Light.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignCenterGeo_Light.psd - GUID: 35ff0937876540d3bd4b6a941df62a92...
+ done. [Time: 5.517700 ms] 
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.035 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignFlush.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignFlush.psd - GUID: 691475c57a824010be0c6f474caeb7e1...
+ done. [Time: 5.483400 ms] 
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.041 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignFlush_Light.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignFlush_Light.psd - GUID: 64b9fad609434c489c32b1cdf2004a1c...
+ done. [Time: 5.410400 ms] 
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.034 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignJustified.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignJustified.psd - GUID: 92027f7f8cfc4feaa477da0dc38d3d46...
+ done. [Time: 5.473000 ms] 
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.040 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignJustified_Light.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignJustified_Light.psd - GUID: fa6bd40a216346b783a4cce741d277a5...
+ done. [Time: 5.381700 ms] 
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.036 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignLeft.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignLeft.psd - GUID: 9288066c33474b94b6ee5465f4df1cc0...
+ done. [Time: 5.453000 ms] 
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.041 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignLeft_Light.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignLeft_Light.psd - GUID: 12736c98af174f91827a26b66d2b01b9...
+ done. [Time: 6.446800 ms] 
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.001 seconds
+  file read: 0.000 seconds (0.041 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignMiddle.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignMiddle.psd - GUID: 41b96614b2e6494ba995ddcd252d11ae...
+ done. [Time: 7.771800 ms] 
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.001 seconds
+  file read: 0.000 seconds (0.042 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignMiddle_Light.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignMiddle_Light.psd - GUID: 066619c9c9c84f89acb1b48c11a7efe2...
+ done. [Time: 6.488500 ms] 
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.043 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignMidLine.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignMidLine.psd - GUID: c2f7f6a88b4c4f20a53deb72f3d9144c...
+ done. [Time: 5.641100 ms] 
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.043 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignMidline_Light.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignMidline_Light.psd - GUID: bb42b2d967d6427983c901a4ffc8ecd9...
+ done. [Time: 5.518400 ms] 
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.036 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignRight.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignRight.psd - GUID: 342a0f8aca7f4f0691338912faec0494...
+ done. [Time: 5.450400 ms] 
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.041 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignRight_Light.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignRight_Light.psd - GUID: e05ace3bd15740cda0bad60d89092a5b...
+ done. [Time: 5.455600 ms] 
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.041 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignTop.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignTop.psd - GUID: 48d034c499ee4697af9dd6e327110249...
+ done. [Time: 5.475600 ms] 
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.042 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignTop_Light.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/btn_AlignTop_Light.psd - GUID: ed041e68439749a69d0efa0e3d896c2e...
+ done. [Time: 5.391100 ms] 
+Refreshing native plugins compatible for Editor in 0.19 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.021 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/SectionHeader_Dark.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/SectionHeader_Dark.psd - GUID: fb5730e24283d0c489e5c7d0bee023d9...
+ done. [Time: 5.390000 ms] 
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+
+Hashing assets (1 files)... 0.000 seconds
+  file read: 0.000 seconds (0.021 MB)
+  wait for write: 0.000 seconds (I/O thread blocked by consumer, aka CPU bound)
+  wait for read: 0.000 seconds (CPUT thread waiting for I/O thread, aka disk bound)
+  hash: 0.000 seconds
+Importer for Packages/com.unity.textmeshpro/Editor Resources/Textures/SectionHeader_Light.psd has changed in memory, but the asset is read only. Importer settings stored in the meta file will be used.
+UnityEditor.AssetDatabase:ImportAsset(String, ImportAssetOptions)
+UnityEditor.AssetDatabase:ImportAsset(String) (at C:\buildslave\unity\build\artifacts\WinEditor\modules\Editor\AssetDatabaseBindings.gen.cs:169)
+UnityEditor.AssetImporter:SaveAndReimport() (at C:\buildslave\unity\build\Editor\Mono\AssetPipeline\AssetImporter.bindings.cs:98)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:123)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+
+[C:\buildslave\unity\build\Modules/AssetDatabase/Editor/V1/AssetDatabaseV1.cpp line 1125] 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 123)
+
+Updating Packages/com.unity.textmeshpro/Editor Resources/Textures/SectionHeader_Light.psd - GUID: e3b0f810fdea84e40ab4ba20f256f7e8...
+ done. [Time: 5.658400 ms] 
+Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Set textures settings
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GamePix.Editor.UnityConfigurator:SetTexturesWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:125)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:23)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+ 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 125)
+
+Set sprite atlas settings
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GamePix.Editor.UnityConfigurator:SetAtlasWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:149)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:24)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+ 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 149)
+
+Set audio clips settings
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GamePix.Editor.UnityConfigurator:SetSoundsWebGLSettings() (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:172)
+GamePix.Editor.UnityConfigurator:SetWebGLSettings(Boolean, Boolean) (at Assets\Plugins\GamePix\Editor\UnityConfigurator.cs:25)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:20)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+ 
+(Filename: Assets/Plugins/GamePix/Editor/UnityConfigurator.cs Line: 172)
+
+Updating ProjectSettings/ProjectSettings.asset - GUID: 00000000000000004000000000000000...
+ done. [Time: 1.744300 ms] 
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Start build
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GamePix.Editor.Builder:Build(CompressOptions) (at Assets\Plugins\GamePix\Editor\Builder.cs:69)
+GamePix.Editor.Builder:BuildArchive(String, Boolean) (at Assets\Plugins\GamePix\Editor\Builder.cs:47)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:21)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+ 
+(Filename: Assets/Plugins/GamePix/Editor/Builder.cs Line: 69)
+
+Build directory: html5
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GamePix.Editor.Builder:Build(CompressOptions) (at Assets\Plugins\GamePix\Editor\Builder.cs:74)
+GamePix.Editor.Builder:BuildArchive(String, Boolean) (at Assets\Plugins\GamePix\Editor\Builder.cs:47)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:21)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+ 
+(Filename: Assets/Plugins/GamePix/Editor/Builder.cs Line: 74)
+
+Updating ProjectSettings/UnityConnectSettings.asset - GUID: 0000000000000000a100000000000000...
+ done. [Time: 1.956100 ms] 
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[ScriptCompilation] Recompiling all scripts because: Recompiling all scripts before player build because Auto Refresh is disabled.
+- Starting compile Library/ScriptAssemblies/Unity.TextMeshPro.dll
+- Starting compile Library/ScriptAssemblies/Unity.Timeline.dll
+- Starting compile Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+- Starting compile Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+- Starting compile Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.Timeline.dll
+- Starting compile Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.TextMeshPro.dll
+- Starting compile Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+- Starting compile Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+- Starting compile Library/ScriptAssemblies/Assembly-CSharp.dll
+- Starting compile Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp.dll
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+Assets\Plugins\GamePix\Editor\Updater.cs(16,25): warning CS0649: Field 'Updater.PluginUpdateResponse.lastVersion' is never assigned to, and will always have its default value false
+Assets\Plugins\GamePix\Editor\Updater.cs(15,27): warning CS0649: Field 'Updater.PluginUpdateResponse.url' is never assigned to, and will always have its default value null
+[ScriptCompilation] Recompiling all scripts because: Recompiling scripts for player build.
+BuildPlayer: start building target 20
+- Starting compile Library/ScriptAssemblies/Unity.TextMeshPro.dll
+- Starting compile Library/ScriptAssemblies/Unity.Timeline.dll
+- Starting compile Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+- Finished compile Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+- Finished compile Library/ScriptAssemblies/Unity.Timeline.dll
+- Finished compile Library/ScriptAssemblies/Unity.TextMeshPro.dll
+- Starting compile Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+- Starting compile Library/ScriptAssemblies/Assembly-CSharp.dll
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp.dll
+Library\PackageCache\com.unity.analytics@3.3.2\DataPrivacy\DataPrivacyButton.cs(28,13): warning CS0618: 'Application.ExternalEval(string)' is obsolete: 'Application.ExternalEval is deprecated. See https://docs.unity3d.com/Manual/webgl-interactingwithbrowserscripting.html for alternatives.'
+Opening scene 'Temp/__Backupscenes/0.backup'
+Load scene 'Temp/__Backupscenes/0.backup' time: 0.011700 ms 
+Unloading 60 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.9 MB.
+System memory in use after: 164.0 MB.
+
+Unloading 61 unused Assets to reduce memory usage. Loaded Objects now: 1836.
+Total: 10.803100 ms (FindLiveObjects: 0.330500 ms CreateObjectMapping: 0.030600 ms MarkObjects: 10.383000 ms  DeleteObjects: 0.058200 ms)
+
+[00:00:00] Enlighten: Precompute started.
+[PathTracer] building lightmap data asset.
+[00:00:00] Enlighten: Finished 1 Layout Systems job (0.00s execute, 0.00s integrate, 0.01s wallclock)
+[00:00:00] Enlighten: Finished 1 Tetrahedralize Probes job (0.00s execute, 0.00s integrate, 0.03s wallclock)
+[00:00:00] Enlighten: Precompute took 0.031442 seconds.
+Enlighten scene contents:   0 geometries.   0 instances.   0 systems.   0 probe groups.   0 cube maps. Scene is up-to-date.
+[00:00:00] Enlighten: Bake started.
+[00:00:00] Enlighten: Bake took 0.014077 seconds.
+[PathTracer] building lightmap data asset.
+> Collecting Enlighten data
+
+
+Mono dependencies included in the build
+Dependency assembly - System.Diagnostics.StackTrace.dll
+Dependency assembly - System.Globalization.Extensions.dll
+Dependency assembly - System.Runtime.Serialization.Xml.dll
+Dependency assembly - System.Xml.XPath.XDocument.dll
+Dependency assembly - netstandard.dll
+Dependency assembly - Mono.Security.dll
+Dependency assembly - System.ComponentModel.Composition.dll
+Dependency assembly - System.Configuration.dll
+Dependency assembly - System.Core.dll
+Dependency assembly - System.Data.dll
+Dependency assembly - System.Drawing.dll
+Dependency assembly - System.EnterpriseServices.dll
+Dependency assembly - System.IO.Compression.FileSystem.dll
+Dependency assembly - System.IO.Compression.dll
+Dependency assembly - System.Net.Http.dll
+Dependency assembly - System.Numerics.dll
+Dependency assembly - System.Runtime.Serialization.dll
+Dependency assembly - System.ServiceModel.Internals.dll
+Dependency assembly - System.Transactions.dll
+Dependency assembly - System.Xml.Linq.dll
+Dependency assembly - System.Xml.dll
+Dependency assembly - System.dll
+Dependency assembly - mscorlib.dll
+Dependency assembly - UnityEngine.UI.dll
+Dependency assembly - Assembly-CSharp-firstpass.dll
+Dependency assembly - Assembly-CSharp.dll
+Dependency assembly - Unity.Analytics.DataPrivacy.dll
+Dependency assembly - Unity.TextMeshPro.dll
+Dependency assembly - Unity.Timeline.dll
+Dependency assembly - UnityEngine.Purchasing.dll
+
+Unloading 11 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.5 MB.
+System memory in use after: 163.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1769.
+Total: 8.455800 ms (FindLiveObjects: 0.264400 ms CreateObjectMapping: 0.023100 ms MarkObjects: 8.148600 ms  DeleteObjects: 0.019300 ms)
+
+[00:00:00] Enlighten: Reflection Probes took 504.701535 seconds. Cancelled, so not done yet.
+[00:00:00] Enlighten: LightingDataAsset took 504.108703 seconds. Cancelled, so not done yet.
+[EnlightenBakeManager] m_Clear = false;
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.2 MB.
+System memory in use after: 163.3 MB.
+
+Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 1791.
+Total: 8.408900 ms (FindLiveObjects: 0.319600 ms CreateObjectMapping: 0.027800 ms MarkObjects: 8.053700 ms  DeleteObjects: 0.007200 ms)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.2 MB.
+System memory in use after: 163.3 MB.
+
+Unloading 0 unused Assets to reduce memory usage. Loaded Objects now: 1770.
+Total: 12.891600 ms (FindLiveObjects: 0.410900 ms CreateObjectMapping: 0.037900 ms MarkObjects: 12.430700 ms  DeleteObjects: 0.011200 ms)
+
+Invoking UnityLinker with arguments: -out="D:/rw/Projects/Work/Main/_gamepix/New Unity Project/Temp/StagingArea/Data/Managed/tempStrip" -x="D:/rw/For Unity/Editors/2019.1.0f2/Editor/Data/PlaybackEngines/WebGLSupport/Whitelists/Core.xml" -x=C:/Users/realw/AppData/Local/Temp/tmp634bb2d9.tmp -x="D:/rw/Projects/Work/Main/_gamepix/New Unity Project/Temp/StagingArea/Data/Managed/TypesInScenes.xml" -d="D:/rw/Projects/Work/Main/_gamepix/New Unity Project/Temp/StagingArea/Data/Managed" --include-unity-root-assembly="D:/rw/Projects/Work/Main/_gamepix/New Unity Project/Temp/StagingArea/Data/Managed/Assembly-CSharp-firstpass.dll" --include-unity-root-assembly="D:/rw/Projects/Work/Main/_gamepix/New Unity Project/Temp/StagingArea/Data/Managed/Assembly-CSharp.dll" --include-unity-root-assembly="D:/rw/Projects/Work/Main/_gamepix/New Unity Project/Temp/StagingArea/Data/Managed/UnityEngine.UI.dll" --dotnetruntime=il2cpp --dotnetprofile=unityaot --use-editor-options --include-directory="D:/rw/Projects/Work/Main/_gamepix/New Unity Project/Temp/StagingArea/Data/Managed" --rule-set=Experimental --platform=WebGL --architecture=EmscriptenJavaScript --engine-modules-asset-file="D:/rw/For Unity/Editors/2019.1.0f2/Editor/Data/PlaybackEngines/WebGLSupport/Whitelists/../modules.asset"
+D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\il2cpp\build/UnityLinker.exe exited after 17724 ms.
+D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\Tools/InternalCallRegistrationWriter/InternalCallRegistrationWriter.exe exited after 152 ms.
+Invoking UnityLinker with arguments: -out="D:/rw/Projects/Work/Main/_gamepix/New Unity Project/Temp/StagingArea/Data/Managed/tempStrip" -x="D:/rw/For Unity/Editors/2019.1.0f2/Editor/Data/PlaybackEngines/WebGLSupport/Whitelists/Core.xml" -x=C:/Users/realw/AppData/Local/Temp/tmp634bb2d9.tmp -x="D:/rw/Projects/Work/Main/_gamepix/New Unity Project/Temp/StagingArea/Data/Managed/TypesInScenes.xml" -x="D:/rw/For Unity/Editors/2019.1.0f2/Editor/Data/PlaybackEngines/WebGLSupport/Whitelists/Animation.xml" -x="D:/rw/For Unity/Editors/2019.1.0f2/Editor/Data/PlaybackEngines/WebGLSupport/Whitelists/Audio.xml" -x="D:/rw/For Unity/Editors/2019.1.0f2/Editor/Data/PlaybackEngines/WebGLSupport/Whitelists/Core.xml" -x="D:/rw/For Unity/Editors/2019.1.0f2/Editor/Data/PlaybackEngines/WebGLSupport/Whitelists/TextRendering.xml" -x="D:/rw/For Unity/Editors/2019.1.0f2/Editor/Data/PlaybackEngines/WebGLSupport/Whitelists/UI.xml" -x="D:/rw/For Unity/Editors/2019.1.0f2/Editor/Data/PlaybackEngines/WebGLSupport/Whitelists/IMGUI.xml" -x="D:/rw/For Unity/Editors/2019.1.0f2/Editor/Data/PlaybackEngines/WebGLSupport/Whitelists/SharedInternals.xml" -x="D:/rw/For Unity/Editors/2019.1.0f2/Editor/Data/PlaybackEngines/WebGLSupport/Whitelists/WebGL.xml" -d="D:/rw/Projects/Work/Main/_gamepix/New Unity Project/Temp/StagingArea/Data/Managed" --include-unity-root-assembly="D:/rw/Projects/Work/Main/_gamepix/New Unity Project/Temp/StagingArea/Data/Managed/Assembly-CSharp-firstpass.dll" --include-unity-root-assembly="D:/rw/Projects/Work/Main/_gamepix/New Unity Project/Temp/StagingArea/Data/Managed/Assembly-CSharp.dll" --include-unity-root-assembly="D:/rw/Projects/Work/Main/_gamepix/New Unity Project/Temp/StagingArea/Data/Managed/UnityEngine.UI.dll" --dotnetruntime=il2cpp --dotnetprofile=unityaot --use-editor-options --include-directory="D:/rw/Projects/Work/Main/_gamepix/New Unity Project/Temp/StagingArea/Data/Managed" --rule-set=Experimental --platform=WebGL --architecture=EmscriptenJavaScript --engine-modules-asset-file="D:/rw/For Unity/Editors/2019.1.0f2/Editor/Data/PlaybackEngines/WebGLSupport/Whitelists/../modules.asset"
+D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\il2cpp\build/UnityLinker.exe exited after 17777 ms.
+D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\Tools/InternalCallRegistrationWriter/InternalCallRegistrationWriter.exe exited after 149 ms.
+Invoking il2cpp with arguments: --convert-to-cpp --emit-null-checks --enable-array-bounds-check --dotnetprofile="unityaot" --compile-cpp --libil2cpp-static --platform="WebGL" --architecture="EmscriptenJavaScript" --configuration="ReleasePlus" --outputpath="D:\rw\Projects\Work\Main\_gamepix\New Unity Project\Assets /../Temp/StagingArea/Data\Native\build.bc" --cachedirectory="D:\rw\Projects\Work\Main\_gamepix\New Unity Project\Assets\..\Library/il2cpp_cache" --compiler-flags="-Oz" --emit-method-map --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_AccessibilityModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_AIModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_AnimationModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_ARModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_AssetBundleModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_AudioModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_ClothModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_CoreModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_CrashReportingModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_DirectorModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_FileSystemHttpModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_GameCenterModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_GridModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_HotReloadModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_ImageConversionModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_IMGUIModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_InputModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_JSONSerializeModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_LocalizationModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_ParticleSystemModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_PerformanceReportingModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_Physics2DModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_PhysicsModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_ProfilerModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_ScreenCaptureModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_SharedInternalsModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_SpriteMaskModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_SpriteShapeModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_StreamingModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_StyleSheetsModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_SubstanceModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_TerrainModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_TerrainPhysicsModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_TextCoreModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_TextRenderingModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_TilemapModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_TLSModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_UIElementsModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_UIModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_UmbraModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_UNETModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_UnityAnalyticsModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_UnityConnectModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_UnityTestProtocolModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_UnityWebRequestAssetBundleModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_UnityWebRequestAudioModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_UnityWebRequestModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_UnityWebRequestTextureModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_UnityWebRequestWWWModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_VehiclesModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_VFXModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_VideoModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_VRModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_WebGLModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_WindModule_Dynamic.bc" --additional-libraries="D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\lib\modules\WebGLSupport_XRModule_Dynamic.bc" --profiler-report --map-file-parser="D:/rw/For Unity/Editors/2019.1.0f2/Editor/Data/Tools/MapFileParser/MapFileParser.exe" --directory="D:/rw/Projects/Work/Main/_gamepix/New Unity Project/Temp/StagingArea/Data/Managed" --generatedcppdir="D:/rw/Projects/Work/Main/_gamepix/New Unity Project/Temp/StagingArea/Data/il2cppOutput" 
+D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\il2cpp/build/il2cpp.exe exited after 34688 ms.
+Filename: "D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten_Win\python\2.7.5.3_64bit\python.exe"
+Arguments: -E "D:\rw\For Unity\Editors\2019.1.0f2\Editor\Data\PlaybackEngines\WebGLSupport\BuildTools\Emscripten\emcc" @"D:\rw\Projects\Work\Main\_gamepix\New Unity Project\Assets\..\Temp\emcc_arguments.resp"
+index: -1
+
+-------------------------------------------------------------------------------
+Build Report
+Uncompressed usage by category (Percentages based on user generated assets only):
+Textures               0.0 kb	 0.0% 
+Meshes                 0.0 kb	 0.0% 
+Animations             0.0 kb	 0.0% 
+Sounds                 0.0 kb	 0.0% 
+Shaders                10.4 kb	 0.1% 
+Other Assets           0.8 kb	 0.0% 
+Levels                 137.3 kb	 0.9% 
+Scripts                913.7 kb	 6.3% 
+Included DLLs          13.2 mb	 92.6% 
+File headers           10.5 kb	 0.1% 
+Total User Assets      14.2 mb	 100.0% 
+Complete build size    36.5 mb
+Used Assets and files from the Resources folder, sorted by uncompressed size:
+ 11.0 kb	 0.0% Resources/unity_builtin_extra
+ 4.1 kb	 0.0% D:/rw/For Unity/Editors/2019.1.0f2/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
+ 4.1 kb	 0.0% D:/rw/For Unity/Editors/2019.1.0f2/Editor/Data/UnityExtensions/Unity/GUISystem/Standalone/UnityEngine.UI.dll
+ 0.9 kb	 0.0% D:/rw/For Unity/Editors/2019.1.0f2/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll
+ 0.3 kb	 0.0% Packages/com.unity.analytics/Unity.Analytics.Tracker.dll
+ 0.3 kb	 0.0% Packages/com.unity.ads/UnityEngine.Advertisements.dll
+ 0.2 kb	 0.0% Packages/com.unity.timeline/Runtime/AssetUpgrade/AnimationPlayableAssetUpgrade.cs
+ 0.2 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/Compression/Streams/StreamManipulator.cs
+ 0.2 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/Compression/Streams/InflaterInputStream.cs
+ 0.2 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/Compression/Streams/DeflaterOutputStream.cs
+ 0.2 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Core/Exceptions/UnexpectedEndOfStreamException.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/Compression/InflaterHuffmanTree.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/Compression/InflaterDynHeader.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/Compression/DeflaterConstants.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Core/Exceptions/StreamUnsupportedException.cs
+ 0.1 kb	 0.0% Packages/com.unity.analytics/Unity.Analytics.Editor.dll
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/AssetUpgrade/AnimationTrackUpgrade.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Animation/AnimationOutputWeightProcessor.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/Compression/Streams/OutputWindow.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/Compression/PendingBuffer.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/Compression/DeflaterPending.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/Compression/DeflaterHuffman.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/Compression/DeflaterEngine.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Core/Exceptions/ValueOutOfRangeException.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Core/Exceptions/StreamDecodingException.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Core/Exceptions/SharpZipBaseException.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/BZip2/BZip2OutputStream.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/ZipEntryExtensions.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/WindowsNameTransform.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Encryption/ZipAESTransform.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Core/InvalidNameException.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Core/FileSystemScanner.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Playables/TimeNotificationBehaviour.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Playables/ActivationControlPlayable.cs
+ 0.1 kb	 0.0% Packages/com.unity.analytics/DataPrivacy/DataPrivacyButton.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/BZip2/BZip2InputStream.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/BZip2/BZip2Exception.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/BZip2/BZip2Constants.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/ZipOutputStream.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/ZipNameTransform.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/ZipInputStream.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/ZipHelperStream.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/ZipEntryFactory.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Encryption/ZipAESStream.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Encryption/PkzipClassic.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Tests/PlayMode/TimelinePlaymodeTests.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Utilities/TimelineCreateUtilities.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Utilities/NotificationUtilities.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Playables/PrefabControlPlayable.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Playables/ParticleControlPlayable.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Playables/DirectorControlPlayable.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Events/Signals/CustomSignalEventDrawer.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Animation/AnimationPlayableAsset.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Activation/ActivationPlayableAsset.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Activation/ActivationMixerPlayable.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_ScrollbarEventHandler.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_PackageResourceImporter.cs
+ 0.1 kb	 0.0% Packages/com.unity.purchasing/Tests/Runtime/PurchasingRuntimeTest.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/Compression/Inflater.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/Compression/Deflater.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Checksum/CrcUtilities.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/ZipStrings.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/ZipExtraData.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/ZipException.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/ZipConstants.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Core/StreamUtils.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Core/PathUtils.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Core/PathFilter.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Core/NameFilter.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Playables/TimeControlPlayable.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Evaluation/ScheduleRuntimeClip.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Evaluation/InfiniteRuntimeClip.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Control/ControlPlayableAsset.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Audio/AudioPlayableAsset.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Audio/AudioMixerProperties.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Audio/AudioClipProperties.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Attributes/TrackColorAttribute.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMPro_ExtensionMethods.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_TextParsingUtilities.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_TextElement_Legacy.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_SpriteAssetImportFormats.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_FontAssetUtilities.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/MaterialReferenceManager.cs
+ 0.1 kb	 0.0% Packages/com.unity.analytics/Tests/Runtime/DataPrivacy/JsonSerialization.cs
+ 0.1 kb	 0.0% Packages/com.unity.analytics/DataPrivacy/DataPrivacy.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Checksum/Crc32.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Checksum/BZip2Crc.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Checksum/Adler32.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/BZip2/BZip2.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/Events/GamepixEvents.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/TimelineAsset_CreateRemove.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Events/INotificationOptionProvider.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/ZipFile.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/ZipEntry.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/FastZip.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Utilities/WeightUtility.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Utilities/Extrapolation.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/TimelinePlayable.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/TimelineAsset.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Scripting/PlayableTrack.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Events/Signals/SignalReceiver.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Events/Signals/SignalEmitter.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Evaluation/RuntimeElement.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Evaluation/RuntimeClipBase.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Animation/AnimationTrack.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Activation/ActivationTrack.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMPro_EventManager.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_UpdateManager.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_TextUtilities.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_SpriteCharacter.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_SpriteAnimator.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_SelectionCaret.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_RichTextTagsCommon.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_MaterialManager.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_InputValidator.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_FontFeaturesCommon.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_FontFeatureTable.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_DefaultControls.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_ColorGradient.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/ZipEncryptionMethod.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/Events/UnityEvents.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Tests/Runtime/TMP_RuntimeTests.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/Ads/GamepixAds.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Utilities/TimelineUndo.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Utilities/TimeUtility.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Utilities/HashUtility.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/TrackAsset.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/TimelineClip.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/GroupTrack.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Events/Signals/SignalAsset.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Events/SignalTrack.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Events/MarkerTrack.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Evaluation/RuntimeClip.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Control/ControlTrack.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Audio/AudioTrack.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TextMeshProUGUI.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TextContainer.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMPro_UGUI_Private.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMPro_MeshUtilities.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_UpdateRegistery.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_TextElement.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_SubMeshUI.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_StyleSheet.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_SpriteGlyph.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_SpriteAsset.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_ShaderUtilities.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_RichTextTagStack.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_InputField.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_FontAssetCommon.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_FontAsset.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_CoroutineTween.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_CharacterInfo.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_Character.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Zip/IEntryFactory.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Core/INameTransform.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Utilities/IPropertyCollector.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/TimelineAttributes.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Timeline.deprecated.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Playables/NotificationFlags.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Playables/BasicScriptPlayable.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/Ads/UnityAds.cs
+ 0.1 kb	 0.0% Assets/NewBehaviourScript.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Events/Marker.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TextMeshPro.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMPro_Private.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_TextInfo.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_SubMesh.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_Style.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_Sprite.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_Settings.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_ObjectPool.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_Dropdown.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_Asset.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/FastAction.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/AssemblyInfo.cs.cs
+ 0.1 kb	 0.0% Packages/com.unity.analytics/DataPrivacy/AssemblyInfo.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Core/IScanFilter.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Core/EmptyRefs.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/SharpZipLib/Checksum/IChecksum.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/Sample/SampleScript.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Utilities/IPropertyPreview.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/IDirectorDriver.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Extensions/TrackExtensions.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/AssetUpgrade/TimelineUpgrade.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_Text.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_MeshInfo.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_ListPool.cs
+ 0.1 kb	 0.0% Packages/com.unity.textmeshpro/Scripts/Runtime/TMP_LineInfo.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/Gpx.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/Events/IEvents.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Properties/AssemblyInfo.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Playables/ITimeControl.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Events/MarkerList.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Evaluation/IntervalTree.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/DiscreteTime.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/AssetUpgrade/TrackUpgrade.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/AssetUpgrade/ClipUpgrade.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Animation/ICurvesOwner.cs
+ 0.1 kb	 0.0% Assets/Plugins/GamePix/Ads/IAds.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/Events/IMarker.cs
+ 0.1 kb	 0.0% Packages/com.unity.timeline/Runtime/ClipCaps.cs
+-------------------------------------------------------------------------------
+Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.5 MB.
+System memory in use after: 163.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1794.
+Total: 8.854700 ms (FindLiveObjects: 0.437300 ms CreateObjectMapping: 0.035400 ms MarkObjects: 8.362800 ms  DeleteObjects: 0.018400 ms)
+
+DisplayProgressNotification: Build Successful
+Load scene 'Temp/__Backupscenes/0.backup' time: 0.018800 ms 
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.2 MB.
+System memory in use after: 163.3 MB.
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1819.
+Total: 9.435800 ms (FindLiveObjects: 0.334000 ms CreateObjectMapping: 0.029900 ms MarkObjects: 9.032300 ms  DeleteObjects: 0.038600 ms)
+
+[ScriptCompilation] Recompiling all scripts because: Recompiling scripts for editor after player build.
+- Starting compile Library/ScriptAssemblies/Unity.TextMeshPro.dll
+- Starting compile Library/ScriptAssemblies/Unity.Timeline.dll
+- Starting compile Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+- Starting compile Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll
+- Starting compile Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.Timeline.dll
+- Starting compile Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.TextMeshPro.dll
+- Starting compile Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+- Finished compile Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+- Starting compile Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+- Starting compile Library/ScriptAssemblies/Assembly-CSharp.dll
+- Starting compile Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp.dll
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+Assets\Plugins\GamePix\Editor\Updater.cs(16,25): warning CS0649: Field 'Updater.PluginUpdateResponse.lastVersion' is never assigned to, and will always have its default value false
+Assets\Plugins\GamePix\Editor\Updater.cs(15,27): warning CS0649: Field 'Updater.PluginUpdateResponse.url' is never assigned to, and will always have its default value null
+Build succeeded. Size: 36,46 Mb. Duration: 2,64 min.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+GamePix.Editor.Builder:Build(CompressOptions) (at Assets\Plugins\GamePix\Editor\Builder.cs:96)
+GamePix.Editor.Builder:BuildArchive(String, Boolean) (at Assets\Plugins\GamePix\Editor\Builder.cs:47)
+GamePix.Editor.<>c:<Build>b__1_0() (at Assets\Plugins\GamePix\Editor\BuildWindow.cs:21)
+GamePix.Editor.<>c__DisplayClass3_0:<TryUpdatePlugin>b__0(AsyncOperation) (at Assets\Plugins\GamePix\Editor\Updater.cs:46)
+UnityEngine.AsyncOperation:InvokeCompletionEvent() (at C:\buildslave\unity\build\Runtime\Export\Scripting\AsyncOperation.cs:21)
+ 
+(Filename: Assets/Plugins/GamePix/Editor/Builder.cs Line: 96)
+
