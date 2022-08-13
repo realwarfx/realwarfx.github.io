@@ -1,0 +1,13 @@
+{
+"companyName": "rw",
+"productName": "inv_multi_cell",
+"dataUrl": "inv.data.unityweb",
+"wasmCodeUrl": "inv.wasm.code.unityweb",
+"wasmFrameworkUrl": "inv.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#280050",
+"cacheControl": {"default": "must-revalidate"}
+}
