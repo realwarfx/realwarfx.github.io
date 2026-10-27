@@ -1,0 +1,1356 @@
+{
+  "schema": "puppy-city-vehicle-material-atlas",
+  "version": 1,
+  "atlas": {
+    "image": "vehicle_material_atlas.png",
+    "width": 1254,
+    "height": 1254,
+    "channels": "RGB",
+    "format": "PNG",
+    "color_space": "sRGB",
+    "map_type": "stylized_base_color",
+    "sha256": "89503bb77c9a3d736ffafeb148c4811fc474a05a6b11e6d625e9a66775ad8d96"
+  },
+  "layout": {
+    "rows": 4,
+    "columns": 4,
+    "order": "row-major",
+    "index_base": 0,
+    "pixel_origin": "top-left",
+    "right_bottom_bounds": "exclusive",
+    "repeat_tile_size_px": [
+      256,
+      256
+    ],
+    "cell_boundaries_x_px": [
+      0,
+      313,
+      627,
+      941,
+      1254
+    ],
+    "cell_boundaries_y_px": [
+      0,
+      313,
+      627,
+      940,
+      1254
+    ],
+    "note_ru": "Для вырезания использовать rect_px / repeat_rect_px. Каждый проверенный фрагмент ровно 256×256. cell_rect_px показывает полную исходную ячейку и не предназначен для вырезания проверенного тайла."
+  },
+  "sampling": {
+    "atlas_wrap": "clamp",
+    "repeat_whole_atlas": false,
+    "local_region_repeat": true,
+    "preferred_uv": "uv_bottom_left",
+    "edge_extrusion_px": 0,
+    "mipmap_safe": false,
+    "repeat_proof_image": "vehicle_tiling_check_3x3.png",
+    "max_opposite_edge_mae_rgb_255": 1.642,
+    "notes_ru": [
+      "Все 16 областей проверены по горизонтали и вертикали в повторении 3×3. Края не идентичны пиксель в пиксель; численные расхождения включены в verification.",
+      "Для обычного Repeat вырезать rect_px в отдельную текстуру. При сохранении единого атласа нужен повтор UV и циклическая фильтрация внутри выбранной области.",
+      "Для mipmaps требуется wrap-padding или отдельные текстуры. Дополнительный inset обрезает период рисунка.",
+      "sampled_color_srgb_hex — измеренный медианный цвет для справки или однотонного материала, не обязательный множитель поверх текстуры."
+    ]
+  },
+  "textures": [
+    {
+      "id": "paint_coral",
+      "label_ru": "Коралловая краска",
+      "index": 0,
+      "row": 0,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 0,
+        "w": 313,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 44,
+        "y": 14,
+        "w": 256,
+        "h": 256
+      },
+      "usage_ru": "Кузов малолитражки и дополнительные красные детали",
+      "repeat_rect_px": {
+        "x": 44,
+        "y": 14,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.0350877193,
+          0.0111642743
+        ],
+        "max": [
+          0.2392344498,
+          0.2153110048
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.0350877193,
+          0.7846889952
+        ],
+        "max": [
+          0.2392344498,
+          0.9888357257
+        ]
+      },
+      "sampled_color_srgb_hex": "#FC4237",
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_repeat_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.613,
+          "y": 0.569
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.395,
+          "y": 0.374
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_yellow",
+      "label_ru": "Жёлтая краска",
+      "index": 1,
+      "row": 0,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 313,
+        "y": 0,
+        "w": 314,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 340,
+        "y": 12,
+        "w": 256,
+        "h": 256
+      },
+      "usage_ru": "Кузов такси и жёлтые акценты",
+      "repeat_rect_px": {
+        "x": 340,
+        "y": 12,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.2711323764,
+          0.009569378
+        ],
+        "max": [
+          0.4752791069,
+          0.2137161085
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.2711323764,
+          0.7862838915
+        ],
+        "max": [
+          0.4752791069,
+          0.990430622
+        ]
+      },
+      "sampled_color_srgb_hex": "#FED90C",
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_repeat_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.556,
+          "y": 0.505
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.315,
+          "y": 0.245
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_mint",
+      "label_ru": "Мятная краска",
+      "index": 2,
+      "row": 0,
+      "column": 2,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 0,
+        "w": 314,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 667,
+        "y": 45,
+        "w": 256,
+        "h": 256
+      },
+      "usage_ru": "Кузов внедорожника",
+      "repeat_rect_px": {
+        "x": 667,
+        "y": 45,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.5318979266,
+          0.0358851675
+        ],
+        "max": [
+          0.7360446571,
+          0.2400318979
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.5318979266,
+          0.7599681021
+        ],
+        "max": [
+          0.7360446571,
+          0.9641148325
+        ]
+      },
+      "sampled_color_srgb_hex": "#4CDF9E",
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_repeat_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.645,
+          "y": 0.721
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.562,
+          "y": 0.602
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_blue",
+      "label_ru": "Синяя краска",
+      "index": 3,
+      "row": 0,
+      "column": 3,
+      "cell_rect_px": {
+        "x": 941,
+        "y": 0,
+        "w": 313,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 966,
+        "y": 36,
+        "w": 256,
+        "h": 256
+      },
+      "usage_ru": "Кузов пикапа и синяя секция проблескового маячка",
+      "repeat_rect_px": {
+        "x": 966,
+        "y": 36,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.7703349282,
+          0.028708134
+        ],
+        "max": [
+          0.9744816587,
+          0.2328548644
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.7703349282,
+          0.7671451356
+        ],
+        "max": [
+          0.9744816587,
+          0.971291866
+        ]
+      },
+      "sampled_color_srgb_hex": "#1087FE",
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_repeat_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.634,
+          "y": 0.539
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.453,
+          "y": 0.36
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_lavender",
+      "label_ru": "Сиреневая краска",
+      "index": 4,
+      "row": 1,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 313,
+        "w": 313,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 28,
+        "y": 322,
+        "w": 256,
+        "h": 256
+      },
+      "usage_ru": "Кузов грузового фургона",
+      "repeat_rect_px": {
+        "x": 28,
+        "y": 322,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.0223285486,
+          0.2567783094
+        ],
+        "max": [
+          0.2264752791,
+          0.4609250399
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.0223285486,
+          0.5390749601
+        ],
+        "max": [
+          0.2264752791,
+          0.7432216906
+        ]
+      },
+      "sampled_color_srgb_hex": "#A46EFC",
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_repeat_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.557,
+          "y": 0.938
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.414,
+          "y": 0.798
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_turquoise",
+      "label_ru": "Бирюзовая краска",
+      "index": 5,
+      "row": 1,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 313,
+        "y": 313,
+        "w": 314,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 335,
+        "y": 331,
+        "w": 256,
+        "h": 256
+      },
+      "usage_ru": "Нижняя часть кузова микроавтобуса",
+      "repeat_rect_px": {
+        "x": 335,
+        "y": 331,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.2671451356,
+          0.2639553429
+        ],
+        "max": [
+          0.471291866,
+          0.4681020734
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.2671451356,
+          0.5318979266
+        ],
+        "max": [
+          0.471291866,
+          0.7360446571
+        ]
+      },
+      "sampled_color_srgb_hex": "#12D8F0",
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_repeat_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.529,
+          "y": 0.591
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.376,
+          "y": 0.415
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_navy",
+      "label_ru": "Тёмно-синяя краска",
+      "index": 6,
+      "row": 1,
+      "column": 2,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 313,
+        "w": 314,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 637,
+        "y": 346,
+        "w": 256,
+        "h": 256
+      },
+      "usage_ru": "Основной кузов патрульной машины, рейлинги и синие детали",
+      "repeat_rect_px": {
+        "x": 637,
+        "y": 346,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.5079744817,
+          0.2759170654
+        ],
+        "max": [
+          0.7121212121,
+          0.4800637959
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.5079744817,
+          0.5199362041
+        ],
+        "max": [
+          0.7121212121,
+          0.7240829346
+        ]
+      },
+      "sampled_color_srgb_hex": "#17438A",
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_repeat_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.564,
+          "y": 0.538
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.329,
+          "y": 0.354
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_ivory",
+      "label_ru": "Кремовая краска",
+      "index": 7,
+      "row": 1,
+      "column": 3,
+      "cell_rect_px": {
+        "x": 941,
+        "y": 313,
+        "w": 313,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 974,
+        "y": 336,
+        "w": 256,
+        "h": 256
+      },
+      "usage_ru": "Крыши, бамперы, зеркала, ручки, двери патрульной машины и грузовой короб",
+      "repeat_rect_px": {
+        "x": 974,
+        "y": 336,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.7767145136,
+          0.2679425837
+        ],
+        "max": [
+          0.980861244,
+          0.4720893142
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.7767145136,
+          0.5279106858
+        ],
+        "max": [
+          0.980861244,
+          0.7320574163
+        ]
+      },
+      "sampled_color_srgb_hex": "#FEF3DE",
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_repeat_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.499,
+          "y": 0.428
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.293,
+          "y": 0.256
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_orange",
+      "label_ru": "Оранжевая краска",
+      "index": 8,
+      "row": 2,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 627,
+        "w": 313,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 31,
+        "y": 666,
+        "w": 256,
+        "h": 256
+      },
+      "usage_ru": "Кабина небольшого грузовика",
+      "repeat_rect_px": {
+        "x": 31,
+        "y": 666,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.0247208931,
+          0.5311004785
+        ],
+        "max": [
+          0.2288676236,
+          0.7352472089
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.0247208931,
+          0.2647527911
+        ],
+        "max": [
+          0.2288676236,
+          0.4688995215
+        ]
+      },
+      "sampled_color_srgb_hex": "#FD6A1B",
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_repeat_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.533,
+          "y": 0.544
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.375,
+          "y": 0.324
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "glass_blue",
+      "label_ru": "Голубое стекло",
+      "index": 9,
+      "row": 2,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 313,
+        "y": 627,
+        "w": 314,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 326,
+        "y": 669,
+        "w": 256,
+        "h": 256
+      },
+      "usage_ru": "Лобовые и боковые стёкла",
+      "repeat_rect_px": {
+        "x": 326,
+        "y": 669,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.2599681021,
+          0.533492823
+        ],
+        "max": [
+          0.4641148325,
+          0.7376395534
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.2599681021,
+          0.2623604466
+        ],
+        "max": [
+          0.4641148325,
+          0.466507177
+        ]
+      },
+      "sampled_color_srgb_hex": "#8BD1FD",
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_repeat_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.586,
+          "y": 0.572
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.374,
+          "y": 0.402
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "rubber_tire",
+      "label_ru": "Резина шин",
+      "index": 10,
+      "row": 2,
+      "column": 2,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 627,
+        "w": 314,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 647,
+        "y": 652,
+        "w": 256,
+        "h": 256
+      },
+      "usage_ru": "Шины всех автомобилей",
+      "repeat_rect_px": {
+        "x": 647,
+        "y": 652,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.5159489633,
+          0.5199362041
+        ],
+        "max": [
+          0.7200956938,
+          0.7240829346
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.5159489633,
+          0.2759170654
+        ],
+        "max": [
+          0.7200956938,
+          0.4800637959
+        ]
+      },
+      "sampled_color_srgb_hex": "#3C3D40",
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_repeat_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.65,
+          "y": 0.562
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.557,
+          "y": 0.412
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "plastic_dark",
+      "label_ru": "Тёмный пластик",
+      "index": 11,
+      "row": 2,
+      "column": 3,
+      "cell_rect_px": {
+        "x": 941,
+        "y": 627,
+        "w": 313,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 966,
+        "y": 651,
+        "w": 256,
+        "h": 256
+      },
+      "usage_ru": "Решётки, оконные уплотнители, накладки, подкрылки и шасси",
+      "repeat_rect_px": {
+        "x": 966,
+        "y": 651,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.7703349282,
+          0.519138756
+        ],
+        "max": [
+          0.9744816587,
+          0.7232854864
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.7703349282,
+          0.2767145136
+        ],
+        "max": [
+          0.9744816587,
+          0.480861244
+        ]
+      },
+      "sampled_color_srgb_hex": "#40577E",
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_repeat_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.596,
+          "y": 0.569
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.398,
+          "y": 0.451
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "metal_silver",
+      "label_ru": "Серебристый металл",
+      "index": 12,
+      "row": 3,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 940,
+        "w": 313,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 24,
+        "y": 981,
+        "w": 256,
+        "h": 256
+      },
+      "usage_ru": "Колпаки, диски и мелкая металлическая фурнитура",
+      "repeat_rect_px": {
+        "x": 24,
+        "y": 981,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.019138756,
+          0.7822966507
+        ],
+        "max": [
+          0.2232854864,
+          0.9864433812
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.019138756,
+          0.0135566188
+        ],
+        "max": [
+          0.2232854864,
+          0.2177033493
+        ]
+      },
+      "sampled_color_srgb_hex": "#C7C8CC",
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_repeat_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.522,
+          "y": 0.482
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.304,
+          "y": 0.241
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "lens_headlamp",
+      "label_ru": "Светлая линза фары",
+      "index": 13,
+      "row": 3,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 313,
+        "y": 940,
+        "w": 314,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 363,
+        "y": 988,
+        "w": 256,
+        "h": 256
+      },
+      "usage_ru": "Передние фары и светлая основа световых элементов",
+      "repeat_rect_px": {
+        "x": 363,
+        "y": 988,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.2894736842,
+          0.7878787879
+        ],
+        "max": [
+          0.4936204147,
+          0.9920255183
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.2894736842,
+          0.0079744817
+        ],
+        "max": [
+          0.4936204147,
+          0.2121212121
+        ]
+      },
+      "sampled_color_srgb_hex": "#FEFAEE",
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_repeat_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.471,
+          "y": 0.47
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.191,
+          "y": 0.219
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "lens_red",
+      "label_ru": "Красная линза фонаря",
+      "index": 14,
+      "row": 3,
+      "column": 2,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 940,
+        "w": 314,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 638,
+        "y": 981,
+        "w": 256,
+        "h": 256
+      },
+      "usage_ru": "Задние фонари и красная секция проблескового маячка",
+      "repeat_rect_px": {
+        "x": 638,
+        "y": 981,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.5087719298,
+          0.7822966507
+        ],
+        "max": [
+          0.7129186603,
+          0.9864433812
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.5087719298,
+          0.0135566188
+        ],
+        "max": [
+          0.7129186603,
+          0.2177033493
+        ]
+      },
+      "sampled_color_srgb_hex": "#E6020B",
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_repeat_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 1.531,
+          "y": 1.642
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 1.275,
+          "y": 1.183
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "lens_amber",
+      "label_ru": "Янтарная линза поворотника",
+      "index": 15,
+      "row": 3,
+      "column": 3,
+      "cell_rect_px": {
+        "x": 941,
+        "y": 940,
+        "w": 313,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 982,
+        "y": 971,
+        "w": 256,
+        "h": 256
+      },
+      "usage_ru": "Поворотники, оранжевые габариты и фонарь такси",
+      "repeat_rect_px": {
+        "x": 982,
+        "y": 971,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.7830940989,
+          0.7743221691
+        ],
+        "max": [
+          0.9872408293,
+          0.9784688995
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.7830940989,
+          0.0215311005
+        ],
+        "max": [
+          0.9872408293,
+          0.2256778309
+        ]
+      },
+      "sampled_color_srgb_hex": "#FE8E01",
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_repeat_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 1.352,
+          "y": 1.092
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.95,
+          "y": 0.684
+        },
+        "pixel_identical_edges": false
+      }
+    }
+  ],
+  "concept_sheet": {
+    "image": "vehicle_concepts.png",
+    "width": 1536,
+    "height": 1024,
+    "alpha": true,
+    "count": 8,
+    "camera": "front_three_quarter",
+    "reading_order": "left-to-right, top row then bottom row"
+  },
+  "vehicles": [
+    {
+      "id": "compact_hatchback",
+      "label_ru": "Малолитражка",
+      "concept_image": "vehicle_concepts.png",
+      "reading_order": 1,
+      "row": 0,
+      "column": 0,
+      "materials": {
+        "windows": "glass_blue",
+        "tires": "rubber_tire",
+        "rims_and_hubcaps": "metal_silver",
+        "grilles_seals_chassis": "plastic_dark",
+        "headlamps": "lens_headlamp",
+        "rear_lights": "lens_red",
+        "indicators": "lens_amber",
+        "bumpers_and_small_trim": "paint_ivory",
+        "body": "paint_coral",
+        "roof": "paint_ivory"
+      }
+    },
+    {
+      "id": "taxi_sedan",
+      "label_ru": "Такси",
+      "concept_image": "vehicle_concepts.png",
+      "reading_order": 2,
+      "row": 0,
+      "column": 1,
+      "materials": {
+        "windows": "glass_blue",
+        "tires": "rubber_tire",
+        "rims_and_hubcaps": "metal_silver",
+        "grilles_seals_chassis": "plastic_dark",
+        "headlamps": "lens_headlamp",
+        "rear_lights": "lens_red",
+        "indicators": "lens_amber",
+        "bumpers_and_small_trim": "paint_ivory",
+        "body": "paint_yellow",
+        "roof_sign_frame": "paint_ivory",
+        "roof_sign_lens": "lens_amber"
+      }
+    },
+    {
+      "id": "compact_suv",
+      "label_ru": "Внедорожник",
+      "concept_image": "vehicle_concepts.png",
+      "reading_order": 3,
+      "row": 0,
+      "column": 2,
+      "materials": {
+        "windows": "glass_blue",
+        "tires": "rubber_tire",
+        "rims_and_hubcaps": "metal_silver",
+        "grilles_seals_chassis": "plastic_dark",
+        "headlamps": "lens_headlamp",
+        "rear_lights": "lens_red",
+        "indicators": "lens_amber",
+        "bumpers_and_small_trim": "paint_ivory",
+        "body": "paint_mint",
+        "roof": "paint_ivory",
+        "roof_rails": "paint_navy",
+        "wheel_arch_trim": "plastic_dark"
+      }
+    },
+    {
+      "id": "small_pickup",
+      "label_ru": "Пикап",
+      "concept_image": "vehicle_concepts.png",
+      "reading_order": 4,
+      "row": 0,
+      "column": 3,
+      "materials": {
+        "windows": "glass_blue",
+        "tires": "rubber_tire",
+        "rims_and_hubcaps": "metal_silver",
+        "grilles_seals_chassis": "plastic_dark",
+        "headlamps": "lens_headlamp",
+        "rear_lights": "lens_red",
+        "indicators": "lens_amber",
+        "bumpers_and_small_trim": "paint_ivory",
+        "cab_and_bed": "paint_blue",
+        "bed_interior": "paint_blue"
+      }
+    },
+    {
+      "id": "delivery_van",
+      "label_ru": "Грузовой фургон",
+      "concept_image": "vehicle_concepts.png",
+      "reading_order": 5,
+      "row": 1,
+      "column": 0,
+      "materials": {
+        "windows": "glass_blue",
+        "tires": "rubber_tire",
+        "rims_and_hubcaps": "metal_silver",
+        "grilles_seals_chassis": "plastic_dark",
+        "headlamps": "lens_headlamp",
+        "rear_lights": "lens_red",
+        "indicators": "lens_amber",
+        "bumpers_and_small_trim": "paint_ivory",
+        "body": "paint_lavender",
+        "roof": "paint_ivory"
+      }
+    },
+    {
+      "id": "city_minibus",
+      "label_ru": "Микроавтобус",
+      "concept_image": "vehicle_concepts.png",
+      "reading_order": 6,
+      "row": 1,
+      "column": 1,
+      "materials": {
+        "windows": "glass_blue",
+        "tires": "rubber_tire",
+        "rims_and_hubcaps": "metal_silver",
+        "grilles_seals_chassis": "plastic_dark",
+        "headlamps": "lens_headlamp",
+        "rear_lights": "lens_red",
+        "indicators": "lens_amber",
+        "bumpers_and_small_trim": "paint_ivory",
+        "lower_body": "paint_turquoise",
+        "upper_body_and_roof": "paint_ivory"
+      }
+    },
+    {
+      "id": "patrol_vehicle",
+      "label_ru": "Патрульная машина",
+      "concept_image": "vehicle_concepts.png",
+      "reading_order": 7,
+      "row": 1,
+      "column": 2,
+      "materials": {
+        "windows": "glass_blue",
+        "tires": "rubber_tire",
+        "rims_and_hubcaps": "metal_silver",
+        "grilles_seals_chassis": "plastic_dark",
+        "headlamps": "lens_headlamp",
+        "rear_lights": "lens_red",
+        "indicators": "lens_amber",
+        "bumpers_and_small_trim": "paint_ivory",
+        "body": "paint_navy",
+        "doors_and_roof": "paint_ivory",
+        "lightbar_base": "plastic_dark",
+        "lightbar_red": "lens_red",
+        "lightbar_blue": "paint_blue"
+      }
+    },
+    {
+      "id": "small_box_truck",
+      "label_ru": "Небольшой грузовик",
+      "concept_image": "vehicle_concepts.png",
+      "reading_order": 8,
+      "row": 1,
+      "column": 3,
+      "materials": {
+        "windows": "glass_blue",
+        "tires": "rubber_tire",
+        "rims_and_hubcaps": "metal_silver",
+        "grilles_seals_chassis": "plastic_dark",
+        "headlamps": "lens_headlamp",
+        "rear_lights": "lens_red",
+        "indicators": "lens_amber",
+        "bumpers_and_small_trim": "paint_ivory",
+        "cab": "paint_orange",
+        "cargo_box": "paint_ivory",
+        "fuel_tank_and_chassis": "plastic_dark"
+      }
+    }
+  ],
+  "suggested_lighting": {
+    "headlamps_srgb_hex": "#FFF0BC",
+    "tail_lights_srgb_hex": "#FF2525",
+    "indicators_srgb_hex": "#FFAD19",
+    "patrol_lightbar_red_srgb_hex": "#FF202D",
+    "patrol_lightbar_blue_srgb_hex": "#168AFF",
+    "note_ru": "Цвета свечения — рекомендуемые художественные настройки. Сам PNG не содержит emission-карты; свечение и интенсивность задаются отдельно."
+  },
+  "modeling_notes_ru": [
+    "Кузова, колёса, фары, решётки, зеркала, ручки и дверные швы моделируются геометрией. Атлас содержит поверхности материалов, а не готовую UV-развёртку кузова.",
+    "Колёса удобно сделать отдельными деталями; для транспорта этого набора подразумеваются две оси и четыре колеса.",
+    "Стёкла в атласе непрозрачные голубые. Прозрачность и отражения при необходимости задаются материалом движка.",
+    "Масштаб автомобилей на концепт-листе немного подогнан для читаемости; физические размеры определяет 3D-дизайнер.",
+    "Карты normal, roughness, metallic, alpha и emission в комплект не входят. Крупные блики кузова не запечены в цветовой атлас."
+  ]
+}

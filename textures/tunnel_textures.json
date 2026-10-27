@@ -1,0 +1,1406 @@
+{
+  "schema": "puppy-city-tunnel-material-kit",
+  "version": 1,
+  "hero_concept": {
+    "file": "tunnel_hero_concept.png",
+    "width": 1536,
+    "height": 1024,
+    "has_alpha": true,
+    "intended_lane_count": 3
+  },
+  "concept_sheets": [
+    {
+      "id": "modules",
+      "file": "tunnel_modules_concepts.png",
+      "width": 1586,
+      "height": 992,
+      "has_alpha": true,
+      "grid_columns": 4,
+      "grid_rows": 2,
+      "index_order": "left_to_right_top_to_bottom",
+      "grid_usage": "Module identification only, not exact sprite crop rectangles."
+    }
+  ],
+  "atlases": [
+    {
+      "id": "tunnel",
+      "file": "tunnel_material_atlas.png",
+      "width": 1254,
+      "height": 1254,
+      "grid_columns": 4,
+      "grid_rows": 4,
+      "channels": "RGB",
+      "color_space": "sRGB",
+      "map_type": "base_color",
+      "alpha": false,
+      "proof_file": "tunnel_tiling_check_3x3.png",
+      "sha256": "e3f35c4fc846dd24e3c3567cde6ef8f3704cf708b0b96a49eccc4a1f84c7b4fb"
+    }
+  ],
+  "textures": [
+    {
+      "id": "wall_concrete_ivory",
+      "label_ru": "Бетон стен",
+      "index": 0,
+      "row": 0,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 0,
+        "w": 314,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 19,
+        "y": 18,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#F4EBDE",
+      "atlas_id": "tunnel",
+      "usage_ru": "Основные светлые стены и внутренние панели",
+      "repeat_rect_px": {
+        "x": 19,
+        "y": 18,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.0151515152,
+          0.014354067
+        ],
+        "max": [
+          0.2192982456,
+          0.2185007974
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.0151515152,
+          0.7814992026
+        ],
+        "max": [
+          0.2192982456,
+          0.985645933
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 3.824,
+          "y": 3.849
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 1.674,
+          "y": 1.574
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "vault_concrete_gray",
+      "label_ru": "Бетон свода",
+      "index": 1,
+      "row": 0,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 314,
+        "y": 0,
+        "w": 313,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 333,
+        "y": 10,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#BCC3CE",
+      "atlas_id": "tunnel",
+      "usage_ru": "Светло-серый свод и потолок",
+      "repeat_rect_px": {
+        "x": 333,
+        "y": 10,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.2655502392,
+          0.0079744817
+        ],
+        "max": [
+          0.4696969697,
+          0.2121212121
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.2655502392,
+          0.7878787879
+        ],
+        "max": [
+          0.4696969697,
+          0.9920255183
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 6.344,
+          "y": 5.471
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 2.31,
+          "y": 2.245
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "asphalt_bluegray",
+      "label_ru": "Асфальт",
+      "index": 2,
+      "row": 0,
+      "column": 2,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 0,
+        "w": 313,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 638,
+        "y": 51,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#374459",
+      "atlas_id": "tunnel",
+      "usage_ru": "Асфальт трёхполосной дороги, без запечённой разметки",
+      "repeat_rect_px": {
+        "x": 638,
+        "y": 51,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.5087719298,
+          0.0406698565
+        ],
+        "max": [
+          0.7129186603,
+          0.2448165869
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.5087719298,
+          0.7551834131
+        ],
+        "max": [
+          0.7129186603,
+          0.9593301435
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 6.428,
+          "y": 6.889
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 2.844,
+          "y": 4.224
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "walkway_stone_gray",
+      "label_ru": "Камень тротуара",
+      "index": 3,
+      "row": 0,
+      "column": 3,
+      "cell_rect_px": {
+        "x": 940,
+        "y": 0,
+        "w": 314,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 959,
+        "y": 32,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#AFAEAF",
+      "atlas_id": "tunnel",
+      "usage_ru": "Технические тротуары, каменные основания и опоры",
+      "repeat_rect_px": {
+        "x": 959,
+        "y": 32,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.7647527911,
+          0.0255183413
+        ],
+        "max": [
+          0.9688995215,
+          0.2296650718
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.7647527911,
+          0.7703349282
+        ],
+        "max": [
+          0.9688995215,
+          0.9744816587
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 9.872,
+          "y": 8.961
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 3.433,
+          "y": 3.087
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_ivory",
+      "label_ru": "Краска айвори",
+      "index": 4,
+      "row": 1,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 314,
+        "w": 314,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 19,
+        "y": 331,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#FDF5E2",
+      "atlas_id": "tunnel",
+      "usage_ru": "Светлая отделка, бордюры и цвет дорожной разметки",
+      "repeat_rect_px": {
+        "x": 19,
+        "y": 331,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.0151515152,
+          0.2639553429
+        ],
+        "max": [
+          0.2192982456,
+          0.4681020734
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.0151515152,
+          0.5318979266
+        ],
+        "max": [
+          0.2192982456,
+          0.7360446571
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.708,
+          "y": 1.021
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.493,
+          "y": 0.884
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_navy",
+      "label_ru": "Тёмно-синяя краска",
+      "index": 5,
+      "row": 1,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 314,
+        "y": 314,
+        "w": 313,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 333,
+        "y": 321,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#224371",
+      "atlas_id": "tunnel",
+      "usage_ru": "Наружная окантовка арок, корпуса приборов, кабельные лотки",
+      "repeat_rect_px": {
+        "x": 333,
+        "y": 321,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.2655502392,
+          0.2559808612
+        ],
+        "max": [
+          0.4696969697,
+          0.4601275917
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.2655502392,
+          0.5398724083
+        ],
+        "max": [
+          0.4696969697,
+          0.7440191388
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 1.047,
+          "y": 2.04
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.901,
+          "y": 1.908
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_turquoise",
+      "label_ru": "Бирюзовая краска",
+      "index": 6,
+      "row": 1,
+      "column": 2,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 314,
+        "w": 313,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 634,
+        "y": 345,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#2DDBDD",
+      "atlas_id": "tunnel",
+      "usage_ru": "Арочные рёбра, нижние стеновые панели, кронштейны и акценты",
+      "repeat_rect_px": {
+        "x": 634,
+        "y": 345,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.5055821372,
+          0.2751196172
+        ],
+        "max": [
+          0.7097288676,
+          0.4792663477
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.5055821372,
+          0.5207336523
+        ],
+        "max": [
+          0.7097288676,
+          0.7248803828
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 1.033,
+          "y": 1.137
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.93,
+          "y": 0.963
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_coral",
+      "label_ru": "Коралловая краска",
+      "index": 7,
+      "row": 1,
+      "column": 3,
+      "cell_rect_px": {
+        "x": 940,
+        "y": 314,
+        "w": 314,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 959,
+        "y": 337,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#FD785F",
+      "atlas_id": "tunnel",
+      "usage_ru": "Акцентная полоса стен, служебная дверь и отражающие вставки портала",
+      "repeat_rect_px": {
+        "x": 959,
+        "y": 337,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.7647527911,
+          0.2687400319
+        ],
+        "max": [
+          0.9688995215,
+          0.4728867624
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.7647527911,
+          0.5271132376
+        ],
+        "max": [
+          0.9688995215,
+          0.7312599681
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.811,
+          "y": 1.363
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.539,
+          "y": 1.198
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_amber",
+      "label_ru": "Янтарная краска",
+      "index": 8,
+      "row": 2,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 627,
+        "w": 314,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 29,
+        "y": 661,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#FEBD39",
+      "atlas_id": "tunnel",
+      "usage_ru": "Янтарные маркеры и золотистая мелкая фурнитура",
+      "repeat_rect_px": {
+        "x": 29,
+        "y": 661,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.0231259968,
+          0.5271132376
+        ],
+        "max": [
+          0.2272727273,
+          0.7312599681
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.0231259968,
+          0.2687400319
+        ],
+        "max": [
+          0.2272727273,
+          0.4728867624
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.846,
+          "y": 0.943
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.641,
+          "y": 0.704
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "metal_silver",
+      "label_ru": "Серебристый металл",
+      "index": 9,
+      "row": 2,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 314,
+        "y": 627,
+        "w": 313,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 321,
+        "y": 657,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#A9B0BB",
+      "atlas_id": "tunnel",
+      "usage_ru": "Металлические ободы вентилятора, крепления и фурнитура",
+      "repeat_rect_px": {
+        "x": 321,
+        "y": 657,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.2559808612,
+          0.523923445
+        ],
+        "max": [
+          0.4601275917,
+          0.7280701754
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.2559808612,
+          0.2719298246
+        ],
+        "max": [
+          0.4601275917,
+          0.476076555
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 1.207,
+          "y": 1.503
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 1.084,
+          "y": 1.472
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "rubber_charcoal",
+      "label_ru": "Тёмная резина",
+      "index": 10,
+      "row": 2,
+      "column": 2,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 627,
+        "w": 313,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 674,
+        "y": 644,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#343E4B",
+      "atlas_id": "tunnel",
+      "usage_ru": "Уплотнения, прокладки и небольшие тёмные вставки",
+      "repeat_rect_px": {
+        "x": 674,
+        "y": 644,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.5374800638,
+          0.5135566188
+        ],
+        "max": [
+          0.7416267943,
+          0.7177033493
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.5374800638,
+          0.2822966507
+        ],
+        "max": [
+          0.7416267943,
+          0.4864433812
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.517,
+          "y": 0.617
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.389,
+          "y": 0.572
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "portal_sandstone",
+      "label_ru": "Песчаник портала",
+      "index": 11,
+      "row": 2,
+      "column": 3,
+      "cell_rect_px": {
+        "x": 940,
+        "y": 627,
+        "w": 314,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 983,
+        "y": 653,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#E5CEB2",
+      "atlas_id": "tunnel",
+      "usage_ru": "Каменная облицовка портала и светлые декоративные детали",
+      "repeat_rect_px": {
+        "x": 983,
+        "y": 653,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.783891547,
+          0.5207336523
+        ],
+        "max": [
+          0.9880382775,
+          0.7248803828
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.783891547,
+          0.2751196172
+        ],
+        "max": [
+          0.9880382775,
+          0.4792663477
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 7.139,
+          "y": 6.466
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 2.615,
+          "y": 2.428
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "diffuser_warm",
+      "label_ru": "Тёплый рассеиватель",
+      "index": 12,
+      "row": 3,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 940,
+        "w": 314,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 12,
+        "y": 973,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#FEF4B8",
+      "atlas_id": "tunnel",
+      "usage_ru": "Цвет тёплого рассеивателя лампы; свечение включается в материале",
+      "repeat_rect_px": {
+        "x": 12,
+        "y": 973,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.009569378,
+          0.7759170654
+        ],
+        "max": [
+          0.2137161085,
+          0.9800637959
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.009569378,
+          0.0199362041
+        ],
+        "max": [
+          0.2137161085,
+          0.2240829346
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.706,
+          "y": 0.672
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.546,
+          "y": 0.446
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "diffuser_cool",
+      "label_ru": "Холодный рассеиватель",
+      "index": 13,
+      "row": 3,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 314,
+        "y": 940,
+        "w": 313,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 355,
+        "y": 983,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#CAFDFD",
+      "atlas_id": "tunnel",
+      "usage_ru": "Дополнительный холодный цвет рассеивателя; свечение включается в материале",
+      "repeat_rect_px": {
+        "x": 355,
+        "y": 983,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.2830940989,
+          0.783891547
+        ],
+        "max": [
+          0.4872408293,
+          0.9880382775
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.2830940989,
+          0.0119617225
+        ],
+        "max": [
+          0.4872408293,
+          0.216108453
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.583,
+          "y": 0.613
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.368,
+          "y": 0.416
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "tile_ivory_grid",
+      "label_ru": "Светлая плитка",
+      "index": 14,
+      "row": 3,
+      "column": 2,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 940,
+        "w": 313,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 818,
+        "y": 1153,
+        "w": 78,
+        "h": 78
+      },
+      "sampled_color_srgb_hex": "#FBF3E2",
+      "atlas_id": "tunnel",
+      "usage_ru": "Светлая плиточная облицовка как вариант отделки стен или свода",
+      "repeat_rect_px": {
+        "x": 818,
+        "y": 1153,
+        "w": 78,
+        "h": 78
+      },
+      "uv_top_left": {
+        "min": [
+          0.6523125997,
+          0.9194577352
+        ],
+        "max": [
+          0.7145135566,
+          0.9816586922
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.6523125997,
+          0.0183413078
+        ],
+        "max": [
+          0.7145135566,
+          0.0805422648
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.56,
+          "y": 0.679
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.276,
+          "y": 0.325
+        },
+        "pixel_identical_edges": false
+      },
+      "grid_periods_in_selected_region": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "tile_turquoise_grid",
+      "label_ru": "Бирюзовая плитка",
+      "index": 15,
+      "row": 3,
+      "column": 3,
+      "cell_rect_px": {
+        "x": 940,
+        "y": 940,
+        "w": 314,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 1039,
+        "y": 1127,
+        "w": 78,
+        "h": 78
+      },
+      "sampled_color_srgb_hex": "#39D3D2",
+      "atlas_id": "tunnel",
+      "usage_ru": "Бирюзовая плиточная облицовка нижней части стен",
+      "repeat_rect_px": {
+        "x": 1039,
+        "y": 1127,
+        "w": 78,
+        "h": 78
+      },
+      "uv_top_left": {
+        "min": [
+          0.8285486443,
+          0.8987240829
+        ],
+        "max": [
+          0.8907496013,
+          0.9609250399
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.8285486443,
+          0.0390749601
+        ],
+        "max": [
+          0.8907496013,
+          0.1012759171
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.863,
+          "y": 0.675
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.734,
+          "y": 0.48
+        },
+        "pixel_identical_edges": false
+      },
+      "grid_periods_in_selected_region": [
+        1,
+        1
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "entrance_portal",
+      "label_ru": "Въездной портал",
+      "concept": {
+        "sheet_id": "modules",
+        "index": 0,
+        "row": 0,
+        "column": 0
+      },
+      "material_slots": {
+        "masonry": "portal_sandstone",
+        "ivory_trim": "paint_ivory",
+        "navy_coping": "paint_navy",
+        "inner_arch_trim": "paint_turquoise",
+        "footings": "walkway_stone_gray",
+        "side_markers": "paint_amber",
+        "side_lamp_lenses": "diffuser_warm",
+        "reflector_inserts": "paint_coral"
+      },
+      "notes_ru": [
+        "Профиль проёма согласовать с прямой секцией. Тот же портал можно использовать у выхода."
+      ]
+    },
+    {
+      "id": "straight_segment",
+      "label_ru": "Прямая секция туннеля",
+      "concept": {
+        "sheet_id": "modules",
+        "index": 1,
+        "row": 0,
+        "column": 1
+      },
+      "material_slots": {
+        "road": "asphalt_bluegray",
+        "lane_markings": "paint_ivory",
+        "walkways": "walkway_stone_gray",
+        "curbs": "paint_ivory",
+        "walls": "wall_concrete_ivory",
+        "vault": "vault_concrete_gray",
+        "lower_wall_panels": "paint_turquoise",
+        "arch_ribs": "paint_turquoise",
+        "outer_trim_and_cable_trays": "paint_navy",
+        "accent_band": "paint_coral",
+        "lamp_housing": "paint_navy",
+        "lamp_diffusers": "diffuser_warm"
+      },
+      "notes_ru": [
+        "Одинаковое сечение на обоих торцах; три полосы и два боковых тротуара.",
+        "Для длинного туннеля повторяются тело секции, освещение и разметка с согласованной фазой."
+      ],
+      "alternative_material_slots": {
+        "walls": "tile_ivory_grid",
+        "lower_wall_panels": "tile_turquoise_grid"
+      }
+    },
+    {
+      "id": "curved_segment",
+      "label_ru": "Плавный поворот",
+      "concept": {
+        "sheet_id": "modules",
+        "index": 2,
+        "row": 0,
+        "column": 2
+      },
+      "material_slots": {
+        "road": "asphalt_bluegray",
+        "lane_markings": "paint_ivory",
+        "walkways": "walkway_stone_gray",
+        "curbs": "paint_ivory",
+        "walls": "wall_concrete_ivory",
+        "vault": "vault_concrete_gray",
+        "lower_wall_panels": "paint_turquoise",
+        "arch_ribs": "paint_turquoise",
+        "outer_trim_and_cable_trays": "paint_navy",
+        "accent_band": "paint_coral",
+        "lamp_housing": "paint_navy",
+        "lamp_diffusers": "diffuser_warm"
+      },
+      "notes_ru": [
+        "Поворот показан с частичным разрезом оболочки для читаемости. В готовой модели оболочку нужно замкнуть.",
+        "Ориентир дизайна — плавный поворот около 30 градусов; точный радиус и угол задаются при моделировании.",
+        "Ширину проезда, форму свода и отметки тротуаров сохранить такими же, как у прямой секции."
+      ],
+      "alternative_material_slots": {
+        "walls": "tile_ivory_grid",
+        "lower_wall_panels": "tile_turquoise_grid"
+      }
+    },
+    {
+      "id": "arch_rib",
+      "label_ru": "Отдельное арочное ребро",
+      "concept": {
+        "sheet_id": "modules",
+        "index": 3,
+        "row": 0,
+        "column": 3
+      },
+      "material_slots": {
+        "arch": "paint_turquoise",
+        "outer_trim": "paint_navy",
+        "feet": "paint_ivory"
+      },
+      "notes_ru": [
+        "Совместить с тем же профилем свода, что у внутренних секций."
+      ]
+    },
+    {
+      "id": "road_deck",
+      "label_ru": "Дорога с тротуарами",
+      "concept": {
+        "sheet_id": "modules",
+        "index": 4,
+        "row": 1,
+        "column": 0
+      },
+      "material_slots": {
+        "road": "asphalt_bluegray",
+        "lane_markings": "paint_ivory",
+        "walkways": "walkway_stone_gray",
+        "curbs": "paint_ivory"
+      },
+      "notes_ru": [
+        "Две линии штрихов делят дорогу на три полосы. Разметку делать отдельной геометрией или декалями."
+      ]
+    },
+    {
+      "id": "service_wall_bay",
+      "label_ru": "Служебная стеновая секция",
+      "concept": {
+        "sheet_id": "modules",
+        "index": 5,
+        "row": 1,
+        "column": 1
+      },
+      "material_slots": {
+        "wall": "wall_concrete_ivory",
+        "lower_panels": "paint_turquoise",
+        "accent_band_and_door": "paint_coral",
+        "frame_and_trim": "paint_ivory",
+        "handle": "paint_amber",
+        "cable_tray": "paint_navy",
+        "seals": "rubber_charcoal"
+      },
+      "notes_ru": [],
+      "alternative_material_slots": {
+        "wall": "tile_ivory_grid",
+        "lower_panels": "tile_turquoise_grid"
+      }
+    },
+    {
+      "id": "light_fixture_pair",
+      "label_ru": "Потолочные светильники",
+      "concept": {
+        "sheet_id": "modules",
+        "index": 6,
+        "row": 1,
+        "column": 2
+      },
+      "material_slots": {
+        "housing": "paint_navy",
+        "bracket": "paint_turquoise",
+        "mounting_plate": "metal_silver",
+        "diffuser": "diffuser_warm",
+        "gasket": "rubber_charcoal"
+      },
+      "notes_ru": [
+        "В ячейке показаны два вида светильника для понимания корпуса и крепления.",
+        "Цвет рассеивателя можно использовать как основу для emission; освещение сцены настраивается отдельно."
+      ],
+      "alternative_material_slots": {
+        "diffuser": "diffuser_cool"
+      }
+    },
+    {
+      "id": "ventilation_fan",
+      "label_ru": "Вентилятор с креплением",
+      "concept": {
+        "sheet_id": "modules",
+        "index": 7,
+        "row": 1,
+        "column": 3
+      },
+      "material_slots": {
+        "housing_and_blades": "paint_navy",
+        "rim_and_fasteners": "metal_silver",
+        "hub_and_bracket": "paint_turquoise",
+        "mounting_cap": "paint_ivory",
+        "isolators": "rubber_charcoal"
+      },
+      "notes_ru": [
+        "Вращающиеся лопасти желательно выделить отдельным объектом с центром вращения на оси вентилятора."
+      ]
+    }
+  ],
+  "assembly_notes_ru": [
+    "Зафиксировать единый профиль арки, ширину трёх полос и двух боковых тротуаров до детализации моделей.",
+    "У прямых и поворотных секций совпадают контуры стыков, высота пола, бордюры, полоса на стене и высота кабельных лотков.",
+    "Удобный ориентир для пивота секции — центр проезда на уровне дороги у входного торца; точную систему координат принять в проекте.",
+    "Тело туннеля должно оставаться открытым на входном и выходном торцах. Рёбра, светильники и вентиляторы не перекрывают игровой проход.",
+    "Штрихи дорожной разметки и шаг светильников согласовать на стыках. Разметка не запечена в асфальт.",
+    "Криволинейные стены и свод моделируются геометрией. UV распределяются по поверхности без перспективного схождения в исходной текстуре.",
+    "Рисунки являются концептами, не CAD-чертежами; точные размеры, коллизии, торцы и UV-развёртки создаются и проверяются при моделировании."
+  ],
+  "sampling": {
+    "coordinate_origin_px": "top_left",
+    "rect_max_exclusive": true,
+    "use_rect_px_for_extraction": true,
+    "repeat_whole_atlas": false,
+    "atlas_wrap": "clamp",
+    "local_region_repeat": true,
+    "individual_texture_wrap_u": "repeat",
+    "individual_texture_wrap_v": "repeat",
+    "preferred_uv": "uv_bottom_left",
+    "padding_px": 0,
+    "mipmap_safe": false,
+    "notes_ru": [
+      "rect_px — рекомендуемая квадратная область; cell_rect_px показывает исходную ячейку атласа.",
+      "Основные материалы: 256×256. Плитка: 78×78, с одним повторяемым шагом сетки по каждой оси.",
+      "Для обычного Repeat вырезать rect_px в отдельную текстуру. В едином атласе нужны циклическая адресация и фильтрация внутри выбранного региона.",
+      "Для mipmaps используйте отдельные текстуры либо wrap-padding; поля padding не добавлены.",
+      "Не уменьшайте rect_px дополнительным inset: это изменит шаг рисунка плитки.",
+      "sampled_color_srgb_hex — медианный цвет для справки, не обязательный множитель поверх текстуры.",
+      "Все квадраты проверены в повторении 3×3. Крайние пиксели не идентичны; математически точная бесшовность не заявляется."
+    ]
+  },
+  "lighting_notes_ru": [
+    "Атлас содержит базовый цвет; отдельные карты emission, normal, roughness и metallic не входят в пакет.",
+    "diffuser_warm и diffuser_cool — цветовые варианты рассеивателя. Свечение и влияние светильника на стены и дорогу задаются материалами и освещением сцены.",
+    "Металлический блеск и отражения настраиваются в шейдере; в metal_silver они не запечены."
+  ],
+  "generation": {
+    "method": "built_in_image_generation",
+    "artwork_edited_programmatically": false,
+    "region_selection": "Selected square regions measured and reviewed in 3x3 repeats; ceramic regions contain one grid-line period per axis. Proof image is a diagnostic visualization."
+  }
+}

@@ -1,0 +1,1800 @@
+{
+  "schema": "puppy-city-beach-material-kit",
+  "version": 1,
+  "atlases": [
+    {
+      "id": "materials",
+      "file": "beach_material_atlas.png",
+      "width": 1254,
+      "height": 1254,
+      "grid_columns": 4,
+      "grid_rows": 4,
+      "channels": "RGB",
+      "color_space": "sRGB",
+      "map_type": "base_color",
+      "alpha": false,
+      "proof_file": "beach_materials_tiling_check_3x3.png",
+      "sha256": "748ddeb622768c21c8150202896458218a8c71d0e1102c407b66ffec047365fe"
+    },
+    {
+      "id": "sand",
+      "file": "beach_sand_atlas.png",
+      "width": 1254,
+      "height": 1254,
+      "grid_columns": 2,
+      "grid_rows": 2,
+      "channels": "RGB",
+      "color_space": "sRGB",
+      "map_type": "base_color",
+      "alpha": false,
+      "proof_file": "beach_sand_tiling_check_3x3.png",
+      "sha256": "a67e62e3325b93398c93f13e5ea546c122bb7e5a63cbf16f8cb51858da5e4a89"
+    }
+  ],
+  "textures": [
+    {
+      "id": "wood_honey",
+      "label_ru": "Медовое дерево",
+      "index": 0,
+      "row": 0,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 0,
+        "w": 314,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 43,
+        "y": 34,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#F1B447",
+      "atlas_id": "materials",
+      "usage_ru": "Каркасы, настилы, вёсла, скамьи, стойки и деревянные детали",
+      "repeat_rect_px": {
+        "x": 43,
+        "y": 34,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.0342902711,
+          0.0271132376
+        ],
+        "max": [
+          0.2384370016,
+          0.2312599681
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.0342902711,
+          0.7687400319
+        ],
+        "max": [
+          0.2384370016,
+          0.9728867624
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 5.608,
+          "y": 5.263
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 4.471,
+          "y": 2.398
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "wood_ivory",
+      "label_ru": "Светлое дерево",
+      "index": 1,
+      "row": 0,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 314,
+        "y": 0,
+        "w": 313,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 347,
+        "y": 16,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#F7E5BD",
+      "atlas_id": "materials",
+      "usage_ru": "Светлая деревянная отделка, белёные доски и светлые опоры",
+      "repeat_rect_px": {
+        "x": 347,
+        "y": 16,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.2767145136,
+          0.0127591707
+        ],
+        "max": [
+          0.480861244,
+          0.2169059011
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.2767145136,
+          0.7830940989
+        ],
+        "max": [
+          0.480861244,
+          0.9872408293
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 3.201,
+          "y": 3.426
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 1.737,
+          "y": 1.201
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "palm_bark",
+      "label_ru": "Ствол пальмы",
+      "index": 2,
+      "row": 0,
+      "column": 2,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 0,
+        "w": 313,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 677,
+        "y": 82,
+        "w": 220,
+        "h": 220
+      },
+      "sampled_color_srgb_hex": "#D69951",
+      "atlas_id": "materials",
+      "usage_ru": "Стволы пальм; объёмные кольца и изгиб формируются геометрией",
+      "repeat_rect_px": {
+        "x": 677,
+        "y": 82,
+        "w": 220,
+        "h": 220
+      },
+      "uv_top_left": {
+        "min": [
+          0.5398724083,
+          0.0653907496
+        ],
+        "max": [
+          0.7153110048,
+          0.2408293461
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.5398724083,
+          0.7591706539
+        ],
+        "max": [
+          0.7153110048,
+          0.9346092504
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 6.773,
+          "y": 8.302
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 2.852,
+          "y": 18.347
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "palm_leaf",
+      "label_ru": "Листья пальмы",
+      "index": 3,
+      "row": 0,
+      "column": 3,
+      "cell_rect_px": {
+        "x": 940,
+        "y": 0,
+        "w": 314,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 982,
+        "y": 32,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#87B21F",
+      "atlas_id": "materials",
+      "usage_ru": "Крупные листья пальм и пляжная трава; силуэт формируется геометрией",
+      "repeat_rect_px": {
+        "x": 982,
+        "y": 32,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.7830940989,
+          0.0255183413
+        ],
+        "max": [
+          0.9872408293,
+          0.2296650718
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.7830940989,
+          0.7703349282
+        ],
+        "max": [
+          0.9872408293,
+          0.9744816587
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 3.977,
+          "y": 4.658
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 3.082,
+          "y": 2.207
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_turquoise",
+      "label_ru": "Бирюза",
+      "index": 4,
+      "row": 1,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 314,
+        "w": 314,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 18,
+        "y": 327,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#1ECAD8",
+      "atlas_id": "materials",
+      "usage_ru": "Бирюзовые борта лодки, домики, доски, двери и душ",
+      "repeat_rect_px": {
+        "x": 18,
+        "y": 327,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.014354067,
+          0.2607655502
+        ],
+        "max": [
+          0.2185007974,
+          0.4649122807
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.014354067,
+          0.5350877193
+        ],
+        "max": [
+          0.2185007974,
+          0.7392344498
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 2.618,
+          "y": 2.618
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 1.261,
+          "y": 1.435
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_coral",
+      "label_ru": "Коралл",
+      "index": 5,
+      "row": 1,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 314,
+        "y": 314,
+        "w": 313,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 326,
+        "y": 324,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#FB6E5D",
+      "atlas_id": "materials",
+      "usage_ru": "Коралловые крыши, корпуса, полосы маяка и мягкие детали",
+      "repeat_rect_px": {
+        "x": 326,
+        "y": 324,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.2599681021,
+          0.2583732057
+        ],
+        "max": [
+          0.4641148325,
+          0.4625199362
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.2599681021,
+          0.5374800638
+        ],
+        "max": [
+          0.4641148325,
+          0.7416267943
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 2.025,
+          "y": 2.293
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.864,
+          "y": 1.43
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_ivory",
+      "label_ru": "Айвори",
+      "index": 6,
+      "row": 1,
+      "column": 2,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 314,
+        "w": 313,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 636,
+        "y": 363,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#FCF0D6",
+      "atlas_id": "materials",
+      "usage_ru": "Светлая окантовка, оконные рамы и корпуса",
+      "repeat_rect_px": {
+        "x": 636,
+        "y": 363,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.5071770335,
+          0.2894736842
+        ],
+        "max": [
+          0.711323764,
+          0.4936204147
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.5071770335,
+          0.5063795853
+        ],
+        "max": [
+          0.711323764,
+          0.7105263158
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 1.375,
+          "y": 1.165
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.541,
+          "y": 0.406
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_navy",
+      "label_ru": "Тёмно-синий",
+      "index": 7,
+      "row": 1,
+      "column": 3,
+      "cell_rect_px": {
+        "x": 940,
+        "y": 314,
+        "w": 314,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 961,
+        "y": 325,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#184683",
+      "atlas_id": "materials",
+      "usage_ru": "Тёмно-синие крыши, основания, мотор лодки и металлические детали",
+      "repeat_rect_px": {
+        "x": 961,
+        "y": 325,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.7663476874,
+          0.2591706539
+        ],
+        "max": [
+          0.9704944179,
+          0.4633173844
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.7663476874,
+          0.5366826156
+        ],
+        "max": [
+          0.9704944179,
+          0.7408293461
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 1.79,
+          "y": 1.891
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.897,
+          "y": 1.018
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_yellow",
+      "label_ru": "Жёлтый",
+      "index": 8,
+      "row": 2,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 627,
+        "w": 314,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 17,
+        "y": 646,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#FED031",
+      "atlas_id": "materials",
+      "usage_ru": "Жёлтая кабинка, доски и золотистая фурнитура",
+      "repeat_rect_px": {
+        "x": 17,
+        "y": 646,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.0135566188,
+          0.5151515152
+        ],
+        "max": [
+          0.2177033493,
+          0.7192982456
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.0135566188,
+          0.2807017544
+        ],
+        "max": [
+          0.2177033493,
+          0.4848484848
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 1.615,
+          "y": 1.811
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.823,
+          "y": 0.992
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_periwinkle",
+      "label_ru": "Сиренево-синий",
+      "index": 9,
+      "row": 2,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 314,
+        "y": 627,
+        "w": 313,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 341,
+        "y": 636,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#6C95F4",
+      "atlas_id": "materials",
+      "usage_ru": "Сиренево-синяя крыша кабинки и дополнительные акценты",
+      "repeat_rect_px": {
+        "x": 341,
+        "y": 636,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.2719298246,
+          0.5071770335
+        ],
+        "max": [
+          0.476076555,
+          0.711323764
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.2719298246,
+          0.288676236
+        ],
+        "max": [
+          0.476076555,
+          0.4928229665
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 2.706,
+          "y": 2.361
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 1.397,
+          "y": 1.396
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "glass_blue",
+      "label_ru": "Голубое стекло",
+      "index": 10,
+      "row": 2,
+      "column": 2,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 627,
+        "w": 313,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 673,
+        "y": 648,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#48D0FC",
+      "atlas_id": "materials",
+      "usage_ru": "Цвет окон, ветрового стекла катера и фонаря маяка; блики задаются материалом",
+      "repeat_rect_px": {
+        "x": 673,
+        "y": 648,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.5366826156,
+          0.5167464115
+        ],
+        "max": [
+          0.7408293461,
+          0.7208931419
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.5366826156,
+          0.2791068581
+        ],
+        "max": [
+          0.7408293461,
+          0.4832535885
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 1.298,
+          "y": 1.513
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.785,
+          "y": 1.0
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "stone_warm_gray",
+      "label_ru": "Светлый камень",
+      "index": 11,
+      "row": 2,
+      "column": 3,
+      "cell_rect_px": {
+        "x": 940,
+        "y": 627,
+        "w": 314,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 988,
+        "y": 648,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#D6CFC4",
+      "atlas_id": "materials",
+      "usage_ru": "Каменное основание маяка, опоры и светлые камешки",
+      "repeat_rect_px": {
+        "x": 988,
+        "y": 648,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.7878787879,
+          0.5167464115
+        ],
+        "max": [
+          0.9920255183,
+          0.7208931419
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.7878787879,
+          0.2791068581
+        ],
+        "max": [
+          0.9920255183,
+          0.4832535885
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 6.586,
+          "y": 7.25
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 2.619,
+          "y": 3.851
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "canvas_turquoise_stripe",
+      "label_ru": "Бирюзовая полоска",
+      "index": 12,
+      "row": 3,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 940,
+        "w": 314,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 93,
+        "y": 997,
+        "w": 205,
+        "h": 205
+      },
+      "sampled_color_srgb_hex": "#58CDD7",
+      "atlas_id": "materials",
+      "usage_ru": "Полосатая ткань лежака и тента",
+      "repeat_rect_px": {
+        "x": 93,
+        "y": 997,
+        "w": 205,
+        "h": 205
+      },
+      "uv_top_left": {
+        "min": [
+          0.0741626794,
+          0.7950558214
+        ],
+        "max": [
+          0.2376395534,
+          0.9585326954
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.0741626794,
+          0.0414673046
+        ],
+        "max": [
+          0.2376395534,
+          0.2049441786
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 1.629,
+          "y": 2.298
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.742,
+          "y": 0.882
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "canvas_coral_stripe",
+      "label_ru": "Коралловая полоска",
+      "index": 13,
+      "row": 3,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 314,
+        "y": 940,
+        "w": 313,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 397,
+        "y": 1002,
+        "w": 201,
+        "h": 201
+      },
+      "sampled_color_srgb_hex": "#F87768",
+      "atlas_id": "materials",
+      "usage_ru": "Полосатая ткань зонта и навеса киоска",
+      "repeat_rect_px": {
+        "x": 397,
+        "y": 1002,
+        "w": 201,
+        "h": 201
+      },
+      "uv_top_left": {
+        "min": [
+          0.3165869219,
+          0.7990430622
+        ],
+        "max": [
+          0.4768740032,
+          0.9593301435
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.3165869219,
+          0.0406698565
+        ],
+        "max": [
+          0.4768740032,
+          0.2009569378
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 1.92,
+          "y": 2.02
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.707,
+          "y": 0.732
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "canvas_ivory",
+      "label_ru": "Светлый холст",
+      "index": 14,
+      "row": 3,
+      "column": 2,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 940,
+        "w": 313,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 673,
+        "y": 956,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#F4E8CF",
+      "atlas_id": "materials",
+      "usage_ru": "Светлые части ткани, шторы и полотенца",
+      "repeat_rect_px": {
+        "x": 673,
+        "y": 956,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.5366826156,
+          0.7623604466
+        ],
+        "max": [
+          0.7408293461,
+          0.966507177
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.5366826156,
+          0.033492823
+        ],
+        "max": [
+          0.7408293461,
+          0.2376395534
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 5.868,
+          "y": 9.069
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 1.436,
+          "y": 2.101
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "rope_tan",
+      "label_ru": "Волокна каната",
+      "index": 15,
+      "row": 3,
+      "column": 3,
+      "cell_rect_px": {
+        "x": 940,
+        "y": 940,
+        "w": 314,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 971,
+        "y": 959,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#D3A665",
+      "atlas_id": "materials",
+      "usage_ru": "Канаты пирса и верёвочные крепления; форму верёвки задаёт модель",
+      "repeat_rect_px": {
+        "x": 971,
+        "y": 959,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.7743221691,
+          0.7647527911
+        ],
+        "max": [
+          0.9784688995,
+          0.9688995215
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.7743221691,
+          0.0311004785
+        ],
+        "max": [
+          0.9784688995,
+          0.2352472089
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 16.947,
+          "y": 20.064
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 8.756,
+          "y": 5.777
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "sand_dry",
+      "label_ru": "Сухой песок",
+      "index": 0,
+      "row": 0,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 0,
+        "w": 627,
+        "h": 627
+      },
+      "rect_px": {
+        "x": 60,
+        "y": 38,
+        "w": 512,
+        "h": 512
+      },
+      "sampled_color_srgb_hex": "#F4C378",
+      "atlas_id": "sand",
+      "usage_ru": "Основная поверхность сухого пляжа, песчаные подставки и участок с ракушками",
+      "repeat_rect_px": {
+        "x": 60,
+        "y": 38,
+        "w": 512,
+        "h": 512
+      },
+      "uv_top_left": {
+        "min": [
+          0.04784689,
+          0.0303030303
+        ],
+        "max": [
+          0.4561403509,
+          0.4385964912
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.04784689,
+          0.5614035088
+        ],
+        "max": [
+          0.4561403509,
+          0.9696969697
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 14.157,
+          "y": 14.145
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 5.288,
+          "y": 5.302
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "sand_ripples",
+      "label_ru": "Песок с рябью",
+      "index": 1,
+      "row": 0,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 0,
+        "w": 627,
+        "h": 627
+      },
+      "rect_px": {
+        "x": 638,
+        "y": 38,
+        "w": 576,
+        "h": 576
+      },
+      "sampled_color_srgb_hex": "#EDB870",
+      "atlas_id": "sand",
+      "usage_ru": "Участки с мягкой песчаной рябью; линии не сходятся к точке",
+      "repeat_rect_px": {
+        "x": 638,
+        "y": 38,
+        "w": 576,
+        "h": 576
+      },
+      "uv_top_left": {
+        "min": [
+          0.5087719298,
+          0.0303030303
+        ],
+        "max": [
+          0.9681020734,
+          0.4896331738
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.5087719298,
+          0.5103668262
+        ],
+        "max": [
+          0.9681020734,
+          0.9696969697
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 10.052,
+          "y": 9.62
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 3.842,
+          "y": 4.94
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "sand_wet",
+      "label_ru": "Влажный песок",
+      "index": 2,
+      "row": 1,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 627,
+        "w": 627,
+        "h": 627
+      },
+      "rect_px": {
+        "x": 80,
+        "y": 699,
+        "w": 512,
+        "h": 512
+      },
+      "sampled_color_srgb_hex": "#C7A171",
+      "atlas_id": "sand",
+      "usage_ru": "Уплотнённый влажный песок у берега; вода и пена в текстуру не включены",
+      "repeat_rect_px": {
+        "x": 80,
+        "y": 699,
+        "w": 512,
+        "h": 512
+      },
+      "uv_top_left": {
+        "min": [
+          0.0637958533,
+          0.5574162679
+        ],
+        "max": [
+          0.4720893142,
+          0.9657097289
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.0637958533,
+          0.0342902711
+        ],
+        "max": [
+          0.4720893142,
+          0.4425837321
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 13.274,
+          "y": 12.972
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 4.337,
+          "y": 4.125
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "sand_shells",
+      "label_ru": "Песок с ракушками",
+      "index": 3,
+      "row": 1,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 627,
+        "w": 627,
+        "h": 627
+      },
+      "rect_px": {
+        "x": 657,
+        "y": 700,
+        "w": 512,
+        "h": 512
+      },
+      "sampled_color_srgb_hex": "#F3C177",
+      "atlas_id": "sand",
+      "usage_ru": "Декоративные участки сухого песка с редкими мелкими фрагментами ракушек",
+      "repeat_rect_px": {
+        "x": 657,
+        "y": 700,
+        "w": 512,
+        "h": 512
+      },
+      "uv_top_left": {
+        "min": [
+          0.523923445,
+          0.5582137161
+        ],
+        "max": [
+          0.9322169059,
+          0.966507177
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.523923445,
+          0.033492823
+        ],
+        "max": [
+          0.9322169059,
+          0.4417862839
+        ]
+      },
+      "rotation_degrees": 0,
+      "native_repeat_aspect_ratio": 1.0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 12.969,
+          "y": 14.911
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 4.653,
+          "y": 6.103
+        },
+        "pixel_identical_edges": false
+      }
+    }
+  ],
+  "concept_sheets": [
+    {
+      "id": "props",
+      "file": "beach_props_concepts.png",
+      "width": 1586,
+      "height": 992,
+      "has_alpha": true,
+      "grid_columns": 4,
+      "grid_rows": 2,
+      "index_order": "left_to_right_top_to_bottom",
+      "grid_usage": "Object identification only, not guaranteed sprite crop rectangles."
+    },
+    {
+      "id": "structures",
+      "file": "beach_structures_concepts.png",
+      "width": 1536,
+      "height": 1024,
+      "has_alpha": true,
+      "grid_columns": 4,
+      "grid_rows": 2,
+      "index_order": "left_to_right_top_to_bottom",
+      "grid_usage": "Object identification only, not guaranteed sprite crop rectangles."
+    }
+  ],
+  "assets": [
+    {
+      "id": "palm_coconut",
+      "label_ru": "Кокосовая пальма",
+      "concept": {
+        "sheet_id": "props",
+        "index": 0,
+        "row": 0,
+        "column": 0
+      },
+      "material_slots": {
+        "trunk": "palm_bark",
+        "fronds": "palm_leaf",
+        "sand_base": "sand_dry",
+        "coconuts": "palm_bark",
+        "stones": "stone_warm_gray"
+      },
+      "notes_ru": [
+        "Листья и ствол — отдельная геометрия; атлас не содержит силуэтных alpha-масок."
+      ]
+    },
+    {
+      "id": "palm_cluster",
+      "label_ru": "Группа пальм",
+      "concept": {
+        "sheet_id": "props",
+        "index": 1,
+        "row": 0,
+        "column": 1
+      },
+      "material_slots": {
+        "trunks": "palm_bark",
+        "fronds_and_grass": "palm_leaf",
+        "sand_base": "sand_dry",
+        "stones": "stone_warm_gray"
+      },
+      "notes_ru": []
+    },
+    {
+      "id": "rowboat",
+      "label_ru": "Гребная лодка",
+      "concept": {
+        "sheet_id": "props",
+        "index": 2,
+        "row": 0,
+        "column": 2
+      },
+      "material_slots": {
+        "hull": "paint_turquoise",
+        "trim": "paint_ivory",
+        "bottom_and_fittings": "paint_navy",
+        "benches_and_oars": "wood_honey"
+      },
+      "notes_ru": []
+    },
+    {
+      "id": "motorboat",
+      "label_ru": "Моторная лодка",
+      "concept": {
+        "sheet_id": "props",
+        "index": 3,
+        "row": 0,
+        "column": 3
+      },
+      "material_slots": {
+        "hull_and_seats": "paint_coral",
+        "trim": "paint_ivory",
+        "motor_and_fittings": "paint_navy",
+        "windshield": "glass_blue"
+      },
+      "notes_ru": []
+    },
+    {
+      "id": "beach_parasol",
+      "label_ru": "Пляжный зонт",
+      "concept": {
+        "sheet_id": "props",
+        "index": 4,
+        "row": 1,
+        "column": 0
+      },
+      "material_slots": {
+        "canopy_striped": "canvas_coral_stripe",
+        "canopy_light": "canvas_ivory",
+        "canopy_colored": "paint_coral",
+        "pole": "wood_honey",
+        "base_light": "paint_ivory",
+        "base_dark": "paint_navy"
+      },
+      "notes_ru": [
+        "Для чередующихся секторов купола удобно назначить коралловый и светлый материалы разным секторам. Полосатый квадрат — вариант для непрерывного тканевого UV."
+      ]
+    },
+    {
+      "id": "sun_lounger",
+      "label_ru": "Лежак",
+      "concept": {
+        "sheet_id": "props",
+        "index": 5,
+        "row": 1,
+        "column": 1
+      },
+      "material_slots": {
+        "fabric": "canvas_turquoise_stripe",
+        "frame": "paint_ivory",
+        "hinges": "paint_navy"
+      },
+      "notes_ru": []
+    },
+    {
+      "id": "sand_patch",
+      "label_ru": "Песчаный участок",
+      "concept": {
+        "sheet_id": "props",
+        "index": 6,
+        "row": 1,
+        "column": 2
+      },
+      "material_slots": {
+        "sand": "sand_dry",
+        "optional_shell_sand": "sand_shells",
+        "grass": "palm_leaf",
+        "shells_light": "paint_ivory",
+        "shells_coral": "paint_coral"
+      },
+      "notes_ru": [
+        "Крупные ракушки на концепте моделируются отдельно; в текстуре sand_shells только мелкие вкрапления."
+      ]
+    },
+    {
+      "id": "surfboard_rack",
+      "label_ru": "Стойка с досками",
+      "concept": {
+        "sheet_id": "props",
+        "index": 7,
+        "row": 1,
+        "column": 3
+      },
+      "material_slots": {
+        "wood": "wood_honey",
+        "feet_and_fittings": "paint_navy",
+        "board_turquoise": "paint_turquoise",
+        "board_yellow": "paint_yellow",
+        "stripes_coral": "paint_coral",
+        "stripes_light": "paint_ivory"
+      },
+      "notes_ru": []
+    },
+    {
+      "id": "beach_bungalow",
+      "label_ru": "Пляжный домик",
+      "concept": {
+        "sheet_id": "structures",
+        "index": 0,
+        "row": 0,
+        "column": 0
+      },
+      "material_slots": {
+        "walls": "paint_turquoise",
+        "trim": "paint_ivory",
+        "roof": "paint_coral",
+        "door": "paint_navy",
+        "windows": "glass_blue",
+        "deck": "wood_honey",
+        "footings": "stone_warm_gray"
+      },
+      "notes_ru": [
+        "Черепица, доски и швы задаются геометрией."
+      ]
+    },
+    {
+      "id": "changing_hut",
+      "label_ru": "Кабинка для переодевания",
+      "concept": {
+        "sheet_id": "structures",
+        "index": 1,
+        "row": 0,
+        "column": 1
+      },
+      "material_slots": {
+        "walls": "paint_yellow",
+        "trim": "paint_ivory",
+        "roof": "paint_periwinkle",
+        "door": "paint_turquoise",
+        "window": "glass_blue",
+        "steps": "wood_honey",
+        "footings": "stone_warm_gray"
+      },
+      "notes_ru": []
+    },
+    {
+      "id": "lifeguard_tower",
+      "label_ru": "Спасательная вышка",
+      "concept": {
+        "sheet_id": "structures",
+        "index": 2,
+        "row": 0,
+        "column": 2
+      },
+      "material_slots": {
+        "wood": "wood_honey",
+        "walls_and_ring": "paint_coral",
+        "trim_and_ring_light": "paint_ivory",
+        "roof_and_rails": "paint_navy",
+        "windows": "glass_blue",
+        "footings": "stone_warm_gray"
+      },
+      "notes_ru": []
+    },
+    {
+      "id": "beach_cabana",
+      "label_ru": "Пляжный тент",
+      "concept": {
+        "sheet_id": "structures",
+        "index": 3,
+        "row": 0,
+        "column": 3
+      },
+      "material_slots": {
+        "frame_and_deck": "wood_honey",
+        "canopy": "canvas_turquoise_stripe",
+        "curtains": "canvas_ivory",
+        "daybed": "paint_coral",
+        "ties_and_hinges": "paint_navy",
+        "feet": "paint_ivory"
+      },
+      "notes_ru": []
+    },
+    {
+      "id": "icecream_kiosk",
+      "label_ru": "Киоск с мороженым",
+      "concept": {
+        "sheet_id": "structures",
+        "index": 4,
+        "row": 1,
+        "column": 0
+      },
+      "material_slots": {
+        "walls": "paint_coral",
+        "trim": "paint_ivory",
+        "awning": "canvas_coral_stripe",
+        "counter_and_cone": "wood_honey",
+        "window": "glass_blue",
+        "hatch_interior": "paint_navy",
+        "scoop_coral": "paint_coral",
+        "scoop_light": "paint_ivory",
+        "scoop_turquoise": "paint_turquoise"
+      },
+      "notes_ru": []
+    },
+    {
+      "id": "pier_segment",
+      "label_ru": "Секция пирса",
+      "concept": {
+        "sheet_id": "structures",
+        "index": 5,
+        "row": 1,
+        "column": 1
+      },
+      "material_slots": {
+        "deck_and_posts": "wood_honey",
+        "rope": "rope_tan",
+        "bollard_and_post_sleeves": "paint_navy",
+        "post_caps": "paint_ivory"
+      },
+      "notes_ru": []
+    },
+    {
+      "id": "lighthouse",
+      "label_ru": "Маяк",
+      "concept": {
+        "sheet_id": "structures",
+        "index": 6,
+        "row": 1,
+        "column": 2
+      },
+      "material_slots": {
+        "tower_light": "paint_ivory",
+        "tower_coral": "paint_coral",
+        "roof_and_balcony": "paint_navy",
+        "lantern_windows": "glass_blue",
+        "door": "paint_turquoise",
+        "base": "stone_warm_gray"
+      },
+      "notes_ru": []
+    },
+    {
+      "id": "beach_shower",
+      "label_ru": "Пляжный душ",
+      "concept": {
+        "sheet_id": "structures",
+        "index": 7,
+        "row": 1,
+        "column": 3
+      },
+      "material_slots": {
+        "pipe": "paint_turquoise",
+        "shower_head_and_fittings": "paint_ivory",
+        "deck": "wood_honey",
+        "valve": "paint_yellow",
+        "towel": "paint_coral",
+        "towel_bar": "paint_navy"
+      },
+      "notes_ru": []
+    }
+  ],
+  "sampling": {
+    "coordinate_origin_px": "top_left",
+    "rect_max_exclusive": true,
+    "use_rect_px_for_extraction": true,
+    "repeat_whole_atlas": false,
+    "atlas_wrap": "clamp",
+    "local_region_repeat": true,
+    "individual_texture_wrap_u": "repeat",
+    "individual_texture_wrap_v": "repeat",
+    "preferred_uv": "uv_bottom_left",
+    "padding_px": 0,
+    "mipmap_safe": false,
+    "notes_ru": [
+      "Использовать rect_px; cell_rect_px показывает только исходную ячейку атласа.",
+      "Все rect_px квадратные. Для полосатой ткани, коры и ряби размер подобран по рисунку; он отличается от 256 и 512.",
+      "Для обычного Repeat вырезать rect_px в отдельную текстуру. Для единого атласа нужна циклическая адресация и фильтрация внутри выбранного региона.",
+      "Mipmaps без специальной упаковки могут смешивать соседние материалы; используйте отдельные текстуры или wrap-padding.",
+      "Дополнительный inset меняет период рисунка.",
+      "Каждый квадрат просмотрен в повторении 3×3. Противоположные края не идентичны пиксель в пиксель, математически точная бесшовность не заявляется.",
+      "sampled_color_srgb_hex — измеренный медианный цвет для справки, не обязательный множитель поверх текстуры."
+    ]
+  },
+  "modeling_notes_ru": [
+    "Концепты предназначены для 3D-моделирования. Готовые модели, UV-развёртки моделей и карты normal/roughness/metallic не входят в пакет.",
+    "Черепица, доски, швы, кольца стволов и отдельные листья формируются геометрией; материалы содержат цвет и рисунок поверхности.",
+    "Сухой, влажный и ракушечный песок можно смешивать масками на поверхности пляжа. Граница воды и пена в текстуры не запечены.",
+    "Все карты непрозрачные base-color. Листья требуют геометрического контура либо отдельной alpha-маски.",
+    "Зеркальные блики, прозрачность стекла и шероховатость задаются материалами в движке."
+  ],
+  "generation": {
+    "method": "built_in_image_generation",
+    "texture_images_edited_programmatically": false,
+    "region_selection": "Measured candidate square regions selected from unmodified generated atlases; repeated proof sheets are diagnostic visualizations."
+  }
+}

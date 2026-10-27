@@ -1,0 +1,1386 @@
+{
+  "schema": "puppy-city-street-material-atlas",
+  "version": 1,
+  "atlas": {
+    "image": "street_material_atlas.png",
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "channels": "RGB",
+    "color_space": "sRGB",
+    "map_type": "stylized_base_color",
+    "alpha": false,
+    "sha256": "a0f6d04b22dbae940e643ff6f8f010fd6765da83acde8452108279d435d1aa6d"
+  },
+  "layout": {
+    "rows": 4,
+    "columns": 4,
+    "order": "row-major",
+    "index_base": 0,
+    "pixel_origin": "top-left",
+    "rect_right_bottom": "exclusive",
+    "cell_boundaries_x_px": [
+      0,
+      313,
+      627,
+      941,
+      1254
+    ],
+    "cell_boundaries_y_px": [
+      0,
+      313,
+      627,
+      940,
+      1254
+    ],
+    "repeat_regions_have_variable_dimensions": true,
+    "note_ru": "Для тайлинга вырезайте rect_px, а не всю cell_rect_px. Повторяемые области имеют разные размеры и могут быть прямоугольными."
+  },
+  "sampling": {
+    "atlas_wrap": "clamp",
+    "whole_atlas_repeat": false,
+    "local_region_repeat": true,
+    "recommended_uv": "uv_bottom_left",
+    "edge_extrusion_px": 0,
+    "mipmap_safe": false,
+    "verification_image": "street_tiling_check_3x3.png",
+    "notes_ru": [
+      "Все 16 областей просмотрены в повторении 3×3. Противоположные края не идентичны пиксель в пиксель; остаточная разница фактуры измерена в verification.",
+      "Для простого импорта вырезать rect_px в отдельную текстуру и использовать Repeat. Для работы из атласа нужны повтор и циклическая фильтрация внутри выбранной области.",
+      "Дополнительный inset меняет период рисунка. Для mipmaps подготовьте wrap-padding или используйте отдельные текстуры.",
+      "Для правильных пропорций рисунка учитывайте native_repeat_aspect_ratio; особенно для кладки, плитки и диагональных полос."
+    ]
+  },
+  "textures": [
+    {
+      "id": "metal_navy",
+      "label_ru": "Тёмно-синий крашеный металл",
+      "index": 0,
+      "row": 0,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 0,
+        "w": 313,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 37,
+        "y": 22,
+        "w": 178,
+        "h": 138
+      },
+      "usage_ru": "Стойки, рамы, перила, корпуса фонарей и светофора",
+      "repeat_rect_px": {
+        "x": 37,
+        "y": 22,
+        "w": 178,
+        "h": 138
+      },
+      "uv_top_left": {
+        "min": [
+          0.0295055821,
+          0.0175438596
+        ],
+        "max": [
+          0.1714513557,
+          0.1275917065
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.0295055821,
+          0.8724082935
+        ],
+        "max": [
+          0.1714513557,
+          0.9824561404
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.28985507,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 1.138,
+          "y": 1.124
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.789,
+          "y": 0.782
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "metal_turquoise",
+      "label_ru": "Бирюзовый крашеный металл",
+      "index": 1,
+      "row": 0,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 313,
+        "y": 0,
+        "w": 314,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 359,
+        "y": 80,
+        "w": 174,
+        "h": 162
+      },
+      "usage_ru": "Каркас остановки, урна, акценты портала и рекламных конструкций",
+      "repeat_rect_px": {
+        "x": 359,
+        "y": 80,
+        "w": 174,
+        "h": 162
+      },
+      "uv_top_left": {
+        "min": [
+          0.2862838915,
+          0.0637958533
+        ],
+        "max": [
+          0.4250398724,
+          0.1929824561
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.2862838915,
+          0.8070175439
+        ],
+        "max": [
+          0.4250398724,
+          0.9362041467
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.07407407,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.831,
+          "y": 0.808
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.632,
+          "y": 0.78
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_ivory",
+      "label_ru": "Кремовая отделка",
+      "index": 2,
+      "row": 0,
+      "column": 2,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 0,
+        "w": 314,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 637,
+        "y": 4,
+        "w": 253,
+        "h": 286
+      },
+      "usage_ru": "Обрамления, манжеты, опоры, перила мостика и светлые панели",
+      "repeat_rect_px": {
+        "x": 637,
+        "y": 4,
+        "w": 253,
+        "h": 286
+      },
+      "uv_top_left": {
+        "min": [
+          0.5079744817,
+          0.0031897927
+        ],
+        "max": [
+          0.7097288676,
+          0.2312599681
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.5079744817,
+          0.7687400319
+        ],
+        "max": [
+          0.7097288676,
+          0.9968102073
+        ]
+      },
+      "native_repeat_aspect_ratio": 0.88461538,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.86,
+          "y": 0.851
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.653,
+          "y": 0.622
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "metal_coral",
+      "label_ru": "Коралловый крашеный металл",
+      "index": 3,
+      "row": 0,
+      "column": 3,
+      "cell_rect_px": {
+        "x": 941,
+        "y": 0,
+        "w": 313,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 951,
+        "y": 9,
+        "w": 257,
+        "h": 234
+      },
+      "usage_ru": "Пожарный гидрант и коралловые металлические детали",
+      "repeat_rect_px": {
+        "x": 951,
+        "y": 9,
+        "w": 257,
+        "h": 234
+      },
+      "uv_top_left": {
+        "min": [
+          0.7583732057,
+          0.0071770335
+        ],
+        "max": [
+          0.9633173844,
+          0.1937799043
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.7583732057,
+          0.8062200957
+        ],
+        "max": [
+          0.9633173844,
+          0.9928229665
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.0982906,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 1.06,
+          "y": 0.873
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.854,
+          "y": 0.724
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_yellow",
+      "label_ru": "Жёлтая краска",
+      "index": 4,
+      "row": 1,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 313,
+        "w": 313,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 58,
+        "y": 353,
+        "w": 242,
+        "h": 251
+      },
+      "usage_ru": "Жёлтые акценты и отражатели",
+      "repeat_rect_px": {
+        "x": 58,
+        "y": 353,
+        "w": 242,
+        "h": 251
+      },
+      "uv_top_left": {
+        "min": [
+          0.0462519936,
+          0.2814992026
+        ],
+        "max": [
+          0.2392344498,
+          0.4816586922
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.0462519936,
+          0.5183413078
+        ],
+        "max": [
+          0.2392344498,
+          0.7185007974
+        ]
+      },
+      "native_repeat_aspect_ratio": 0.96414343,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.838,
+          "y": 0.806
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.683,
+          "y": 0.682
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "metal_galvanized",
+      "label_ru": "Серый оцинкованный металл",
+      "index": 5,
+      "row": 1,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 313,
+        "y": 313,
+        "w": 314,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 357,
+        "y": 387,
+        "w": 211,
+        "h": 211
+      },
+      "usage_ru": "Хомуты, крепления, металлические закладные и мелкая фурнитура",
+      "repeat_rect_px": {
+        "x": 357,
+        "y": 387,
+        "w": 211,
+        "h": 211
+      },
+      "uv_top_left": {
+        "min": [
+          0.2846889952,
+          0.3086124402
+        ],
+        "max": [
+          0.4529505582,
+          0.4768740032
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.2846889952,
+          0.5231259968
+        ],
+        "max": [
+          0.4529505582,
+          0.6913875598
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.0,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 6.907,
+          "y": 7.422
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 3.702,
+          "y": 3.927
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "concrete_light",
+      "label_ru": "Светлый бетон",
+      "index": 6,
+      "row": 1,
+      "column": 2,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 313,
+        "w": 314,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 634,
+        "y": 356,
+        "w": 256,
+        "h": 256
+      },
+      "usage_ru": "Бетонный столб, фундаменты, подставки и лестницы",
+      "repeat_rect_px": {
+        "x": 634,
+        "y": 356,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.5055821372,
+          0.283891547
+        ],
+        "max": [
+          0.7097288676,
+          0.4880382775
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.5055821372,
+          0.5119617225
+        ],
+        "max": [
+          0.7097288676,
+          0.716108453
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.0,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 4.74,
+          "y": 5.057
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 2.98,
+          "y": 2.927
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "wood_honey",
+      "label_ru": "Медовое дерево",
+      "index": 7,
+      "row": 1,
+      "column": 3,
+      "cell_rect_px": {
+        "x": 941,
+        "y": 313,
+        "w": 313,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 970,
+        "y": 385,
+        "w": 279,
+        "h": 185
+      },
+      "usage_ru": "Деревянные столбы, рейки скамейки и сиденье на остановке",
+      "repeat_rect_px": {
+        "x": 970,
+        "y": 385,
+        "w": 279,
+        "h": 185
+      },
+      "uv_top_left": {
+        "min": [
+          0.7735247209,
+          0.3070175439
+        ],
+        "max": [
+          0.9960127592,
+          0.4545454545
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.7735247209,
+          0.5454545455
+        ],
+        "max": [
+          0.9960127592,
+          0.6929824561
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.50810811,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 1.022,
+          "y": 1.661
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 3.675,
+          "y": 0.996
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "glass_sky_blue",
+      "label_ru": "Голубое стекло",
+      "index": 8,
+      "row": 2,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 627,
+        "w": 313,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 19,
+        "y": 650,
+        "w": 256,
+        "h": 131
+      },
+      "usage_ru": "Стекло остановки и защитные прозрачные панели",
+      "repeat_rect_px": {
+        "x": 19,
+        "y": 650,
+        "w": 256,
+        "h": 131
+      },
+      "uv_top_left": {
+        "min": [
+          0.0151515152,
+          0.5183413078
+        ],
+        "max": [
+          0.2192982456,
+          0.6228070175
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.0151515152,
+          0.3771929825
+        ],
+        "max": [
+          0.2192982456,
+          0.4816586922
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.95419847,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.583,
+          "y": 0.711
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.526,
+          "y": 0.572
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "light_diffuser",
+      "label_ru": "Светлый рассеиватель фонаря",
+      "index": 9,
+      "row": 2,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 313,
+        "y": 627,
+        "w": 314,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 338,
+        "y": 671,
+        "w": 220,
+        "h": 229
+      },
+      "usage_ru": "Плафоны фонарей, линзы светофора и сигнальные огни с отдельным цветом свечения",
+      "repeat_rect_px": {
+        "x": 338,
+        "y": 671,
+        "w": 220,
+        "h": 229
+      },
+      "uv_top_left": {
+        "min": [
+          0.2695374801,
+          0.5350877193
+        ],
+        "max": [
+          0.4449760766,
+          0.7177033493
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.2695374801,
+          0.2822966507
+        ],
+        "max": [
+          0.4449760766,
+          0.4649122807
+        ]
+      },
+      "native_repeat_aspect_ratio": 0.96069869,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.697,
+          "y": 0.486
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.572,
+          "y": 0.334
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "rubber_charcoal",
+      "label_ru": "Резина для проводов",
+      "index": 10,
+      "row": 2,
+      "column": 2,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 627,
+        "w": 314,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 685,
+        "y": 666,
+        "w": 196,
+        "h": 156
+      },
+      "usage_ru": "Провода, уплотнения и чёрные детали",
+      "repeat_rect_px": {
+        "x": 685,
+        "y": 666,
+        "w": 196,
+        "h": 156
+      },
+      "uv_top_left": {
+        "min": [
+          0.5462519936,
+          0.5311004785
+        ],
+        "max": [
+          0.7025518341,
+          0.6555023923
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.5462519936,
+          0.3444976077
+        ],
+        "max": [
+          0.7025518341,
+          0.4688995215
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.25641026,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 1.421,
+          "y": 1.395
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 0.656,
+          "y": 0.779
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "fabric_coral",
+      "label_ru": "Коралловая ткань баннера",
+      "index": 11,
+      "row": 2,
+      "column": 3,
+      "cell_rect_px": {
+        "x": 941,
+        "y": 627,
+        "w": 313,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 1021,
+        "y": 714,
+        "w": 139,
+        "h": 182
+      },
+      "usage_ru": "Ткань наддорожного баннера и сменные тканевые рекламные поверхности",
+      "repeat_rect_px": {
+        "x": 1021,
+        "y": 714,
+        "w": 139,
+        "h": 182
+      },
+      "uv_top_left": {
+        "min": [
+          0.8141945774,
+          0.5693779904
+        ],
+        "max": [
+          0.9250398724,
+          0.7145135566
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.8141945774,
+          0.2854864434
+        ],
+        "max": [
+          0.9250398724,
+          0.4306220096
+        ]
+      },
+      "native_repeat_aspect_ratio": 0.76373626,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 3.936,
+          "y": 2.933
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 1.999,
+          "y": 1.772
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "stone_light",
+      "label_ru": "Светлая каменная кладка",
+      "index": 12,
+      "row": 3,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 940,
+        "w": 313,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 14,
+        "y": 1114,
+        "w": 261,
+        "h": 131
+      },
+      "usage_ru": "Каменная кладка мостика и оснований",
+      "repeat_rect_px": {
+        "x": 14,
+        "y": 1114,
+        "w": 261,
+        "h": 131
+      },
+      "uv_top_left": {
+        "min": [
+          0.0111642743,
+          0.8883572568
+        ],
+        "max": [
+          0.2192982456,
+          0.9928229665
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.0111642743,
+          0.0071770335
+        ],
+        "max": [
+          0.2192982456,
+          0.1116427432
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.99236641,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 3.952,
+          "y": 3.392
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 2.657,
+          "y": 2.418
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paving_gray",
+      "label_ru": "Серая тротуарная плитка",
+      "index": 13,
+      "row": 3,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 313,
+        "y": 940,
+        "w": 314,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 346,
+        "y": 963,
+        "w": 238,
+        "h": 158
+      },
+      "usage_ru": "Настил мостиков и плиточное покрытие",
+      "repeat_rect_px": {
+        "x": 346,
+        "y": 963,
+        "w": 238,
+        "h": 158
+      },
+      "uv_top_left": {
+        "min": [
+          0.2759170654,
+          0.7679425837
+        ],
+        "max": [
+          0.4657097289,
+          0.8939393939
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.2759170654,
+          0.1060606061
+        ],
+        "max": [
+          0.4657097289,
+          0.2320574163
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.50632911,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 3.188,
+          "y": 3.455
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 2.291,
+          "y": 1.954
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "asphalt_blue_gray",
+      "label_ru": "Тёмный асфальт",
+      "index": 14,
+      "row": 3,
+      "column": 2,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 940,
+        "w": 314,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 685,
+        "y": 1066,
+        "w": 242,
+        "h": 183
+      },
+      "usage_ru": "Дорожное покрытие для окружения",
+      "repeat_rect_px": {
+        "x": 685,
+        "y": 1066,
+        "w": 242,
+        "h": 183
+      },
+      "uv_top_left": {
+        "min": [
+          0.5462519936,
+          0.8500797448
+        ],
+        "max": [
+          0.7392344498,
+          0.9960127592
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.5462519936,
+          0.0039872408
+        ],
+        "max": [
+          0.7392344498,
+          0.1499202552
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.32240437,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 11.643,
+          "y": 13.08
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 5.715,
+          "y": 6.384
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "safety_stripes",
+      "label_ru": "Кораллово-кремовые полосы",
+      "index": 15,
+      "row": 3,
+      "column": 3,
+      "cell_rect_px": {
+        "x": 941,
+        "y": 940,
+        "w": 313,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 994,
+        "y": 954,
+        "w": 131,
+        "h": 258
+      },
+      "usage_ru": "Диагональные полосы переносного ограждения",
+      "repeat_rect_px": {
+        "x": 994,
+        "y": 954,
+        "w": 131,
+        "h": 258
+      },
+      "uv_top_left": {
+        "min": [
+          0.7926634769,
+          0.7607655502
+        ],
+        "max": [
+          0.8971291866,
+          0.966507177
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.7926634769,
+          0.033492823
+        ],
+        "max": [
+          0.8971291866,
+          0.2392344498
+        ]
+      },
+      "native_repeat_aspect_ratio": 0.50775194,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 1.262,
+          "y": 1.56
+        },
+        "low_frequency_opposite_edge_mae_rgb_255": {
+          "x": 3.887,
+          "y": 3.747
+        },
+        "pixel_identical_edges": false
+      }
+    }
+  ],
+  "concept_sheets": [
+    {
+      "image": "street_structures_concepts.png",
+      "asset_groups": 8,
+      "width": 1536,
+      "height": 1024,
+      "transparent_background": true
+    },
+    {
+      "image": "street_furniture_concepts.png",
+      "asset_groups": 8,
+      "width": 1536,
+      "height": 1024,
+      "transparent_background": true
+    }
+  ],
+  "props": [
+    {
+      "id": "wooden_utility_span",
+      "label_ru": "Два деревянных столба с проводами",
+      "concept_image": "street_structures_concepts.png",
+      "reading_order": 1,
+      "materials": {
+        "poles": "wood_honey",
+        "crossarms": "metal_navy",
+        "insulators": "paint_ivory",
+        "cables": "rubber_charcoal",
+        "footings": "concrete_light",
+        "hardware": "metal_galvanized"
+      }
+    },
+    {
+      "id": "concrete_utility_pole",
+      "label_ru": "Бетонный столб",
+      "concept_image": "street_structures_concepts.png",
+      "reading_order": 2,
+      "materials": {
+        "pole": "concrete_light",
+        "crossarm": "metal_navy",
+        "insulators": "paint_ivory",
+        "service_box": "metal_navy",
+        "fasteners": "metal_galvanized",
+        "cable": "rubber_charcoal"
+      }
+    },
+    {
+      "id": "single_street_lamp",
+      "label_ru": "Одинарный фонарь",
+      "concept_image": "street_structures_concepts.png",
+      "reading_order": 3,
+      "materials": {
+        "post": "metal_navy",
+        "collars": "paint_ivory",
+        "diffuser": "light_diffuser",
+        "base": "concrete_light"
+      }
+    },
+    {
+      "id": "double_street_lamp",
+      "label_ru": "Двойной фонарь",
+      "concept_image": "street_structures_concepts.png",
+      "reading_order": 4,
+      "materials": {
+        "post_and_arms": "metal_navy",
+        "collars": "paint_ivory",
+        "diffusers": "light_diffuser",
+        "base": "concrete_light"
+      }
+    },
+    {
+      "id": "road_sign_gantry",
+      "label_ru": "Наддорожная рама с указателями",
+      "concept_image": "street_structures_concepts.png",
+      "reading_order": 5,
+      "materials": {
+        "structure": "metal_navy",
+        "sign_panels": "metal_turquoise",
+        "sign_borders": "paint_ivory",
+        "footings": "concrete_light"
+      }
+    },
+    {
+      "id": "banner_portal",
+      "label_ru": "Портал с тканевым баннером",
+      "concept_image": "street_structures_concepts.png",
+      "reading_order": 6,
+      "materials": {
+        "posts": "paint_ivory",
+        "accents": "metal_turquoise",
+        "banner": "fabric_coral",
+        "brackets": "metal_navy"
+      }
+    },
+    {
+      "id": "pedestrian_overpass",
+      "label_ru": "Пешеходный переход над дорогой",
+      "concept_image": "street_structures_concepts.png",
+      "reading_order": 7,
+      "materials": {
+        "columns_and_beams": "paint_ivory",
+        "stairs": "concrete_light",
+        "railings": "metal_navy",
+        "walkway": "paving_gray"
+      }
+    },
+    {
+      "id": "stone_footbridge",
+      "label_ru": "Арочный каменный мостик",
+      "concept_image": "street_structures_concepts.png",
+      "reading_order": 8,
+      "materials": {
+        "arch_masonry": "stone_light",
+        "posts_and_caps": "paint_ivory",
+        "rails": "metal_navy",
+        "steps": "concrete_light",
+        "walkway": "paving_gray"
+      }
+    },
+    {
+      "id": "billboard",
+      "label_ru": "Горизонтальный рекламный щит",
+      "concept_image": "street_furniture_concepts.png",
+      "reading_order": 1,
+      "materials": {
+        "supports": "metal_navy",
+        "frame": "paint_ivory",
+        "cap": "metal_turquoise",
+        "blank_ad_surface": "paint_ivory"
+      }
+    },
+    {
+      "id": "ad_lightbox",
+      "label_ru": "Вертикальный рекламный лайтбокс",
+      "concept_image": "street_furniture_concepts.png",
+      "reading_order": 2,
+      "materials": {
+        "base": "metal_navy",
+        "frame": "paint_ivory",
+        "cap": "metal_turquoise",
+        "blank_ad_surface": "metal_coral"
+      }
+    },
+    {
+      "id": "traffic_light",
+      "label_ru": "Светофор",
+      "concept_image": "street_furniture_concepts.png",
+      "reading_order": 3,
+      "materials": {
+        "post_and_housing": "metal_navy",
+        "trim": "paint_ivory",
+        "lenses": "light_diffuser"
+      }
+    },
+    {
+      "id": "park_bench",
+      "label_ru": "Скамейка",
+      "concept_image": "street_furniture_concepts.png",
+      "reading_order": 4,
+      "materials": {
+        "slats": "wood_honey",
+        "supports": "metal_navy",
+        "foot_caps": "paint_ivory",
+        "bolts": "metal_galvanized"
+      }
+    },
+    {
+      "id": "bus_stop_shelter",
+      "label_ru": "Остановка с навесом",
+      "concept_image": "street_furniture_concepts.png",
+      "reading_order": 5,
+      "materials": {
+        "roof": "paint_ivory",
+        "frame": "metal_turquoise",
+        "footings": "metal_navy",
+        "glass": "glass_sky_blue",
+        "bench_slats": "wood_honey",
+        "poster_frame": "paint_ivory",
+        "blank_poster_surface": "metal_coral"
+      }
+    },
+    {
+      "id": "fire_hydrant",
+      "label_ru": "Пожарный гидрант",
+      "concept_image": "street_furniture_concepts.png",
+      "reading_order": 6,
+      "materials": {
+        "body": "metal_coral",
+        "collars_and_caps": "paint_ivory",
+        "bolts": "metal_galvanized"
+      }
+    },
+    {
+      "id": "litter_bin",
+      "label_ru": "Урна",
+      "concept_image": "street_furniture_concepts.png",
+      "reading_order": 7,
+      "materials": {
+        "body": "metal_turquoise",
+        "lid": "paint_ivory",
+        "rim_and_base": "metal_navy",
+        "inside_opening": "rubber_charcoal"
+      }
+    },
+    {
+      "id": "portable_barrier",
+      "label_ru": "Переносное дорожное ограждение",
+      "concept_image": "street_furniture_concepts.png",
+      "reading_order": 8,
+      "materials": {
+        "striped_beam": "safety_stripes",
+        "supports": "metal_navy",
+        "foot_caps": "paint_ivory",
+        "reflectors": "light_diffuser"
+      }
+    }
+  ],
+  "suggested_lighting": {
+    "single_street_lamp": {
+      "emission_color_srgb_hex": "#FFE29A"
+    },
+    "double_street_lamp": {
+      "emission_color_srgb_hex": "#FFE29A"
+    },
+    "portable_barrier": {
+      "reflector_emission_color_srgb_hex": "#FFB52E"
+    },
+    "traffic_light": {
+      "lens_tints_srgb_hex": {
+        "red": "#FF4028",
+        "yellow": "#FFD033",
+        "green": "#6AD419"
+      },
+      "note_ru": "Создать три варианта материала рассеивателя с заданными цветами свечения; включать нужный сигнал в игре."
+    }
+  },
+  "modeling_notes_ru": [
+    "Это концепт-референсы для 3D-моделирования. Масштаб разных объектов на листе изменён для читаемости.",
+    "Рекламные поверхности оставлены без текста; сделать их отдельными плоскостями для сменных изображений.",
+    "В листе со столбами два соединённых деревянных столба считаются одним модульным пролётом.",
+    "Провода моделировать отдельными кривыми/трубками. Перила, рамки, ступени и объёмная фурнитура моделируются геометрией.",
+    "PNG с материалами — цветовой атлас. Alpha, emission, normal и roughness при необходимости настраиваются отдельно в материале движка. Голубая область не содержит прозрачности."
+  ]
+}

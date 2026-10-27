@@ -1,0 +1,1453 @@
+{
+  "schema": "puppy-city-roadside-material-kit",
+  "version": 1,
+  "atlases": [
+    {
+      "id": "roadside",
+      "file": "roadside_material_atlas.png",
+      "width": 1254,
+      "height": 1254,
+      "grid_columns": 4,
+      "grid_rows": 4,
+      "channels": "RGB",
+      "color_space": "sRGB",
+      "map_type": "base_color",
+      "alpha": false,
+      "proof_file": "roadside_tiling_check_3x3.png",
+      "sha256": "1036e82313a87a89e7a683a1430a77ba5749b04d266907b2405184b97c37c769"
+    }
+  ],
+  "textures": [
+    {
+      "id": "concrete_ivory",
+      "label_ru": "Светлый бетон",
+      "index": 0,
+      "row": 0,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 0,
+        "w": 314,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 21,
+        "y": 15,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#F1E8DD",
+      "atlas_id": "roadside",
+      "usage_ru": "Светлые бетонные барьеры, блоки, столбы, крышки и основания",
+      "repeat_rect_px": {
+        "x": 21,
+        "y": 15,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.0167464115,
+          0.0119617225
+        ],
+        "max": [
+          0.2208931419,
+          0.216108453
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.0167464115,
+          0.783891547
+        ],
+        "max": [
+          0.2208931419,
+          0.9880382775
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.0,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 5.441,
+          "y": 4.768
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 2.762,
+          "y": 2.191
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "concrete_gray",
+      "label_ru": "Серый бетон",
+      "index": 1,
+      "row": 0,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 314,
+        "y": 0,
+        "w": 313,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 348,
+        "y": 20,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#C8CACF",
+      "atlas_id": "roadside",
+      "usage_ru": "Серые основания стен, фундаменты и бетонные детали",
+      "repeat_rect_px": {
+        "x": 348,
+        "y": 20,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.2775119617,
+          0.0159489633
+        ],
+        "max": [
+          0.4816586922,
+          0.2200956938
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.2775119617,
+          0.7799043062
+        ],
+        "max": [
+          0.4816586922,
+          0.9840510367
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.0,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 7.315,
+          "y": 7.982
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 3.721,
+          "y": 3.32
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "metal_silver",
+      "label_ru": "Серебристый металл",
+      "index": 2,
+      "row": 0,
+      "column": 2,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 0,
+        "w": 313,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 654,
+        "y": 48,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#ABAEB3",
+      "atlas_id": "roadside",
+      "usage_ru": "Металлическая балка отбойника, цепи, болты и фурнитура; блеск задаёт шейдер",
+      "repeat_rect_px": {
+        "x": 654,
+        "y": 48,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.5215311005,
+          0.038277512
+        ],
+        "max": [
+          0.7256778309,
+          0.2424242424
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.5215311005,
+          0.7575757576
+        ],
+        "max": [
+          0.7256778309,
+          0.961722488
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.0,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.49,
+          "y": 0.75
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.372,
+          "y": 0.585
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "rubber_charcoal",
+      "label_ru": "Тёмная резина",
+      "index": 3,
+      "row": 0,
+      "column": 3,
+      "cell_rect_px": {
+        "x": 940,
+        "y": 0,
+        "w": 314,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 963,
+        "y": 13,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#273349",
+      "atlas_id": "roadside",
+      "usage_ru": "Резиновые основания конусов, бочек и переносных конструкций",
+      "repeat_rect_px": {
+        "x": 963,
+        "y": 13,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.7679425837,
+          0.0103668262
+        ],
+        "max": [
+          0.9720893142,
+          0.2145135566
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.7679425837,
+          0.7854864434
+        ],
+        "max": [
+          0.9720893142,
+          0.9896331738
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.0,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 5.241,
+          "y": 4.888
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 2.8,
+          "y": 2.567
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_coral",
+      "label_ru": "Коралловая краска",
+      "index": 4,
+      "row": 1,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 314,
+        "w": 314,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 10,
+        "y": 356,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#FC513E",
+      "atlas_id": "roadside",
+      "usage_ru": "Коралловые пластиковые барьеры, конусы, бочки и цветные вставки",
+      "repeat_rect_px": {
+        "x": 10,
+        "y": 356,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.0079744817,
+          0.283891547
+        ],
+        "max": [
+          0.2121212121,
+          0.4880382775
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.0079744817,
+          0.5119617225
+        ],
+        "max": [
+          0.2121212121,
+          0.716108453
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.0,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 1.117,
+          "y": 1.294
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.764,
+          "y": 1.001
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_ivory",
+      "label_ru": "Краска айвори",
+      "index": 5,
+      "row": 1,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 314,
+        "y": 314,
+        "w": 313,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 362,
+        "y": 337,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#FCF2E2",
+      "atlas_id": "roadside",
+      "usage_ru": "Светлые полосы, колпачки, рамки и окрашенные детали",
+      "repeat_rect_px": {
+        "x": 362,
+        "y": 337,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.288676236,
+          0.2687400319
+        ],
+        "max": [
+          0.4928229665,
+          0.4728867624
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.288676236,
+          0.5271132376
+        ],
+        "max": [
+          0.4928229665,
+          0.7312599681
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.0,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.879,
+          "y": 0.973
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.572,
+          "y": 0.617
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_navy",
+      "label_ru": "Тёмно-синяя краска",
+      "index": 6,
+      "row": 1,
+      "column": 2,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 314,
+        "w": 313,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 647,
+        "y": 329,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#013A86",
+      "atlas_id": "roadside",
+      "usage_ru": "Стойки, ножки, перила, основания и тёмно-синие детали",
+      "repeat_rect_px": {
+        "x": 647,
+        "y": 329,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.5159489633,
+          0.2623604466
+        ],
+        "max": [
+          0.7200956938,
+          0.466507177
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.5159489633,
+          0.533492823
+        ],
+        "max": [
+          0.7200956938,
+          0.7376395534
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.0,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 1.275,
+          "y": 1.216
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 1.063,
+          "y": 0.952
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "paint_turquoise",
+      "label_ru": "Бирюзовая краска",
+      "index": 7,
+      "row": 1,
+      "column": 3,
+      "cell_rect_px": {
+        "x": 940,
+        "y": 314,
+        "w": 314,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 976,
+        "y": 329,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#02D4E6",
+      "atlas_id": "roadside",
+      "usage_ru": "Бирюзовые столбы, панели и декоративные вставки",
+      "repeat_rect_px": {
+        "x": 976,
+        "y": 329,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.7783094099,
+          0.2623604466
+        ],
+        "max": [
+          0.9824561404,
+          0.466507177
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.7783094099,
+          0.533492823
+        ],
+        "max": [
+          0.9824561404,
+          0.7376395534
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.0,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 0.986,
+          "y": 0.966
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.698,
+          "y": 0.691
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "wood_honey",
+      "label_ru": "Медовое дерево",
+      "index": 8,
+      "row": 2,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 627,
+        "w": 314,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 34,
+        "y": 656,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#F0A541",
+      "atlas_id": "roadside",
+      "usage_ru": "Деревянные заборы, столбы и поручни",
+      "repeat_rect_px": {
+        "x": 34,
+        "y": 656,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.0271132376,
+          0.5231259968
+        ],
+        "max": [
+          0.2312599681,
+          0.7272727273
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.0271132376,
+          0.2727272727
+        ],
+        "max": [
+          0.2312599681,
+          0.4768740032
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.0,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 5.466,
+          "y": 6.711
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 4.017,
+          "y": 3.626
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "wood_ivory",
+      "label_ru": "Светлое дерево",
+      "index": 9,
+      "row": 2,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 314,
+        "y": 627,
+        "w": 313,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 329,
+        "y": 673,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#F8F0E3",
+      "atlas_id": "roadside",
+      "usage_ru": "Белёные деревянные штакетины и светлые доски",
+      "repeat_rect_px": {
+        "x": 329,
+        "y": 673,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.2623604466,
+          0.5366826156
+        ],
+        "max": [
+          0.466507177,
+          0.7408293461
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.2623604466,
+          0.2591706539
+        ],
+        "max": [
+          0.466507177,
+          0.4633173844
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.0,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 1.557,
+          "y": 3.232
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 0.912,
+          "y": 1.404
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "clay_coral",
+      "label_ru": "Коралловый кирпич",
+      "index": 10,
+      "row": 2,
+      "column": 2,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 627,
+        "w": 313,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 661,
+        "y": 658,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#F6714E",
+      "atlas_id": "roadside",
+      "usage_ru": "Поверхность кораллового кирпича; форму кладки и швы задаёт модель",
+      "repeat_rect_px": {
+        "x": 661,
+        "y": 658,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.5271132376,
+          0.5247208931
+        ],
+        "max": [
+          0.7312599681,
+          0.7288676236
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.5271132376,
+          0.2711323764
+        ],
+        "max": [
+          0.7312599681,
+          0.4752791069
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.0,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 4.418,
+          "y": 4.626
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 2.25,
+          "y": 3.016
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "rope_tan",
+      "label_ru": "Волокна каната",
+      "index": 11,
+      "row": 2,
+      "column": 3,
+      "cell_rect_px": {
+        "x": 940,
+        "y": 627,
+        "w": 314,
+        "h": 313
+      },
+      "rect_px": {
+        "x": 984,
+        "y": 671,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#E1AC66",
+      "atlas_id": "roadside",
+      "usage_ru": "Волокна канатов; форму верёвки и её изгиб задаёт модель",
+      "repeat_rect_px": {
+        "x": 984,
+        "y": 671,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.7846889952,
+          0.5350877193
+        ],
+        "max": [
+          0.9888357257,
+          0.7392344498
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.7846889952,
+          0.2607655502
+        ],
+        "max": [
+          0.9888357257,
+          0.4649122807
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.0,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 8.68,
+          "y": 7.354
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 4.934,
+          "y": 3.119
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "reflector_amber",
+      "label_ru": "Янтарный отражатель",
+      "index": 12,
+      "row": 3,
+      "column": 0,
+      "cell_rect_px": {
+        "x": 0,
+        "y": 940,
+        "w": 314,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 17,
+        "y": 958,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#FCA302",
+      "atlas_id": "roadside",
+      "usage_ru": "Янтарные светоотражатели и рассеиватели предупреждающих ламп",
+      "repeat_rect_px": {
+        "x": 17,
+        "y": 958,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.0135566188,
+          0.7639553429
+        ],
+        "max": [
+          0.2177033493,
+          0.9681020734
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.0135566188,
+          0.0318979266
+        ],
+        "max": [
+          0.2177033493,
+          0.2360446571
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.0,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 5.608,
+          "y": 4.417
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 2.343,
+          "y": 1.675
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "foliage_green",
+      "label_ru": "Зелень изгороди",
+      "index": 13,
+      "row": 3,
+      "column": 1,
+      "cell_rect_px": {
+        "x": 314,
+        "y": 940,
+        "w": 313,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 325,
+        "y": 961,
+        "w": 256,
+        "h": 256
+      },
+      "sampled_color_srgb_hex": "#30812D",
+      "atlas_id": "roadside",
+      "usage_ru": "Поверхность зелёной изгороди в кашпо; силуэт кустов задаёт геометрия",
+      "repeat_rect_px": {
+        "x": 325,
+        "y": 961,
+        "w": 256,
+        "h": 256
+      },
+      "uv_top_left": {
+        "min": [
+          0.2591706539,
+          0.7663476874
+        ],
+        "max": [
+          0.4633173844,
+          0.9704944179
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.2591706539,
+          0.0295055821
+        ],
+        "max": [
+          0.4633173844,
+          0.2336523126
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.0,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 22.062,
+          "y": 19.251
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 14.607,
+          "y": 12.642
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "stripe_coral_ivory",
+      "label_ru": "Коралловые полосы",
+      "index": 14,
+      "row": 3,
+      "column": 2,
+      "cell_rect_px": {
+        "x": 627,
+        "y": 940,
+        "w": 313,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 663,
+        "y": 1090,
+        "w": 156,
+        "h": 156
+      },
+      "sampled_color_srgb_hex": "#FB5C4A",
+      "atlas_id": "roadside",
+      "usage_ru": "Основной кораллово-светлый вариант диагональных предупреждающих полос",
+      "repeat_rect_px": {
+        "x": 663,
+        "y": 1090,
+        "w": 156,
+        "h": 156
+      },
+      "uv_top_left": {
+        "min": [
+          0.528708134,
+          0.8692185008
+        ],
+        "max": [
+          0.6531100478,
+          0.9936204147
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.528708134,
+          0.0063795853
+        ],
+        "max": [
+          0.6531100478,
+          0.1307814992
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.0,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 2.579,
+          "y": 1.498
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 4.638,
+          "y": 3.061
+        },
+        "pixel_identical_edges": false
+      }
+    },
+    {
+      "id": "stripe_navy_yellow",
+      "label_ru": "Сине-жёлтые полосы",
+      "index": 15,
+      "row": 3,
+      "column": 3,
+      "cell_rect_px": {
+        "x": 940,
+        "y": 940,
+        "w": 314,
+        "h": 314
+      },
+      "rect_px": {
+        "x": 972,
+        "y": 948,
+        "w": 157,
+        "h": 157
+      },
+      "sampled_color_srgb_hex": "#06396E",
+      "atlas_id": "roadside",
+      "usage_ru": "Дополнительный сине-жёлтый вариант предупреждающих полос",
+      "repeat_rect_px": {
+        "x": 972,
+        "y": 948,
+        "w": 157,
+        "h": 157
+      },
+      "uv_top_left": {
+        "min": [
+          0.7751196172,
+          0.7559808612
+        ],
+        "max": [
+          0.9003189793,
+          0.8811802233
+        ]
+      },
+      "uv_bottom_left": {
+        "min": [
+          0.7751196172,
+          0.1188197767
+        ],
+        "max": [
+          0.9003189793,
+          0.2440191388
+        ]
+      },
+      "native_repeat_aspect_ratio": 1.0,
+      "rotation_degrees": 0,
+      "verification": {
+        "repeat_layout": [
+          3,
+          3
+        ],
+        "axes_checked": [
+          "x",
+          "y"
+        ],
+        "visual_review": "checked",
+        "opposite_edge_mae_rgb_255": {
+          "x": 3.437,
+          "y": 1.798
+        },
+        "low_frequency_edge_mae_rgb_255": {
+          "x": 6.972,
+          "y": 5.073
+        },
+        "pixel_identical_edges": false
+      }
+    }
+  ],
+  "concept_sheets": [
+    {
+      "id": "barriers",
+      "file": "roadside_barriers_concepts.png",
+      "width": 1586,
+      "height": 992,
+      "has_alpha": true,
+      "grid_columns": 4,
+      "grid_rows": 2,
+      "index_order": "left_to_right_top_to_bottom",
+      "grid_usage": "Concept identification only, not exact sprite crop rectangles."
+    },
+    {
+      "id": "fences",
+      "file": "roadside_fences_concepts.png",
+      "width": 1586,
+      "height": 992,
+      "has_alpha": true,
+      "grid_columns": 4,
+      "grid_rows": 2,
+      "index_order": "left_to_right_top_to_bottom",
+      "grid_usage": "Concept identification only, not exact sprite crop rectangles."
+    }
+  ],
+  "assets": [
+    {
+      "id": "steel_guardrail",
+      "label_ru": "Металлический отбойник",
+      "concept": {
+        "sheet_id": "barriers",
+        "index": 0,
+        "row": 0,
+        "column": 0
+      },
+      "material_slots": {
+        "rail_and_bolts": "metal_silver",
+        "posts_and_end_caps": "paint_navy",
+        "footings_and_caps": "paint_ivory",
+        "reflectors": "reflector_amber"
+      }
+    },
+    {
+      "id": "concrete_jersey",
+      "label_ru": "Бетонный дорожный барьер",
+      "concept": {
+        "sheet_id": "barriers",
+        "index": 1,
+        "row": 0,
+        "column": 1
+      },
+      "material_slots": {
+        "body": "concrete_ivory",
+        "reflector_patches": "paint_coral"
+      }
+    },
+    {
+      "id": "plastic_water_barrier",
+      "label_ru": "Пластиковый барьер",
+      "concept": {
+        "sheet_id": "barriers",
+        "index": 2,
+        "row": 0,
+        "column": 2
+      },
+      "material_slots": {
+        "body": "paint_coral",
+        "reflective_panel_and_cap": "paint_ivory"
+      }
+    },
+    {
+      "id": "portable_barricade",
+      "label_ru": "Переносное ограждение",
+      "concept": {
+        "sheet_id": "barriers",
+        "index": 3,
+        "row": 0,
+        "column": 3
+      },
+      "material_slots": {
+        "warning_board": "stripe_coral_ivory",
+        "legs": "paint_navy",
+        "feet_and_lamp_rims": "paint_ivory",
+        "warning_lenses": "reflector_amber"
+      },
+      "alternative_material_slots": {
+        "warning_board": "stripe_navy_yellow"
+      }
+    },
+    {
+      "id": "concrete_cube",
+      "label_ru": "Бетонный блок",
+      "concept": {
+        "sheet_id": "barriers",
+        "index": 4,
+        "row": 1,
+        "column": 0
+      },
+      "material_slots": {
+        "body": "concrete_ivory",
+        "middle_band": "paint_coral"
+      }
+    },
+    {
+      "id": "traffic_drum",
+      "label_ru": "Дорожная бочка",
+      "concept": {
+        "sheet_id": "barriers",
+        "index": 5,
+        "row": 1,
+        "column": 1
+      },
+      "material_slots": {
+        "body_and_handle": "paint_coral",
+        "reflective_bands": "paint_ivory",
+        "base": "paint_navy"
+      },
+      "alternative_material_slots": {
+        "base": "rubber_charcoal"
+      }
+    },
+    {
+      "id": "traffic_cones",
+      "label_ru": "Набор дорожных конусов",
+      "concept": {
+        "sheet_id": "barriers",
+        "index": 6,
+        "row": 1,
+        "column": 2
+      },
+      "material_slots": {
+        "bodies": "paint_coral",
+        "reflective_bands": "paint_ivory",
+        "bases": "paint_navy"
+      },
+      "alternative_material_slots": {
+        "bases": "rubber_charcoal"
+      }
+    },
+    {
+      "id": "chain_bollards",
+      "label_ru": "Столбики с цепями",
+      "concept": {
+        "sheet_id": "barriers",
+        "index": 7,
+        "row": 1,
+        "column": 3
+      },
+      "material_slots": {
+        "posts": "paint_navy",
+        "caps_and_footings": "paint_ivory",
+        "reflector_collars": "reflector_amber",
+        "chains": "metal_silver"
+      }
+    },
+    {
+      "id": "ivory_picket_fence",
+      "label_ru": "Светлый штакетник",
+      "concept": {
+        "sheet_id": "fences",
+        "index": 0,
+        "row": 0,
+        "column": 0
+      },
+      "material_slots": {
+        "pickets": "wood_ivory",
+        "posts": "paint_turquoise",
+        "caps_and_footings": "paint_ivory",
+        "crossrails": "paint_navy"
+      }
+    },
+    {
+      "id": "wood_fence",
+      "label_ru": "Деревянный забор",
+      "concept": {
+        "sheet_id": "fences",
+        "index": 1,
+        "row": 0,
+        "column": 1
+      },
+      "material_slots": {
+        "boards": "wood_honey",
+        "posts": "paint_navy",
+        "caps_and_footings": "paint_ivory"
+      }
+    },
+    {
+      "id": "pedestrian_railing",
+      "label_ru": "Металлическая ограда",
+      "concept": {
+        "sheet_id": "fences",
+        "index": 2,
+        "row": 0,
+        "column": 2
+      },
+      "material_slots": {
+        "rails": "paint_navy",
+        "stone_piers": "concrete_ivory"
+      }
+    },
+    {
+      "id": "brick_wall",
+      "label_ru": "Низкая кирпичная ограда",
+      "concept": {
+        "sheet_id": "fences",
+        "index": 3,
+        "row": 0,
+        "column": 3
+      },
+      "material_slots": {
+        "bricks": "clay_coral",
+        "coping_and_caps": "concrete_ivory",
+        "base": "concrete_gray"
+      }
+    },
+    {
+      "id": "construction_panel",
+      "label_ru": "Строительный щит",
+      "concept": {
+        "sheet_id": "fences",
+        "index": 4,
+        "row": 1,
+        "column": 0
+      },
+      "material_slots": {
+        "panel": "paint_turquoise",
+        "posts_and_feet": "paint_navy",
+        "frame_and_caps": "paint_ivory"
+      }
+    },
+    {
+      "id": "hedge_planter",
+      "label_ru": "Кашпо-разделитель с изгородью",
+      "concept": {
+        "sheet_id": "fences",
+        "index": 5,
+        "row": 1,
+        "column": 1
+      },
+      "material_slots": {
+        "planter": "concrete_ivory",
+        "base": "paint_navy",
+        "hedge": "foliage_green"
+      }
+    },
+    {
+      "id": "rope_fence",
+      "label_ru": "Канатные перила",
+      "concept": {
+        "sheet_id": "fences",
+        "index": 6,
+        "row": 1,
+        "column": 2
+      },
+      "material_slots": {
+        "wooden_posts": "wood_honey",
+        "ropes": "rope_tan",
+        "caps_and_footings": "paint_ivory",
+        "lower_sleeves": "paint_navy"
+      }
+    },
+    {
+      "id": "curb_segment",
+      "label_ru": "Секция бордюра",
+      "concept": {
+        "sheet_id": "fences",
+        "index": 7,
+        "row": 1,
+        "column": 3
+      },
+      "material_slots": {
+        "coral_blocks": "paint_coral",
+        "ivory_blocks": "paint_ivory",
+        "base": "concrete_gray"
+      }
+    }
+  ],
+  "sampling": {
+    "coordinate_origin_px": "top_left",
+    "rect_max_exclusive": true,
+    "use_rect_px_for_extraction": true,
+    "repeat_whole_atlas": false,
+    "atlas_wrap": "clamp",
+    "local_region_repeat": true,
+    "individual_texture_wrap_u": "repeat",
+    "individual_texture_wrap_v": "repeat",
+    "preferred_uv": "uv_bottom_left",
+    "padding_px": 0,
+    "mipmap_safe": false,
+    "notes_ru": [
+      "Для вырезания и повторения использовать rect_px, а не cell_rect_px.",
+      "Квадраты основных поверхностей 256×256. Для диагональных полос подобраны квадраты полного периода: 156×156 и 157×157.",
+      "Для обычного Repeat вырезать квадрат в отдельную текстуру. В едином атласе нужны циклическая адресация и фильтрация внутри региона.",
+      "Для mipmaps используйте отдельные текстуры или wrap-padding. Обычные mipmaps атласа могут подмешивать соседние материалы.",
+      "Дополнительное сужение rect_px меняет период полос.",
+      "sampled_color_srgb_hex — медианный цвет для справки или однотонного материала, а не обязательный множитель поверх текстуры.",
+      "Квадраты проверены в повторении 3×3. Крайние пиксели не идентичны; математически точная бесшовность не заявляется."
+    ]
+  },
+  "modeling_notes_ru": [
+    "Пакет содержит концепты и base-color текстуры. Готовых 3D-моделей, UV-развёрток моделей и карт normal/roughness/metallic нет.",
+    "Металл имеет ровный базовый цвет; металлический отклик, блеск и отражения настраиваются в движке.",
+    "Светоотражатель содержит цветовой рисунок, а не готовый эффект отражения или свечения.",
+    "Форму кирпичей, швы, доски, канаты, звенья цепи и рёбра пластиковых барьеров задаёт модель.",
+    "Зелень — непрозрачная цветовая текстура для поверхности кустов, без alpha-масок отдельных листьев.",
+    "Горизонтальные полосы конусов, бочек и блоков удобно назначать отдельным участкам геометрии через paint_coral и paint_ivory. Диагональные полосы предназначены для предупреждающих панелей."
+  ],
+  "generation": {
+    "method": "built_in_image_generation",
+    "artwork_edited_programmatically": false,
+    "region_selection": "Square regions selected by edge comparison and reviewed as exact 3x3 repeats. Proof image is a diagnostic visualization."
+  }
+}
