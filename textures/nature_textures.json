@@ -1,0 +1,262 @@
+{
+  "schema": "puppy-city-nature-material-kit",
+  "version": 1,
+  "atlases": [
+    {
+      "id": "nature",
+      "file": "nature_material_atlas.png",
+      "width": 1024,
+      "height": 1024,
+      "grid_columns": 4,
+      "grid_rows": 4,
+      "channels": "RGB",
+      "color_space": "sRGB",
+      "map_type": "base_color",
+      "alpha": false,
+      "source_file": "incoming/nature_kit/nature_atlas_generated.png",
+      "made_by": "node tools/seamless-atlas.mjs … --stripes 2"
+    }
+  ],
+  "textures": [
+    {
+      "id": "grass_lawn",
+      "label_ru": "Газонная трава",
+      "index": 0,
+      "row": 0,
+      "column": 0,
+      "atlas_id": "nature",
+      "usage_ru": "Дворы, поля вокруг города",
+      "rect_px": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "grass_park",
+      "label_ru": "Парковая трава",
+      "index": 1,
+      "row": 0,
+      "column": 1,
+      "atlas_id": "nature",
+      "usage_ru": "Лужайки парка",
+      "rect_px": {
+        "x": 256,
+        "y": 0,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "grass_mowed",
+      "label_ru": "Стриженый газон в полоску",
+      "index": 2,
+      "row": 0,
+      "column": 2,
+      "atlas_id": "nature",
+      "usage_ru": "Газоны площади",
+      "rect_px": {
+        "x": 512,
+        "y": 0,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "grass_flowers",
+      "label_ru": "Трава с цветочками",
+      "index": 3,
+      "row": 0,
+      "column": 3,
+      "atlas_id": "nature",
+      "usage_ru": "Холмы, луга",
+      "rect_px": {
+        "x": 768,
+        "y": 0,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "dirt_site",
+      "label_ru": "Земля стройки",
+      "index": 4,
+      "row": 1,
+      "column": 0,
+      "atlas_id": "nature",
+      "usage_ru": "Площадка стройки",
+      "rect_px": {
+        "x": 0,
+        "y": 256,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "earth_path",
+      "label_ru": "Утоптанная тропинка",
+      "index": 5,
+      "row": 1,
+      "column": 1,
+      "atlas_id": "nature",
+      "usage_ru": "Запас: тропинки",
+      "rect_px": {
+        "x": 256,
+        "y": 256,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "gravel_fine",
+      "label_ru": "Мелкий гравий",
+      "index": 6,
+      "row": 1,
+      "column": 2,
+      "atlas_id": "nature",
+      "usage_ru": "Запас: дорожки, отсыпка",
+      "rect_px": {
+        "x": 512,
+        "y": 256,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "mulch_bark",
+      "label_ru": "Мульча из коры",
+      "index": 7,
+      "row": 1,
+      "column": 3,
+      "atlas_id": "nature",
+      "usage_ru": "Запас: клумбы под деревьями",
+      "rect_px": {
+        "x": 768,
+        "y": 256,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "leaf_canopy",
+      "label_ru": "Листва",
+      "index": 8,
+      "row": 2,
+      "column": 0,
+      "atlas_id": "nature",
+      "usage_ru": "Кроны круглых деревьев, кусты",
+      "rect_px": {
+        "x": 0,
+        "y": 512,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "leaf_dark",
+      "label_ru": "Тёмная листва",
+      "index": 9,
+      "row": 2,
+      "column": 1,
+      "atlas_id": "nature",
+      "usage_ru": "Вторые шары крон, кусты",
+      "rect_px": {
+        "x": 256,
+        "y": 512,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "pine_needles",
+      "label_ru": "Хвоя",
+      "index": 10,
+      "row": 2,
+      "column": 2,
+      "atlas_id": "nature",
+      "usage_ru": "Ели",
+      "rect_px": {
+        "x": 512,
+        "y": 512,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "blossom_pink",
+      "label_ru": "Цветущая сакура",
+      "index": 11,
+      "row": 2,
+      "column": 3,
+      "atlas_id": "nature",
+      "usage_ru": "Кроны цветущих деревьев",
+      "rect_px": {
+        "x": 768,
+        "y": 512,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "foliage_autumn",
+      "label_ru": "Осенняя листва",
+      "index": 12,
+      "row": 3,
+      "column": 0,
+      "atlas_id": "nature",
+      "usage_ru": "Кроны осенних деревьев",
+      "rect_px": {
+        "x": 0,
+        "y": 768,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "soil_garden",
+      "label_ru": "Садовая земля",
+      "index": 13,
+      "row": 3,
+      "column": 1,
+      "atlas_id": "nature",
+      "usage_ru": "Земля в клумбах",
+      "rect_px": {
+        "x": 256,
+        "y": 768,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "hedge_boxwood",
+      "label_ru": "Живая изгородь",
+      "index": 14,
+      "row": 3,
+      "column": 2,
+      "atlas_id": "nature",
+      "usage_ru": "Стриженые изгороди",
+      "rect_px": {
+        "x": 512,
+        "y": 768,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "water_lake",
+      "label_ru": "Вода",
+      "index": 15,
+      "row": 3,
+      "column": 3,
+      "atlas_id": "nature",
+      "usage_ru": "Озеро, ручей",
+      "rect_px": {
+        "x": 768,
+        "y": 768,
+        "w": 256,
+        "h": 256
+      }
+    }
+  ]
+}
