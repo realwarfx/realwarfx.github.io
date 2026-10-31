@@ -112,9 +112,14 @@
     #cheats { width: calc(600px * var(--ui)); }
     #about { width: calc(420px * var(--ui)); }
     #help { width: calc(640px * var(--ui)); }
+    /* 🛠 «Логи» (src/ui/devpanel.js): read only, selectable, copied by its button. */
+    #logs { width: calc(780px * var(--ui)); }
+    #logs textarea { display: block; width: 100%; height: calc(240px * var(--ui)); box-sizing: border-box; resize: none; white-space: pre; overflow: auto;
+      font: calc(11px * var(--ui))/1.35 monospace; color: var(--ink); background: #fffdf6; border: calc(2px * var(--ui)) solid var(--ink);
+      border-radius: calc(8px * var(--ui)); padding: calc(6px * var(--ui)); user-select: text; -webkit-user-select: text; }
     #controls { width: calc(560px * var(--ui)); } /* the controls card at the start (src/ui/controlsCard.js) */
     #controls .stub { text-align: center; font-size: calc(16px * var(--ui)); font-weight: 700; line-height: 1.4; }
-    #qr, #settings, #cheats, #about, #help, #lab, #controls { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; z-index: 10;
+    #qr, #settings, #cheats, #about, #help, #lab, #controls, #logs { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; z-index: 10;
       max-width: calc(var(--col) - var(--sa-left) - var(--sa-right) - calc(24px * var(--ui)));
       max-height: calc(var(--row) - var(--sa-top) - var(--sa-bottom) - calc(24px * var(--ui))); overflow-y: auto; box-sizing: border-box; background: var(--cream); color: var(--ink);
       padding: calc(14px * var(--ui)) calc(18px * var(--ui)); border: calc(4px * var(--ui)) solid var(--ink); border-radius: calc(18px * var(--ui));
@@ -559,7 +564,7 @@
       document.addEventListener('fullscreenchange', fit);
     })();
   </script>
-  <script type="module" crossorigin src="/assets/index-2fT8F7uL.js"></script>
+  <script type="module" crossorigin src="/assets/index--h1m6iS-.js"></script>
 </head>
 <body>
   <div id="loading" class="splash">
@@ -621,6 +626,7 @@
   <div id="settings" class="popup-ui"></div>
   <div id="cheats" class="popup-ui"></div>
   <div id="lab" class="popup-ui"></div>
+  <div id="logs" class="popup-ui"></div>
   <div id="about" class="popup-ui">
     <div class="head">Об игре</div>
     <div class="plate"><img class="logo" src="ui/qplaze_logo.png" alt="Qplaze" /></div>
