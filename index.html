@@ -55,20 +55,11 @@
     #rotate .msg { max-width: calc(320px * var(--ui)); font-size: calc(20px * var(--ui)); font-weight: 800; line-height: 1.3; }
     #rotate button { min-height: calc(52px * var(--ui)); padding: calc(12px * var(--ui)) calc(26px * var(--ui)); border: 0; border-radius: calc(999px * var(--ui)); font: inherit; font-size: calc(18px * var(--ui)); font-weight: 900;
       color: #26324d; background: #ffcf3f; box-shadow: 0 calc(5px * var(--ui)) 0 #c99a12; cursor: pointer; }
-    #ui { position: fixed; z-index: 6; top: 12px; left: 12px; right: 12px; display: flex; flex-wrap: wrap; gap: 6px; pointer-events: none; } /* top left (the model views' bar #info is at the bottom); opens downwards */
-    /* Developer panel folded into the 🛠 button until opened; not on touch screens at all. */
-    #ui:not(.open) > :not(.devtoggle) { display: none; }
-    #ui .devtoggle { order: -1; font-size: 18px; width: 34px; height: 34px; padding: 0; } /* stays in the corner when open */
+    /* The 🛠 button, top left (the model views' bar #info is at the bottom): opens the developer panel (#devtools); not on touch screens. */
+    #ui { position: fixed; z-index: 6; top: 12px; left: 12px; }
     @media (pointer: coarse) { #ui { display: none; } }
-    #ui button { pointer-events: auto; border: 0; border-radius: 999px; padding: 4px 11px; font-weight: 700; font-size: 12px;
+    #ui button { width: 34px; height: 34px; padding: 0; border: 0; border-radius: 999px; font-size: 18px;
       background: #fffaf0; color: #26324d; box-shadow: 0 2px 0 #c9b98f; cursor: pointer; }
-    #ui button.on, #ui select.on { background: #ffcf3f; box-shadow: 0 2px 0 #c99a12; }
-    #ui button:disabled { opacity: 0.45; cursor: default; }
-    #ui select { pointer-events: auto; border: 0; border-radius: 999px; padding: 4px 10px; font-weight: 700; font-size: 12px;
-      background: #fffaf0; color: #26324d; box-shadow: 0 2px 0 #c9b98f; cursor: pointer; }
-    #ui .sep { width: 10px; }
-    #ui { box-sizing: border-box; padding-right: 90px; } /* room for the corner button (QR) */
-    #ui .corner { position: absolute; top: 0; right: 0; display: flex; gap: 6px; pointer-events: auto; }
     #anim { position: fixed; bottom: 74px; left: 50%; transform: translateX(-50%); display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; max-width: calc(100% - 32px); }
     #anim button { border: 0; border-radius: 999px; padding: 8px 14px; font-weight: 700; font-size: 13px; background: #fffaf0; color: #26324d; box-shadow: 0 3px 0 #c9b98f; cursor: pointer; }
     #anim button.on { background: #ffcf3f; box-shadow: 0 3px 0 #c99a12; }
@@ -107,19 +98,30 @@
     #backdrop { position: fixed; inset: 0; z-index: 9; display: none; background: rgba(18, 26, 46, 0.5); }
     /* Centred popups (⚙ settings, 🛠 cheats, «Об игре», 📱 QR) in the menu look: cream, a thick ink outline. Wide and short —
        everything fits without scrolling (the max-height is only a safety net). */
-    #qr { width: calc(240px * var(--ui)); }
+    #qr { width: calc(280px * var(--ui)); } /* the code (216) and the panel's own padding and border inside it: no side scroll */
     #settings { width: calc(520px * var(--ui)); }
     #cheats { width: calc(600px * var(--ui)); }
     #about { width: calc(420px * var(--ui)); }
     #help { width: calc(640px * var(--ui)); }
+    /* 🛠 The developer panel (src/ui/devpanel.js): sections of buttons, the model lists across the whole width. */
+    #devtools { width: calc(620px * var(--ui)); }
+    #devtools .title { font-size: calc(12px * var(--ui)); font-weight: 900; text-transform: uppercase; opacity: 0.6; margin: calc(10px * var(--ui)) 0 calc(5px * var(--ui)); }
+    #devtools .row { display: flex; flex-wrap: wrap; gap: calc(6px * var(--ui)); }
+    #devtools .row button, #devtools select { min-height: calc(38px * var(--ui)); padding: 0 calc(14px * var(--ui)); border: calc(3px * var(--ui)) solid var(--ink);
+      border-radius: calc(999px * var(--ui)); background: #fff; font-size: calc(13px * var(--ui)); }
+    #devtools select { flex: 1 1 100%; min-width: 0; font: inherit; font-weight: 800; color: var(--ink); cursor: pointer; }
+    #devtools .row button.on, #devtools select.on { background: var(--lime); }
+    #devtools .row button.danger { background: #ff7a6b; color: #fff; }
     /* 🛠 «Логи» (src/ui/devpanel.js): read only, selectable, copied by its button. */
     #logs { width: calc(780px * var(--ui)); }
-    #logs textarea { display: block; width: 100%; height: calc(240px * var(--ui)); box-sizing: border-box; resize: none; white-space: pre; overflow: auto;
+    #logs .lines { height: calc(240px * var(--ui)); box-sizing: border-box; overflow: auto; white-space: pre;
       font: calc(11px * var(--ui))/1.35 monospace; color: var(--ink); background: #fffdf6; border: calc(2px * var(--ui)) solid var(--ink);
-      border-radius: calc(8px * var(--ui)); padding: calc(6px * var(--ui)); user-select: text; -webkit-user-select: text; }
+      border-radius: calc(8px * var(--ui)); padding: calc(6px * var(--ui)); user-select: text; -webkit-user-select: text; cursor: text; }
+    #logs .lines .warn { color: #c86400; } /* warnings — orange */
+    #logs .lines .error { color: #c62828; } /* errors — red */
     #controls { width: calc(560px * var(--ui)); } /* the controls card at the start (src/ui/controlsCard.js) */
     #controls .stub { text-align: center; font-size: calc(16px * var(--ui)); font-weight: 700; line-height: 1.4; }
-    #qr, #settings, #cheats, #about, #help, #lab, #controls, #logs { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; z-index: 10;
+    #qr, #settings, #cheats, #about, #help, #lab, #controls, #logs, #devtools { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; z-index: 10;
       max-width: calc(var(--col) - var(--sa-left) - var(--sa-right) - calc(24px * var(--ui)));
       max-height: calc(var(--row) - var(--sa-top) - var(--sa-bottom) - calc(24px * var(--ui))); overflow-y: auto; box-sizing: border-box; background: var(--cream); color: var(--ink);
       padding: calc(14px * var(--ui)) calc(18px * var(--ui)); border: calc(4px * var(--ui)) solid var(--ink); border-radius: calc(18px * var(--ui));
@@ -529,9 +531,10 @@
     #dogwheel .dog.on { border-color: var(--lime); box-shadow: 0 0 0 calc(3px * var(--ui)) var(--lime); opacity: 1; }
     #dogwheel .dog .face { font-size: calc(26px * var(--ui)); line-height: 1; }
     #dogwheel .dog .name { font-size: calc(10px * var(--ui)); font-weight: 900; color: #fff; text-shadow: 0 calc(1px * var(--ui)) 0 rgba(0, 0, 0, 0.6); }
-    #confirm { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: var(--col); height: var(--row); z-index: 12; display: none;
+    /* The dimming over the whole window (the 3D goes to its edges, past the game's frame); the card — in the frame's middle. */
+    #confirm { position: fixed; inset: 0; z-index: 12; display: none;
       align-items: center; justify-content: center; background: rgba(18, 26, 46, 0.5); user-select: none; -webkit-user-select: none; }
-    #confirm .box { width: 80%; background: #fffaf0; color: #26324d; border-radius: calc(22px * var(--ui)); padding: calc(22px * var(--ui)) calc(18px * var(--ui)) calc(18px * var(--ui)); box-shadow: 0 calc(5px * var(--ui)) 0 #c9b98f; text-align: center; }
+    #confirm .box { width: calc(var(--col) * 0.8); background: #fffaf0; color: #26324d; border-radius: calc(22px * var(--ui)); padding: calc(22px * var(--ui)) calc(18px * var(--ui)) calc(18px * var(--ui)); box-shadow: 0 calc(5px * var(--ui)) 0 #c9b98f; text-align: center; }
     #confirm .text { font-weight: 900; font-size: calc(20px * var(--ui)); margin-bottom: calc(18px * var(--ui)); }
     #confirm .buttons { display: flex; gap: calc(10px * var(--ui)); }
     #confirm button { flex: 1; border: 0; border-radius: calc(999px * var(--ui)); min-height: calc(48px * var(--ui)); font: inherit; font-weight: 900; font-size: calc(17px * var(--ui)); color: #26324d;
@@ -564,7 +567,7 @@
       document.addEventListener('fullscreenchange', fit);
     })();
   </script>
-  <script type="module" crossorigin src="/assets/index--h1m6iS-.js"></script>
+  <script type="module" crossorigin src="/assets/index-BgtPCy3F.js"></script>
 </head>
 <body>
   <div id="loading" class="splash">
@@ -627,6 +630,7 @@
   <div id="cheats" class="popup-ui"></div>
   <div id="lab" class="popup-ui"></div>
   <div id="logs" class="popup-ui"></div>
+  <div id="devtools" class="popup-ui"></div>
   <div id="about" class="popup-ui">
     <div class="head">Об игре</div>
     <div class="plate"><img class="logo" src="ui/qplaze_logo.png" alt="Qplaze" /></div>
