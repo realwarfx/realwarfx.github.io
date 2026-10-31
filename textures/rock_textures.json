@@ -1,0 +1,262 @@
+{
+  "schema": "puppy-city-rock-material-kit",
+  "version": 1,
+  "atlases": [
+    {
+      "id": "rock",
+      "file": "rock_material_atlas.webp",
+      "width": 1024,
+      "height": 1024,
+      "grid_columns": 4,
+      "grid_rows": 4,
+      "channels": "RGB",
+      "color_space": "sRGB",
+      "map_type": "base_color",
+      "alpha": false,
+      "source_file": "incoming/rock_kit/rock_atlas_generated.webp (→ .png)",
+      "made_by": "node tools/seamless-atlas.mjs incoming/rock_kit/rock_atlas_generated.png public/textures/rock_material_atlas.webp incoming/rock_kit/rock_tiling_check_3x3.png"
+    }
+  ],
+  "textures": [
+    {
+      "id": "boulder_gray",
+      "label_ru": "Валун серый",
+      "index": 0,
+      "row": 0,
+      "column": 0,
+      "atlas_id": "rock",
+      "usage_ru": "Валуны, камни в парке",
+      "rect_px": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "boulder_warm",
+      "label_ru": "Валун тёплый",
+      "index": 1,
+      "row": 0,
+      "column": 1,
+      "atlas_id": "rock",
+      "usage_ru": "Песчаник, тёплые камни",
+      "rect_px": {
+        "x": 256,
+        "y": 0,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "boulder_cool",
+      "label_ru": "Валун холодный",
+      "index": 2,
+      "row": 0,
+      "column": 2,
+      "atlas_id": "rock",
+      "usage_ru": "Сине-серые камни",
+      "rect_px": {
+        "x": 512,
+        "y": 0,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "granite_speckled",
+      "label_ru": "Гранит с крапом",
+      "index": 3,
+      "row": 0,
+      "column": 3,
+      "atlas_id": "rock",
+      "usage_ru": "Плиты, постаменты",
+      "rect_px": {
+        "x": 768,
+        "y": 0,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "rock_mossy",
+      "label_ru": "Камень со мхом",
+      "index": 4,
+      "row": 1,
+      "column": 0,
+      "atlas_id": "rock",
+      "usage_ru": "Камни в парке, у воды",
+      "rect_px": {
+        "x": 0,
+        "y": 256,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "cliff_layers",
+      "label_ru": "Скала слоями",
+      "index": 5,
+      "row": 1,
+      "column": 1,
+      "atlas_id": "rock",
+      "usage_ru": "Обрывы, скалы острова",
+      "rect_px": {
+        "x": 256,
+        "y": 256,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "shore_rock_wet",
+      "label_ru": "Мокрый береговой камень",
+      "index": 6,
+      "row": 1,
+      "column": 2,
+      "atlas_id": "rock",
+      "usage_ru": "Камни у воды",
+      "rect_px": {
+        "x": 512,
+        "y": 256,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "rock_lichen",
+      "label_ru": "Камень с лишайником",
+      "index": 7,
+      "row": 1,
+      "column": 3,
+      "atlas_id": "rock",
+      "usage_ru": "Старые камни",
+      "rect_px": {
+        "x": 768,
+        "y": 256,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "pebbles",
+      "label_ru": "Галька",
+      "index": 8,
+      "row": 2,
+      "column": 0,
+      "atlas_id": "rock",
+      "usage_ru": "Пляж, дорожки",
+      "rect_px": {
+        "x": 0,
+        "y": 512,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "cobbles_natural",
+      "label_ru": "Булыжник",
+      "index": 9,
+      "row": 2,
+      "column": 1,
+      "atlas_id": "rock",
+      "usage_ru": "Природная мостовая, стенки",
+      "rect_px": {
+        "x": 256,
+        "y": 512,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "gravel_coarse",
+      "label_ru": "Крупный гравий",
+      "index": 10,
+      "row": 2,
+      "column": 2,
+      "atlas_id": "rock",
+      "usage_ru": "Отсыпка, насыпи",
+      "rect_px": {
+        "x": 512,
+        "y": 512,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "crushed_stone_site",
+      "label_ru": "Щебень стройки",
+      "index": 11,
+      "row": 2,
+      "column": 3,
+      "atlas_id": "rock",
+      "usage_ru": "Стройка",
+      "rect_px": {
+        "x": 768,
+        "y": 512,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "stone_dark",
+      "label_ru": "Тёмный камень",
+      "index": 12,
+      "row": 3,
+      "column": 0,
+      "atlas_id": "rock",
+      "usage_ru": "Особые места, пришельцы",
+      "rect_px": {
+        "x": 0,
+        "y": 768,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "rock_crystal_veins",
+      "label_ru": "Камень с бирюзовыми жилами",
+      "index": 13,
+      "row": 3,
+      "column": 1,
+      "atlas_id": "rock",
+      "usage_ru": "Особые места, кристаллы",
+      "rect_px": {
+        "x": 256,
+        "y": 768,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "rock_snow",
+      "label_ru": "Камень со снегом",
+      "index": 14,
+      "row": 3,
+      "column": 2,
+      "atlas_id": "rock",
+      "usage_ru": "Зимние места",
+      "rect_px": {
+        "x": 512,
+        "y": 768,
+        "w": 256,
+        "h": 256
+      }
+    },
+    {
+      "id": "rock_red_clay",
+      "label_ru": "Красный камень",
+      "index": 15,
+      "row": 3,
+      "column": 3,
+      "atlas_id": "rock",
+      "usage_ru": "Тёплые скалы",
+      "rect_px": {
+        "x": 768,
+        "y": 768,
+        "w": 256,
+        "h": 256
+      }
+    }
+  ]
+}

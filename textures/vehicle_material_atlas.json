@@ -2,7 +2,7 @@
   "schema": "puppy-city-vehicle-material-atlas",
   "version": 1,
   "atlas": {
-    "image": "vehicle_material_atlas.png",
+    "image": "vehicle_material_atlas.webp",
     "width": 1254,
     "height": 1254,
     "channels": "RGB",

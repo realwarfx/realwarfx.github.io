@@ -2,7 +2,7 @@
   "schema": "puppy-city-street-material-atlas",
   "version": 1,
   "atlas": {
-    "image": "street_material_atlas.png",
+    "image": "street_material_atlas.webp",
     "width": 1254,
     "height": 1254,
     "format": "PNG",

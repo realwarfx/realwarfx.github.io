@@ -4,7 +4,7 @@
   "atlases": [
     {
       "id": "roadside",
-      "file": "roadside_material_atlas.png",
+      "file": "roadside_material_atlas.webp",
       "width": 1254,
       "height": 1254,
       "grid_columns": 4,

@@ -30,6 +30,9 @@
     #notchsim::after { content: ''; position: absolute; bottom: calc(8px * var(--ui)); left: 50%; transform: translateX(-50%); width: calc(134px * var(--ui)); height: calc(5px * var(--ui));
       border-radius: calc(999px * var(--ui)); background: rgba(255, 255, 255, 0.85); } /* the home bar */
     @media (pointer: coarse) { :root { --pc-pad: 0px; --col: 100vw; --row: 100vh; } }
+    :root:fullscreen { --pc-pad: 0px; --col: 100vw; --row: 100vh; } /* F2 on a computer: the game over the whole screen (src/core/app.js) */
+    body:not(.started) #ui { display: none; } /* not under the loading screen: its dark round the frame is only a shadow — clicks went through to the panel */
+    :root:fullscreen #ui { display: none; } /* and no developer panel (🛠) over it: back in the frame (F2, Esc) — it is there again */
     canvas { display: block; margin: 0 auto; }
     /* Game views on a computer: the game in a phone-shaped (landscape) frame in the middle of the window. */
     body.framed { background: #26324d; }
@@ -52,17 +55,17 @@
     #rotate .msg { max-width: calc(320px * var(--ui)); font-size: calc(20px * var(--ui)); font-weight: 800; line-height: 1.3; }
     #rotate button { min-height: calc(52px * var(--ui)); padding: calc(12px * var(--ui)) calc(26px * var(--ui)); border: 0; border-radius: calc(999px * var(--ui)); font: inherit; font-size: calc(18px * var(--ui)); font-weight: 900;
       color: #26324d; background: #ffcf3f; box-shadow: 0 calc(5px * var(--ui)) 0 #c99a12; cursor: pointer; }
-    #ui { position: fixed; z-index: 6; bottom: 12px; left: 12px; right: 12px; display: flex; flex-wrap: wrap-reverse; gap: 6px; pointer-events: none; } /* bottom left; opens upwards */
+    #ui { position: fixed; z-index: 6; top: 12px; left: 12px; right: 12px; display: flex; flex-wrap: wrap; gap: 6px; pointer-events: none; } /* top left (the model views' bar #info is at the bottom); opens downwards */
     /* Developer panel folded into the 🛠 button until opened; not on touch screens at all. */
     #ui:not(.open) > :not(.devtoggle) { display: none; }
-    #ui .devtoggle { order: -1; font-size: 24px; width: 48px; height: 48px; padding: 0; } /* stays in the corner when open */
+    #ui .devtoggle { order: -1; font-size: 18px; width: 34px; height: 34px; padding: 0; } /* stays in the corner when open */
     @media (pointer: coarse) { #ui { display: none; } }
-    #ui button { pointer-events: auto; border: 0; border-radius: 999px; padding: 8px 14px; font-weight: 700; font-size: 13px;
-      background: #fffaf0; color: #26324d; box-shadow: 0 3px 0 #c9b98f; cursor: pointer; }
-    #ui button.on, #ui select.on { background: #ffcf3f; box-shadow: 0 3px 0 #c99a12; }
+    #ui button { pointer-events: auto; border: 0; border-radius: 999px; padding: 4px 11px; font-weight: 700; font-size: 12px;
+      background: #fffaf0; color: #26324d; box-shadow: 0 2px 0 #c9b98f; cursor: pointer; }
+    #ui button.on, #ui select.on { background: #ffcf3f; box-shadow: 0 2px 0 #c99a12; }
     #ui button:disabled { opacity: 0.45; cursor: default; }
-    #ui select { pointer-events: auto; border: 0; border-radius: 999px; padding: 8px 12px; font-weight: 700; font-size: 13px;
-      background: #fffaf0; color: #26324d; box-shadow: 0 3px 0 #c9b98f; cursor: pointer; }
+    #ui select { pointer-events: auto; border: 0; border-radius: 999px; padding: 4px 10px; font-weight: 700; font-size: 12px;
+      background: #fffaf0; color: #26324d; box-shadow: 0 2px 0 #c9b98f; cursor: pointer; }
     #ui .sep { width: 10px; }
     #ui { box-sizing: border-box; padding-right: 90px; } /* room for the corner button (QR) */
     #ui .corner { position: absolute; top: 0; right: 0; display: flex; gap: 6px; pointer-events: auto; }
@@ -71,11 +74,28 @@
     #anim button.on { background: #ffcf3f; box-shadow: 0 3px 0 #c99a12; }
     /* Controls hint (city, run; computer only): a panel at the middle of the frame's left edge, one control a line
        (the text has line breaks), in the menu look, for a few seconds. */
-    #label { position: fixed; top: 50%; left: calc(50% - var(--col) / 2 + calc(12px * var(--ui)) + var(--sa-left)); transform: translateY(-50%); z-index: 3;
-      width: max-content; box-sizing: border-box; padding: calc(8px * var(--ui)) calc(14px * var(--ui));
-      background: var(--cream); color: var(--ink); border: calc(3px * var(--ui)) solid var(--ink); border-radius: calc(14px * var(--ui));
-      box-shadow: 0 calc(3px * var(--ui)) 0 var(--ink); font-size: calc(13px * var(--ui)); font-weight: 800; line-height: 1.55; text-align: left;
-      white-space: pre-line; pointer-events: none; display: none; }
+    #fade { position: fixed; inset: 0; z-index: 4; background: #000; opacity: 0; pointer-events: none; transition: opacity 0.25s; } /* src/ui/fade.js */
+    #fade.on { opacity: 1; }
+    /* Story slides (src/ui/slides.js): black over everything, one text at a time in big letters, a click — the next; a comic's
+       slide (.comic) — its picture over the game frame (cut to fill it), the line under it smaller, on a dark band. */
+    #slides { position: fixed; inset: 0; z-index: 9; display: none; background: #000; opacity: 0; transition: opacity 0.5s; cursor: pointer;
+      user-select: none; -webkit-user-select: none; }
+    #slides.on { opacity: 1; }
+    #slides .text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: calc(var(--col) * 0.72); color: #fff8e1;
+      font-size: calc(24px * var(--ui)); font-weight: 800; line-height: 1.45; text-align: center; opacity: 0; transition: opacity 0.5s; }
+    #slides .text.on { opacity: 1; }
+    #slides .pic { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: var(--col); height: var(--row); overflow: hidden;
+      opacity: 0; transition: opacity 0.5s; }
+    #slides .pic.on { opacity: 1; }
+    #slides .pic img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    #slides.comic .text { top: auto; bottom: calc(50% - var(--row) / 2 + calc(48px * var(--ui)) + var(--sa-bottom)); transform: translateX(-50%);
+      width: auto; max-width: calc(var(--col) * 0.78); box-sizing: border-box; padding: calc(8px * var(--ui)) calc(18px * var(--ui));
+      font-size: calc(17px * var(--ui)); line-height: 1.35; background: rgba(12, 16, 40, 0.72); border-radius: calc(14px * var(--ui)); }
+    #slides.comic .hint { bottom: calc(50% - var(--row) / 2 + calc(10px * var(--ui)) + var(--sa-bottom)); color: #fff8e1; white-space: nowrap; padding: calc(4px * var(--ui)) calc(12px * var(--ui)); background: rgba(12, 16, 40, 0.72);
+      border-radius: calc(999px * var(--ui)); } /* on a dark pill like the line above it: readable over any picture */
+    #slides .hint { position: absolute; left: 50%; bottom: calc(50% - var(--row) / 2 + calc(24px * var(--ui)) + var(--sa-bottom)); transform: translateX(-50%);
+      color: rgba(255, 248, 225, 0.55); font-size: calc(13px * var(--ui)); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0; transition: opacity 0.4s; }
+    #slides .hint.on { opacity: 1; }
     /* Bottom bar of the model / group views: name + download. */
     #info { position: fixed; bottom: calc(16px + var(--sa-bottom)); left: 50%; transform: translateX(-50%); display: none; align-items: center; gap: 12px;
       background: #fffaf0; color: #26324d; padding: 6px 6px 6px 18px; border-radius: 999px; font-weight: 800; box-shadow: 0 3px 0 #c9b98f;
@@ -91,7 +111,10 @@
     #settings { width: calc(520px * var(--ui)); }
     #cheats { width: calc(600px * var(--ui)); }
     #about { width: calc(420px * var(--ui)); }
-    #qr, #settings, #cheats, #about { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; z-index: 10;
+    #help { width: calc(640px * var(--ui)); }
+    #controls { width: calc(560px * var(--ui)); } /* the controls card at the start (src/ui/controlsCard.js) */
+    #controls .stub { text-align: center; font-size: calc(16px * var(--ui)); font-weight: 700; line-height: 1.4; }
+    #qr, #settings, #cheats, #about, #help, #lab, #controls { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; z-index: 10;
       max-width: calc(var(--col) - var(--sa-left) - var(--sa-right) - calc(24px * var(--ui)));
       max-height: calc(var(--row) - var(--sa-top) - var(--sa-bottom) - calc(24px * var(--ui))); overflow-y: auto; box-sizing: border-box; background: var(--cream); color: var(--ink);
       padding: calc(14px * var(--ui)) calc(18px * var(--ui)); border: calc(4px * var(--ui)) solid var(--ink); border-radius: calc(18px * var(--ui));
@@ -124,6 +147,15 @@
     /* The «Графика» page (class .gfx): its rows, a note and «◀ Назад» instead of the settings rows and buttons. */
     #settings .gfx-only, #settings.gfx .main-only, #settings.gfx .run-only, #settings.gfx .menu-only { display: none; }
     #settings.gfx .gfx-only { display: block; }
+    /* 🛠 cheats (dev): an icon in the right corner of the panel's button row. */
+    #settings .foot { position: relative; }
+    #settings .foot .cheats { position: absolute; right: 0; top: 0; width: calc(46px * var(--ui)); padding: 0; font-size: calc(20px * var(--ui)); }
+    #settings .foot .help { position: absolute; left: 0; top: 0; width: calc(46px * var(--ui)); padding: 0; font-size: calc(22px * var(--ui)); }
+    /* The controls (? in the game's menu): two columns of «key — what it does». */
+    #help .lines, #controls .lines { display: grid; grid-template-columns: auto 1fr auto 1fr; gap: calc(7px * var(--ui)) calc(12px * var(--ui));
+      align-items: baseline; font-size: calc(15px * var(--ui)); font-weight: 700; }
+    #help .key, #controls .key { justify-self: end; white-space: nowrap; font-weight: 900; padding: calc(1px * var(--ui)) calc(7px * var(--ui));
+      background: var(--cream); border: calc(2px * var(--ui)) solid var(--ink); border-radius: calc(7px * var(--ui)); }
     #settings .more { width: calc(206px * var(--ui)); justify-content: center; } /* as wide as ◀ value ▶: the button under the values */
     #settings .row .name .hint { display: block; font-size: calc(11px * var(--ui)); font-weight: 700; text-transform: none; letter-spacing: 0; opacity: 0.6; }
     #settings .note { min-height: calc(16px * var(--ui)); margin-top: calc(4px * var(--ui)); text-align: center; font-size: calc(12px * var(--ui)); color: #e0443a; }
@@ -131,9 +163,28 @@
     #cheats .cols { display: grid; grid-template-columns: 1fr 1.3fr; gap: calc(16px * var(--ui)); }
     #cheats .actions { display: flex; flex-direction: column; gap: calc(10px * var(--ui)); }
     #cheats .actions button { font-size: calc(13px * var(--ui)); white-space: nowrap; padding: 0 calc(12px * var(--ui)); }
+    /* The dog: round buttons in the dogs' colours; the dog on now — ringed. */
+    #cheats .dogs { display: flex; gap: calc(8px * var(--ui)); justify-content: center; margin-bottom: calc(4px * var(--ui)); }
+    #cheats .dogs button { width: calc(44px * var(--ui)); height: calc(44px * var(--ui)); padding: 0; border: calc(3px * var(--ui)) solid var(--ink); border-radius: 50%; cursor: pointer; }
+    #cheats .dogs button.on { outline: calc(3px * var(--ui)) solid var(--lime); outline-offset: calc(2px * var(--ui)); }
     #cheats .title { font-weight: 900; font-size: calc(13px * var(--ui)); text-transform: uppercase; margin: calc(2px * var(--ui)) 0 calc(4px * var(--ui)); }
     #cheats .slider { display: flex; align-items: center; justify-content: space-between; gap: calc(10px * var(--ui)); font-size: calc(13px * var(--ui)); margin-bottom: calc(4px * var(--ui)); }
     #cheats .slider input { width: calc(170px * var(--ui)); accent-color: var(--lime-dark); cursor: pointer; }
+    /* 🎮 The mini-game lab (dev: src/ui/missionLab.js): the name left, its choices right. */
+    #lab { width: calc(760px * var(--ui)); padding-top: calc(8px * var(--ui)); padding-bottom: calc(10px * var(--ui)); }
+    #lab .head { font-size: calc(18px * var(--ui)); margin-bottom: calc(6px * var(--ui)); }
+    #lab .row { display: flex; align-items: center; gap: calc(10px * var(--ui)); margin-bottom: calc(6px * var(--ui)); }
+    #lab .row .name { flex: none; width: calc(86px * var(--ui)); font-weight: 900; text-transform: uppercase; font-size: calc(12px * var(--ui)); }
+    #lab .row .name.next { width: auto; margin-left: calc(24px * var(--ui)); }
+    #lab .choice { flex-wrap: wrap; gap: calc(5px * var(--ui)); }
+    #lab .choice button { min-height: calc(32px * var(--ui)); padding: 0 calc(8px * var(--ui)); font-size: calc(11px * var(--ui)); border-width: calc(2px * var(--ui)); }
+    #lab .goal, #lab .rules { display: flex; flex-wrap: wrap; gap: calc(6px * var(--ui)) calc(14px * var(--ui)); }
+    #lab input[type="number"] { width: calc(64px * var(--ui)); font: inherit; padding: calc(4px * var(--ui)); border: calc(2px * var(--ui)) solid var(--ink); border-radius: calc(8px * var(--ui)); }
+    #lab select { font: inherit; padding: calc(4px * var(--ui)); border: calc(2px * var(--ui)) solid var(--ink); border-radius: calc(8px * var(--ui)); }
+    #lab .check { display: flex; align-items: center; gap: calc(6px * var(--ui)); cursor: pointer; }
+    #lab .check input { width: calc(18px * var(--ui)); height: calc(18px * var(--ui)); accent-color: var(--lime-dark); }
+    #lab .foot { margin-top: calc(8px * var(--ui)); align-items: center; }
+    #lab .foot .check { margin-right: auto; }
     /* «Об игре»: the (white) studio logo on an ink plate; it pops in, then glows once. */
     #about { text-align: center; }
     #about .plate { margin: calc(4px * var(--ui)) auto calc(12px * var(--ui)); width: fit-content; padding: calc(16px * var(--ui)) calc(26px * var(--ui));
@@ -208,6 +259,58 @@
     #hud { position: fixed; top: calc(50% - var(--row) / 2 + calc(12px * var(--ui)) + var(--sa-top)); left: calc(50% - var(--col) / 2 + calc(12px * var(--ui)) + var(--sa-left));
       width: calc(var(--col) - calc(96px * var(--ui)) - var(--sa-left) - var(--sa-right)); z-index: 5; display: none; pointer-events: none; color: #fffaf0;
       font-weight: 900; text-shadow: 0 calc(2px * var(--ui)) 0 #26324d; user-select: none; -webkit-user-select: none; }
+    /* The wallet (src/ui/wallet.js): bones and stars, top left, in the town and the office. */
+    #wallet { position: fixed; top: calc(50% - var(--row) / 2 + calc(12px * var(--ui)) + var(--sa-top)); left: calc(50% - var(--col) / 2 + calc(12px * var(--ui)) + var(--sa-left));
+      z-index: 5; display: none; gap: calc(6px * var(--ui)); pointer-events: none; user-select: none; -webkit-user-select: none; }
+    /* Quiet: small, half see-through, no shadow — there when looked for, not catching the eye. */
+    #wallet .chip { display: flex; align-items: center; gap: calc(4px * var(--ui)); min-width: calc(58px * var(--ui)); height: calc(30px * var(--ui));
+      padding: 0 calc(10px * var(--ui)) 0 calc(6px * var(--ui)); box-sizing: border-box; background: rgba(255, 248, 225, 0.72); color: var(--ink);
+      border: calc(2px * var(--ui)) solid rgba(43, 45, 66, 0.55); border-radius: calc(999px * var(--ui));
+      font-weight: 800; font-size: calc(15px * var(--ui)); font-variant-numeric: tabular-nums; }
+    #wallet .chip .icon { font-size: calc(17px * var(--ui)); line-height: 1; }
+    /* The objective (src/ui/objective.js): a small line under the wallet. */
+    #objective { position: fixed; top: calc(50% - var(--row) / 2 + calc(50px * var(--ui)) + var(--sa-top)); left: calc(50% - var(--col) / 2 + calc(12px * var(--ui)) + var(--sa-left));
+      z-index: 5; display: none; align-items: center; gap: calc(6px * var(--ui)); max-width: calc(var(--col) * 0.4); padding: calc(4px * var(--ui)) calc(10px * var(--ui));
+      background: rgba(43, 45, 66, 0.55); color: #fff8e1; border-radius: calc(10px * var(--ui)); font-size: calc(13px * var(--ui)); font-weight: 800;
+      pointer-events: none; user-select: none; -webkit-user-select: none; }
+    #objective .icon { font-size: calc(14px * var(--ui)); }
+    /* A control's hint (src/ui/hint.js): the top middle of the frame, a few seconds — the dialogs never name keys. */
+    #hint { position: fixed; top: calc(50% - var(--row) / 2 + calc(56px * var(--ui)) + var(--sa-top)); left: 50%; transform: translateX(-50%);
+      z-index: 5; padding: calc(7px * var(--ui)) calc(16px * var(--ui)); background: rgba(43, 45, 66, 0.82); color: #fff8e1;
+      border-radius: calc(12px * var(--ui)); font-size: calc(16px * var(--ui)); font-weight: 800; white-space: nowrap;
+      opacity: 0; transition: opacity 0.4s; pointer-events: none; user-select: none; -webkit-user-select: none; }
+    #hint.on { opacity: 1; }
+    /* The bubble gun's sticky aim (src/ui/aim.js): a white ring over the view's middle; stuck on a болтик — Ziggy's blue, smaller, over it. */
+    #aim { position: fixed; z-index: 4; display: none; width: calc(30px * var(--ui)); height: calc(30px * var(--ui)); transform: translate(-50%, -50%);
+      border: calc(2px * var(--ui)) solid rgba(255, 255, 255, 0.75); border-radius: 50%; opacity: 0.95;
+      box-shadow: 0 0 calc(4px * var(--ui)) rgba(255, 255, 255, 0.35);
+      pointer-events: none; transition: width 0.12s, height 0.12s, border-color 0.12s; }
+    #aim::before { content: ''; position: absolute; left: 50%; top: 50%; width: calc(4px * var(--ui)); height: calc(4px * var(--ui));
+      transform: translate(-50%, -50%); border-radius: 50%; background: rgba(255, 255, 255, 0.75); }
+    #aim.on { width: calc(24px * var(--ui)); height: calc(24px * var(--ui)); border-color: rgba(77, 141, 255, 0.95); box-shadow: 0 0 calc(6px * var(--ui)) rgba(77, 141, 255, 0.6); }
+    #aim.on::before { background: rgba(77, 141, 255, 0.95); }
+    /* The pillar's prompt (src/ui/objective.js): «E — поговорить», bottom middle; a tap works too. */
+    #interact { position: fixed; left: 50%; bottom: calc(50% - var(--row) / 2 + calc(70px * var(--ui)) + var(--sa-bottom)); transform: translateX(-50%); z-index: 6; display: none;
+      align-items: center; gap: calc(8px * var(--ui)); height: calc(44px * var(--ui)); padding: 0 calc(18px * var(--ui)) 0 calc(6px * var(--ui));
+      background: var(--cream); color: var(--ink); border: calc(3px * var(--ui)) solid var(--ink); border-radius: calc(999px * var(--ui));
+      box-shadow: 0 calc(3px * var(--ui)) 0 var(--ink); font-size: calc(16px * var(--ui)); font-weight: 900; cursor: pointer; }
+    #interact .key { display: grid; place-items: center; width: calc(30px * var(--ui)); height: calc(30px * var(--ui)); border-radius: 50%; background: var(--lime); font-size: calc(15px * var(--ui)); }
+    /* A talk (src/ui/dialog.js): a panel along the bottom — portrait, name, the line. */
+    #dialog { position: fixed; left: 50%; bottom: calc(50% - var(--row) / 2 + calc(14px * var(--ui)) + var(--sa-bottom)); transform: translateX(-50%); z-index: 8; display: none;
+      align-items: center; gap: calc(16px * var(--ui)); width: calc(var(--col) * 0.78); min-height: calc(110px * var(--ui)); box-sizing: border-box;
+      padding: calc(14px * var(--ui)) calc(22px * var(--ui)) calc(30px * var(--ui)) calc(14px * var(--ui)); background: var(--cream); color: var(--ink);
+      border: calc(3px * var(--ui)) solid var(--ink); border-radius: calc(18px * var(--ui)); box-shadow: 0 calc(4px * var(--ui)) 0 var(--ink); cursor: pointer;
+      user-select: none; -webkit-user-select: none; }
+    #dialog .face { flex: none; display: grid; place-items: center; width: calc(76px * var(--ui)); height: calc(76px * var(--ui)); border-radius: 50%;
+      border: calc(3px * var(--ui)) solid var(--ink); font-size: calc(40px * var(--ui)); }
+    #dialog .body { flex: 1; }
+    #dialog .name { font-size: calc(14px * var(--ui)); font-weight: 900; text-transform: uppercase; opacity: 0.7; margin-bottom: calc(4px * var(--ui)); }
+    #dialog .text { font-size: calc(20px * var(--ui)); font-weight: 800; line-height: 1.35; }
+    #dialog .text.in { animation: dialog-in 0.25s ease-out; }
+    @keyframes dialog-in { from { opacity: 0; transform: translateY(calc(6px * var(--ui))); } }
+    #dialog .more { position: absolute; right: calc(18px * var(--ui)); bottom: calc(9px * var(--ui)); font-size: calc(12px * var(--ui)); font-weight: 800; opacity: 0.5; }
+    #wallet .chip.bump { animation: wallet-bump 0.3s ease-out; }
+    @keyframes wallet-bump { 40% { transform: scale(1.15); } }
     #hud .row { display: flex; justify-content: space-between; align-items: center; font-size: calc(20px * var(--ui)); margin-bottom: calc(6px * var(--ui)); }
     #hud .lives { letter-spacing: calc(2px * var(--ui)); }
     #hud .timer { display: none; background: rgba(38, 50, 77, 0.55); border-radius: calc(999px * var(--ui)); padding: calc(2px * var(--ui)) calc(12px * var(--ui)); }
@@ -223,16 +326,204 @@
     #result .box { width: 82%; background: #fffaf0; color: #26324d; border-radius: calc(24px * var(--ui)); padding: calc(22px * var(--ui)) calc(18px * var(--ui)) calc(18px * var(--ui)); box-shadow: 0 calc(6px * var(--ui)) 0 #c9b98f; text-align: center; }
     #result .icon { font-size: calc(54px * var(--ui)); line-height: 1; margin-bottom: calc(6px * var(--ui)); }
     #result .title { font-size: calc(24px * var(--ui)); font-weight: 900; margin-bottom: calc(6px * var(--ui)); }
-    #result .reason { font-weight: 700; opacity: 0.75; margin-bottom: calc(12px * var(--ui)); min-height: 0.5em; }
+    #result .reason { font-size: calc(15px * var(--ui)); font-weight: 700; opacity: 0.75; margin-bottom: calc(12px * var(--ui)); min-height: 0.5em; }
     #result.win .title { color: #2e9e4f; }
-    #result .stats > div { display: flex; justify-content: space-between; font-weight: 700; padding: calc(6px * var(--ui)) calc(4px * var(--ui)); border-bottom: calc(2px * var(--ui)) dashed #eadfc7; }
+    #result .stats > div { display: flex; justify-content: space-between; font-size: calc(17px * var(--ui)); font-weight: 700; padding: calc(6px * var(--ui)) calc(4px * var(--ui)); border-bottom: calc(2px * var(--ui)) dashed #eadfc7; }
     #result .stats > div:last-child { border-bottom: 0; }
     #result .buttons { display: flex; gap: calc(10px * var(--ui)); margin-top: calc(16px * var(--ui)); }
     #result button { flex: 1; border: 0; border-radius: calc(999px * var(--ui)); min-height: calc(50px * var(--ui)); font: inherit; font-weight: 900; font-size: calc(17px * var(--ui)); color: #26324d; cursor: pointer;
       background: #fffaf0; box-shadow: 0 calc(4px * var(--ui)) 0 #c9b98f; }
-    #result .retry { background: #ffcf3f; box-shadow: 0 calc(4px * var(--ui)) 0 #c99a12; }
+    #result .exit { background: #ffcf3f; box-shadow: 0 calc(4px * var(--ui)) 0 #c99a12; } /* the way on: the main button */
     #result button:active { transform: translateY(calc(2px * var(--ui))); }
     #runmenu:active { transform: translateY(calc(2px * var(--ui))); box-shadow: 0 calc(2px * var(--ui)) 0 #c9b98f; }
+    /* Fullscreen and back (src/core/app.js, like F2): a small button bottom left, computers' game screens only; over every
+       popup and its dark backdrop (z 40: the cursor is free only with a menu open), under the phones' screen guard (#rotate). */
+    #fsbtn { position: fixed; left: calc(50% - var(--col) / 2 + calc(2.2px * var(--ui)) + var(--sa-left)); bottom: calc(50% - var(--row) / 2 + calc(2.2px * var(--ui)) + var(--sa-bottom));
+      z-index: 40; display: none; width: calc(32px * var(--ui)); height: calc(32px * var(--ui)); padding: calc(11.8px * var(--ui)); border: 0; border-radius: 0;
+      /* the icon: the FPS label's height (#fps: 6 px × 1.4) at its bottom (12); round it, a see-through margin to hit (32 in all) */
+      background: transparent; color: #fff; filter: drop-shadow(0 0 calc(1px * var(--ui)) rgba(0, 0, 0, 0.8)); cursor: pointer; opacity: 0.7; }
+    body.pcgame #fsbtn { display: block; }
+    #fsbtn:hover { opacity: 1; }
+    #fsbtn:active { transform: translateY(calc(1px * var(--ui))); }
+    #fsbtn svg { display: block; width: 100%; height: 100%; }
+    #fsbtn .out, :root:fullscreen #fsbtn .in { display: none; }
+    /* Dev only (src/core/quickWin.js): 🏁 — the game on now won at once (as F4); a round button at the frame's right edge,
+       halfway down, over any window (a puzzle's card too). */
+    #winbtn { position: fixed; right: calc(50% - var(--col) / 2 + calc(10px * var(--ui)) + var(--sa-right)); top: 50%; transform: translateY(-50%);
+      z-index: 40; display: none; width: calc(48px * var(--ui)); height: calc(48px * var(--ui)); padding: 0;
+      background: var(--lime); color: var(--ink); border: calc(3px * var(--ui)) solid var(--ink); border-radius: calc(999px * var(--ui));
+      box-shadow: 0 calc(3px * var(--ui)) 0 var(--ink); font-size: calc(22px * var(--ui)); line-height: 1; cursor: pointer; }
+    #winbtn:active { transform: translateY(calc(-50% + 2px * var(--ui))); box-shadow: 0 calc(1px * var(--ui)) 0 var(--ink); }
+    :root:fullscreen #fsbtn .out { display: block; }
+    /* The dog wheel (src/ui/dogWheel.js): its button like ☰, left of it; the ring half see-through over the game. */
+    #dogbtn { position: fixed; top: calc(50% - var(--row) / 2 + calc(12px * var(--ui)) + var(--sa-top));
+      right: calc(50% - var(--col) / 2 + calc(70px * var(--ui)) + var(--sa-right)); z-index: 5; display: none;
+      width: calc(48px * var(--ui)); height: calc(48px * var(--ui)); border: 0; border-radius: 50%; background: #fffaf0; font-size: calc(24px * var(--ui));
+      box-shadow: 0 calc(4px * var(--ui)) 0 #c9b98f; cursor: pointer; }
+    #dogbtn:active, #dogbtn.on { transform: translateY(calc(2px * var(--ui))); box-shadow: 0 calc(2px * var(--ui)) 0 #c9b98f; }
+    /* The backpack (src/ui/items.js): its button like 🐶, left of it; the panel (backpack / the lab's shop) a popup. */
+    #bagbtn { position: fixed; top: calc(50% - var(--row) / 2 + calc(12px * var(--ui)) + var(--sa-top));
+      right: calc(50% - var(--col) / 2 + calc(128px * var(--ui)) + var(--sa-right)); z-index: 5; display: none;
+      width: calc(48px * var(--ui)); height: calc(48px * var(--ui)); border: 0; border-radius: 50%; background: #fffaf0; font-size: calc(24px * var(--ui));
+      box-shadow: 0 calc(4px * var(--ui)) 0 #c9b98f; cursor: pointer; }
+    #bagbtn:active { transform: translateY(calc(2px * var(--ui))); box-shadow: 0 calc(2px * var(--ui)) 0 #c9b98f; }
+    /* The city map (src/ui/cityMap.js): its button like 🎒, left of it (the town only); the map a big popup. */
+    #mapbtn { position: fixed; top: calc(50% - var(--row) / 2 + calc(12px * var(--ui)) + var(--sa-top));
+      right: calc(50% - var(--col) / 2 + calc(186px * var(--ui)) + var(--sa-right)); z-index: 5; display: none;
+      width: calc(48px * var(--ui)); height: calc(48px * var(--ui)); border: 0; border-radius: 50%; background: #fffaf0; font-size: calc(24px * var(--ui));
+      box-shadow: 0 calc(4px * var(--ui)) 0 #c9b98f; cursor: pointer; }
+    #mapbtn:active { transform: translateY(calc(2px * var(--ui))); box-shadow: 0 calc(2px * var(--ui)) 0 #c9b98f; }
+    #citymap { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; z-index: 10; box-sizing: border-box;
+      width: calc(var(--col) - var(--sa-left) - var(--sa-right) - calc(40px * var(--ui))); height: calc(var(--row) - var(--sa-top) - var(--sa-bottom) - calc(28px * var(--ui)));
+      background: var(--cream); color: var(--ink); padding: calc(8px * var(--ui)) calc(10px * var(--ui)) calc(10px * var(--ui)); border: calc(4px * var(--ui)) solid var(--ink);
+      border-radius: calc(18px * var(--ui)); box-shadow: 0 calc(6px * var(--ui)) 0 var(--ink); user-select: none; -webkit-user-select: none; }
+    #citymap .head { margin: 0; line-height: calc(32px * var(--ui)); }
+    #citymap .x { position: absolute; top: calc(4px * var(--ui)); right: calc(8px * var(--ui)); width: calc(44px * var(--ui)); height: calc(44px * var(--ui));
+      border: 0; border-radius: 50%; background: none; font-size: calc(20px * var(--ui)); }
+    #citymap .hint { position: absolute; left: calc(14px * var(--ui)); top: calc(8px * var(--ui)); font-size: calc(10px * var(--ui)); font-weight: 700; opacity: 0.6; max-width: 32%; line-height: 1.25; }
+    #citymap canvas { position: absolute; left: calc(10px * var(--ui)); top: calc(44px * var(--ui)); width: calc(100% - calc(20px * var(--ui))); height: calc(100% - calc(54px * var(--ui)));
+      margin: 0; transform: none; box-shadow: none; border-radius: calc(10px * var(--ui)); touch-action: none; cursor: grab; } /* not the game's canvas (body.framed canvas) */
+    #citymap canvas:active { cursor: grabbing; }
+    #items { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; z-index: 10; width: calc(720px * var(--ui));
+      max-width: calc(var(--col) - var(--sa-left) - var(--sa-right) - calc(24px * var(--ui)));
+      max-height: calc(var(--row) - var(--sa-top) - var(--sa-bottom) - calc(24px * var(--ui))); overflow-y: auto; box-sizing: border-box;
+      background: var(--cream); color: var(--ink); padding: calc(14px * var(--ui)) calc(18px * var(--ui)); border: calc(4px * var(--ui)) solid var(--ink);
+      border-radius: calc(18px * var(--ui)); box-shadow: 0 calc(6px * var(--ui)) 0 var(--ink); font-size: calc(13px * var(--ui)); font-weight: 700;
+      user-select: none; -webkit-user-select: none; }
+    #items .wallet { position: absolute; top: calc(16px * var(--ui)); left: calc(20px * var(--ui)); font-size: calc(17px * var(--ui)); font-weight: 900; }
+    #items .x { position: absolute; top: calc(10px * var(--ui)); right: calc(12px * var(--ui)); width: calc(44px * var(--ui)); height: calc(44px * var(--ui));
+      border: 0; border-radius: 50%; background: none; font-size: calc(20px * var(--ui)); }
+    #items .cols { display: flex; gap: calc(12px * var(--ui)); min-height: calc(230px * var(--ui)); align-items: flex-start; }
+    #items .col { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: calc(6px * var(--ui)); }
+    /* The shop's goods: as tall as the backpack beside them, scrolled on their own (the card and the backpack stay put). */
+    #items .col.goodscol { flex: 1.1; max-height: calc(300px * var(--ui)); overflow-y: auto; padding-right: calc(4px * var(--ui)); }
+    #items .col.card { flex: 0 0 calc(190px * var(--ui)); align-items: center; text-align: center; padding: calc(8px * var(--ui)); border: calc(3px * var(--ui)) solid var(--ink);
+      border-radius: calc(14px * var(--ui)); background: #fffdf5; gap: calc(2px * var(--ui)); align-self: stretch; }
+    /* The backpack's tabs (Расходники / Нанотехнологии) and, for the nano-tech, the dogs' round buttons. */
+    #items .tabs { display: flex; gap: calc(6px * var(--ui)); }
+    #items .tab { flex: 1; min-height: calc(44px * var(--ui)); border: calc(3px * var(--ui)) solid var(--ink); border-radius: calc(12px * var(--ui)) calc(12px * var(--ui)) 0 0;
+      background: #efe6cf; font-size: calc(14px * var(--ui)); }
+    #items .tab.on { background: var(--lime); }
+    #items.shop .tab .tl { display: none; } /* the shop's narrow backpack: the icons only */
+    #items .whose { display: flex; align-items: center; gap: calc(6px * var(--ui)); }
+    #items .dog { width: calc(44px * var(--ui)); height: calc(44px * var(--ui)); padding: 0; border: calc(3px * var(--ui)) solid var(--ink); border-radius: 50%;
+      color: #fff; font-size: calc(17px * var(--ui)); text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); opacity: 0.55; }
+    #items .dog.on { opacity: 1; box-shadow: 0 0 0 calc(3px * var(--ui)) var(--lime); }
+    #items .dogname { font-size: calc(15px * var(--ui)); font-weight: 900; margin-left: calc(4px * var(--ui)); }
+    #items .title { font-size: calc(15px * var(--ui)); font-weight: 900; text-transform: uppercase; opacity: 0.7; }
+    /* The shop's section heading: a click folds its goods away (▶) or back (▼). */
+    #items .title.fold { display: flex; align-items: center; gap: calc(6px * var(--ui)); flex-shrink: 0; min-height: calc(44px * var(--ui)); padding: 0;
+      border: 0; background: none; text-align: left; cursor: pointer; font-size: calc(15px * var(--ui)); }
+    #items .title.fold:hover { opacity: 1; }
+    #items .title .tri { display: inline-block; width: calc(16px * var(--ui)); font-size: calc(12px * var(--ui)); }
+    #items .title .many { font-size: calc(12px * var(--ui)); opacity: 0.7; }
+    #items .goods { display: flex; flex-direction: column; gap: calc(6px * var(--ui)); }
+    #items .good { display: flex; flex-shrink: 0; align-items: center; gap: calc(8px * var(--ui)); min-height: calc(52px * var(--ui)); padding: calc(4px * var(--ui)) calc(10px * var(--ui)); /* flex-shrink 0: the scrolled list must not squeeze them (their names were cut) */
+      border: calc(3px * var(--ui)) solid var(--ink); border-radius: calc(12px * var(--ui)); background: #fffdf5; text-align: left; }
+    #items .good .icon, #items .slot .icon { font-size: calc(26px * var(--ui)); }
+    #items .good .gname { flex: 1; font-size: calc(14px * var(--ui)); line-height: 1.15; }
+    #items .good .gname small { display: block; font-size: calc(11px * var(--ui)); opacity: 0.65; }
+    #items .good .gprice, #items .price { font-size: calc(15px * var(--ui)); font-weight: 900; white-space: nowrap; }
+    #items s { opacity: 0.5; font-weight: 700; }
+    /* The grid of slots: --cols across, rows as many as needed (src/ui/items.js) — beyond ~3.5 rows it scrolls. */
+    #items .bag { display: grid; grid-template-columns: repeat(var(--cols), 1fr); gap: calc(6px * var(--ui)); align-content: start;
+      max-height: calc(250px * var(--ui)); overflow-y: auto; padding: calc(6px * var(--ui)); border-radius: calc(12px * var(--ui)); background: #efe6cf; }
+    #items .slot { position: relative; aspect-ratio: 1; padding: 0; border: calc(3px * var(--ui)) solid var(--ink);
+      border-radius: calc(12px * var(--ui)); background: #fffdf5; }
+    #items .slot.free { border-style: dashed; border-color: rgba(38, 50, 77, 0.3); background: rgba(255, 253, 245, 0.5); }
+    #items .slot .n { position: absolute; right: calc(2px * var(--ui)); bottom: calc(2px * var(--ui)); min-width: calc(18px * var(--ui)); padding: 0 calc(4px * var(--ui));
+      box-sizing: border-box; border-radius: calc(999px * var(--ui)); background: rgba(38, 50, 77, 0.6); color: #fff; font-size: calc(12px * var(--ui));
+      font-weight: 900; line-height: calc(18px * var(--ui)); text-align: center; } /* the count on a half-clear dark pill: readable over any icon */
+    #items .good.on, #items .slot.on { background: var(--lime); }
+    #items .empty { opacity: 0.6; font-size: calc(14px * var(--ui)); margin: auto 0; }
+    #items .big { font-size: calc(40px * var(--ui)); line-height: 1.1; }
+    #items .name { font-size: calc(16px * var(--ui)); font-weight: 900; }
+    #items .desc { font-size: calc(12px * var(--ui)); font-weight: 600; margin: calc(2px * var(--ui)) 0; }
+    #items .owner { font-size: calc(12px * var(--ui)); font-weight: 900; opacity: 0.75; }
+    #items .sale { color: #e0443a; }
+    #items .count { font-size: calc(14px * var(--ui)); }
+    #items .act { min-height: calc(44px * var(--ui)); min-width: calc(130px * var(--ui)); margin-top: calc(6px * var(--ui)); border: calc(3px * var(--ui)) solid var(--ink);
+      border-radius: calc(999px * var(--ui)); background: var(--lime); font-size: calc(15px * var(--ui)); }
+    #items .act:disabled { opacity: 0.4; cursor: default; }
+    #items .note { font-size: calc(12px * var(--ui)); font-weight: 600; opacity: 0.7; margin-top: calc(4px * var(--ui)); }
+    /* A puzzle quest (src/ui/puzzleCard.js, src/ui/puzzles.js): a card over the town. */
+    #puzzle { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; z-index: 10; box-sizing: border-box; text-align: center;
+      width: calc(600px * var(--ui)); max-width: calc(var(--col) - var(--sa-left) - var(--sa-right) - calc(24px * var(--ui)));
+      max-height: calc(var(--row) - var(--sa-top) - var(--sa-bottom) - calc(20px * var(--ui))); overflow-y: auto;
+      background: var(--cream); color: var(--ink); padding: calc(10px * var(--ui)) calc(16px * var(--ui)); border: calc(4px * var(--ui)) solid var(--ink);
+      border-radius: calc(18px * var(--ui)); box-shadow: 0 calc(6px * var(--ui)) 0 var(--ink); font-size: calc(14px * var(--ui)); font-weight: 700;
+      user-select: none; -webkit-user-select: none; }
+    #puzzle:has(.pz-lock-body) { width: calc(720px * var(--ui)); } /* the lock: the tries, the keypad of up to 7 symbols in one row, their mirror — 140 + 358 + 140 + gaps */
+    #puzzle .kind { font-size: calc(12px * var(--ui)); font-weight: 900; text-transform: uppercase; opacity: 0.6; }
+    #puzzle .head { margin: 0; font-size: calc(19px * var(--ui)); }
+    #puzzle .who { font-size: calc(12px * var(--ui)); opacity: 0.7; min-height: 1em; }
+    #puzzle .hint { font-size: calc(11px * var(--ui)); font-weight: 600; opacity: 0.65; margin: calc(2px * var(--ui)) 0 calc(6px * var(--ui)); min-height: 1em; }
+    #puzzle .x { position: absolute; top: calc(4px * var(--ui)); right: calc(8px * var(--ui)); width: calc(44px * var(--ui)); height: calc(44px * var(--ui));
+      border: 0; border-radius: 50%; background: none; font-size: calc(20px * var(--ui)); }
+    #puzzle button { font-family: inherit; } /* the family only; the size, weight, colour — each kind's own: those rules are #puzzle's (.popup-ui button's `font: inherit` beat a bare class — tiles and symbols came out in the card's small dark text) */
+    .pz-body { display: flex; flex-direction: column; align-items: center; }
+    .pz-lock-body { flex-direction: row; justify-content: center; align-items: flex-start; gap: calc(16px * var(--ui)); }
+    .pz-side { display: flex; flex-direction: column; align-items: center; }
+    .pz-note { font-weight: 800; margin: calc(6px * var(--ui)) 0; min-height: 1.2em; }
+    .pz-history { display: flex; flex-direction: column; gap: calc(4px * var(--ui)); min-width: calc(140px * var(--ui)); } /* a try of 4: 4 × 30 + 3 × 6 = 138 */
+    .pz-lock-body::after { content: ''; min-width: calc(140px * var(--ui)); } /* the tries' column mirrored, empty: the keypad in the middle (before the first try the empty column pushed it right) */
+    .pz-row { display: flex; gap: calc(6px * var(--ui)); justify-content: center; align-items: center; }
+    .pz-cell { width: calc(30px * var(--ui)); height: calc(30px * var(--ui)); display: inline-flex; align-items: center; justify-content: center; font-size: calc(18px * var(--ui)); background: #f3ead6; border-radius: calc(9px * var(--ui)); }
+    .pz-cell.exact { background: #5cc96e; box-shadow: 0 calc(2px * var(--ui)) 0 #2e9e4f; }
+    .pz-cell.near { background: #ffcf3f; box-shadow: 0 calc(2px * var(--ui)) 0 #c99a12; }
+    .pz-cell.miss { background: #cfc6b4; opacity: 0.7; }
+    .pz-sym.absent { opacity: 0.3; filter: grayscale(1); }
+    .pz-current .pz-slot { width: calc(44px * var(--ui)); height: calc(44px * var(--ui)); border: calc(3px * var(--ui)) dashed #c9b98f; border-radius: calc(12px * var(--ui)); background: #fff; font-size: calc(24px * var(--ui)); cursor: pointer; }
+    .pz-palette { display: flex; flex-wrap: wrap; gap: calc(6px * var(--ui)); justify-content: center; margin: calc(6px * var(--ui)) 0; max-width: calc(360px * var(--ui)); } /* one row up to 7 symbols (the lock's level 3): 7 × 46 + 6 × 6 = 358 */
+    #puzzle .pz-sym { width: calc(46px * var(--ui)); height: calc(46px * var(--ui)); border: 0; border-radius: calc(14px * var(--ui)); background: #ffe49a; box-shadow: 0 calc(3px * var(--ui)) 0 #d9b04a; font-size: calc(24px * var(--ui)); cursor: pointer; }
+    .pz-sym:disabled { opacity: 0.35; cursor: default; }
+    .pz-actions { display: flex; gap: calc(8px * var(--ui)); justify-content: center; }
+    #puzzle .pz-btn { min-width: calc(56px * var(--ui)); min-height: calc(46px * var(--ui)); border: 0; border-radius: calc(999px * var(--ui)); padding: 0 calc(18px * var(--ui)); background: #fffaf0; box-shadow: 0 calc(3px * var(--ui)) 0 #c9b98f;
+      font-weight: 900; font-size: calc(16px * var(--ui)); color: #26324d; cursor: pointer; }
+    #puzzle .pz-main { background: #ffcf3f; box-shadow: 0 calc(3px * var(--ui)) 0 #c99a12; }
+    .pz-btn:disabled { opacity: 0.45; cursor: default; }
+    .pz-slide { display: grid; gap: calc(5px * var(--ui)); width: calc(230px * var(--ui)); margin: 0 auto; }
+    #puzzle .pz-tile { aspect-ratio: 1; border: 0; border-radius: calc(12px * var(--ui)); background: #ff8a3d; box-shadow: 0 calc(4px * var(--ui)) 0 #c45f1c; color: #fffaf0; font-size: calc(30px * var(--ui));
+      font-weight: 800; text-shadow: 0 calc(1.5px * var(--ui)) 0 #26324d; cursor: pointer; }
+    #puzzle .pz-slide.small .pz-tile { font-size: calc(22px * var(--ui)); }
+    #puzzle .pz-gap { background: #eadfc7; box-shadow: inset 0 calc(3px * var(--ui)) 0 rgba(0, 0, 0, 0.08); cursor: default; }
+    .pz-pipes-wrap { display: flex; align-items: stretch; gap: calc(4px * var(--ui)); justify-content: center; }
+    .pz-pipe-side { display: grid; width: calc(28px * var(--ui)); font-size: calc(22px * var(--ui)); align-items: center; }
+    .pz-pipes { display: grid; gap: calc(3px * var(--ui)); width: calc(240px * var(--ui)); }
+    .pz-pipe { aspect-ratio: 1; padding: 0; border: 0; border-radius: calc(7px * var(--ui)); background: #f3ead6; cursor: pointer; }
+    .pz-pipe svg { width: 100%; height: 100%; display: block; }
+    .pz-won .big { font-size: calc(56px * var(--ui)); }
+    .pz-won .title { font-size: calc(22px * var(--ui)); font-weight: 900; color: #2e9e4f; margin-bottom: calc(14px * var(--ui)); } /* clear of «Забрать» (no reward — no gain row between) */
+    .pz-won .gain { font-size: calc(18px * var(--ui)); font-weight: 900; margin: calc(-8px * var(--ui)) 0 calc(12px * var(--ui)); }
+    #wallet .chip.buff { display: none; }
+    /* The mission card (src/ui/missionBrief.js): after a resident's ask — the goal, the lives, the time; «Потом» / «Вперёд!». */
+    #brief { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); display: none; z-index: 10; width: calc(460px * var(--ui));
+      max-width: calc(var(--col) - var(--sa-left) - var(--sa-right) - calc(24px * var(--ui)));
+      max-height: calc(var(--row) - var(--sa-top) - var(--sa-bottom) - calc(24px * var(--ui))); overflow-y: auto; box-sizing: border-box;
+      background: var(--cream); color: var(--ink); padding: calc(14px * var(--ui)) calc(20px * var(--ui)); border: calc(4px * var(--ui)) solid var(--ink);
+      border-radius: calc(18px * var(--ui)); box-shadow: 0 calc(6px * var(--ui)) 0 var(--ink); font-size: calc(14px * var(--ui)); font-weight: 700;
+      user-select: none; -webkit-user-select: none; }
+    #brief .kind { text-align: center; font-size: calc(13px * var(--ui)); font-weight: 900; text-transform: uppercase; opacity: 0.6; }
+    #brief .head { margin-bottom: calc(2px * var(--ui)); }
+    #brief .who { text-align: center; font-size: calc(14px * var(--ui)); opacity: 0.75; margin-bottom: calc(10px * var(--ui)); }
+    #brief .goal { display: flex; align-items: center; gap: calc(10px * var(--ui)); padding: calc(10px * var(--ui)) calc(14px * var(--ui));
+      border: calc(3px * var(--ui)) solid var(--ink); border-radius: calc(14px * var(--ui)); background: var(--lime); font-size: calc(17px * var(--ui)); font-weight: 900; }
+    #brief .goal .icon { font-size: calc(26px * var(--ui)); }
+    #brief .rows { margin: calc(8px * var(--ui)) calc(4px * var(--ui)) 0; }
+    #brief .row { display: flex; justify-content: space-between; gap: calc(12px * var(--ui)); padding: calc(5px * var(--ui)) 0;
+      border-bottom: calc(2px * var(--ui)) dashed rgba(38, 50, 77, 0.2); }
+    #brief .row b { text-align: right; }
+    #brief .keys { margin-top: calc(8px * var(--ui)); text-align: center; font-size: calc(12px * var(--ui)); opacity: 0.6; }
+    #dogwheel { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: var(--col); height: var(--row); z-index: 6; display: none; }
+    #dogwheel .ring { position: absolute; top: 50%; left: 50%; width: calc(290px * var(--ui)); height: calc(290px * var(--ui)); transform: translate(-50%, -50%);
+      border-radius: 50%; background: radial-gradient(circle, rgba(18, 26, 46, 0.15) 30%, rgba(18, 26, 46, 0.5) 31%, rgba(18, 26, 46, 0.5) 69%, rgba(18, 26, 46, 0) 70%); }
+    #dogwheel .dog { position: absolute; transform: translate(-50%, -50%); width: calc(64px * var(--ui)); height: calc(64px * var(--ui)); padding: 0;
+      border-radius: 50%; border: calc(3px * var(--ui)) solid rgba(255, 255, 255, 0.85); background: var(--c); opacity: 0.88; cursor: pointer;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; transition: transform 0.1s, opacity 0.1s; }
+    #dogwheel .dog:hover { transform: translate(-50%, -50%) scale(1.12); opacity: 1; }
+    #dogwheel .dog.on { border-color: var(--lime); box-shadow: 0 0 0 calc(3px * var(--ui)) var(--lime); opacity: 1; }
+    #dogwheel .dog .face { font-size: calc(26px * var(--ui)); line-height: 1; }
+    #dogwheel .dog .name { font-size: calc(10px * var(--ui)); font-weight: 900; color: #fff; text-shadow: 0 calc(1px * var(--ui)) 0 rgba(0, 0, 0, 0.6); }
     #confirm { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: var(--col); height: var(--row); z-index: 12; display: none;
       align-items: center; justify-content: center; background: rgba(18, 26, 46, 0.5); user-select: none; -webkit-user-select: none; }
     #confirm .box { width: 80%; background: #fffaf0; color: #26324d; border-radius: calc(22px * var(--ui)); padding: calc(22px * var(--ui)) calc(18px * var(--ui)) calc(18px * var(--ui)); box-shadow: 0 calc(5px * var(--ui)) 0 #c9b98f; text-align: center; }
@@ -244,6 +535,11 @@
     #confirm button:active { transform: translateY(calc(2px * var(--ui))); }
     #fps { position: fixed; right: calc(50% - var(--col) / 2 + calc(12px * var(--ui)) + var(--sa-right)); bottom: calc(50% - var(--row) / 2 + calc(12px * var(--ui)) + var(--sa-bottom)); z-index: 7; display: none; pointer-events: none; padding: calc(2px * var(--ui)) calc(5px * var(--ui)); border-radius: calc(999px * var(--ui));
       background: rgba(18, 26, 46, 0.7); color: #fffaf0; font: 700 calc(6px * var(--ui))/1.4 ui-monospace, Consolas, monospace; }
+    /* The dog's coordinates, left of the FPS counter (dev; src/core/app.js). */
+    #coords { position: fixed; right: calc(50% - var(--col) / 2 + calc(52px * var(--ui)) + var(--sa-right)); bottom: calc(50% - var(--row) / 2 + calc(12px * var(--ui)) + var(--sa-bottom)); z-index: 7; display: none; pointer-events: none; padding: calc(2px * var(--ui)) calc(5px * var(--ui)); border-radius: calc(999px * var(--ui));
+      background: rgba(18, 26, 46, 0.7); color: #fffaf0; font: 700 calc(6px * var(--ui))/1.4 ui-monospace, Consolas, monospace; white-space: pre; }
+    #cheats .check { display: flex; align-items: center; gap: calc(6px * var(--ui)); font-size: calc(14px * var(--ui)); cursor: pointer; margin: calc(6px * var(--ui)) 0 calc(4px * var(--ui)); }
+    #cheats .check input { width: calc(20px * var(--ui)); height: calc(20px * var(--ui)); }
   </style>
   <script>
     // UI scale, like Unity's Canvas Scaler «Scale With Screen Size»: the game UI is laid out for a frame 412 px tall
@@ -253,15 +549,17 @@
     (function () {
       var touch = matchMedia('(pointer: coarse)').matches;
       var fit = function () {
-        var pad = touch ? 0 : parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--pc-pad')) || 0;
-        var row = Math.max(1, touch ? innerHeight : Math.min(innerHeight - 2 * pad, (innerWidth - 2 * pad) * 9 / 19.5));
+        var full = touch || !!document.fullscreenElement; // F2 on a computer: the whole screen, like a phone
+        var pad = full ? 0 : parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--pc-pad')) || 0;
+        var row = Math.max(1, full ? innerHeight : Math.min(innerHeight - 2 * pad, (innerWidth - 2 * pad) * 9 / 19.5));
         document.documentElement.style.setProperty('--ui', (row / 412).toFixed(3));
       };
       fit();
       addEventListener('resize', fit);
+      document.addEventListener('fullscreenchange', fit);
     })();
   </script>
-  <script type="module" crossorigin src="/assets/index-ZM48R9lJ.js"></script>
+  <script type="module" crossorigin src="/assets/index-2fT8F7uL.js"></script>
 </head>
 <body>
   <div id="loading" class="splash">
@@ -278,6 +576,24 @@
     </div>
   </div>
   <button id="runmenu" aria-label="Меню">☰</button>
+  <button id="fsbtn" aria-label="Во весь экран" title="Во весь экран (F2)">
+    <svg class="in" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7V2h5M13 2h5v5M18 13v5h-5M7 18H2v-5"/></svg>
+    <svg class="out" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v5H2M18 7h-5V2M13 18v-5h5M2 13h5v5"/></svg>
+  </button>
+  <button id="dogbtn" aria-label="Сменить собаку">🐶</button>
+  <button id="bagbtn" aria-label="Рюкзак">🎒</button>
+  <button id="mapbtn" aria-label="Карта">🗺️</button>
+  <div id="items" class="popup-ui"></div>
+  <div id="brief" class="popup-ui"></div>
+  <div id="puzzle" class="popup-ui"><button class="x" aria-label="Закрыть">✕</button><div class="kind"></div><div class="head"></div><div class="who"></div><div class="hint"></div><div class="game"></div></div>
+  <div id="citymap" class="popup-ui"><div class="head">Карта города</div><div class="hint">Колесо — приблизить / отдалить<br>Нажми на ⚡ или ❗ — выбрать задание</div><button class="x" aria-label="Закрыть">✕</button><canvas></canvas></div>
+  <div id="dogwheel"><div class="ring"></div></div>
+  <div id="objective"><span class="icon">🎯</span><span class="text"></span></div>
+  <div id="hint"></div>
+  <div id="aim"></div>
+  <button id="interact"><span class="key">E</span><span class="text"></span></button>
+  <div id="dialog"><div class="face"></div><div class="body"><div class="name"></div><div class="text"></div></div><div class="more">дальше ▸</div></div>
+  <div id="wallet"><div class="chip bones"><span class="icon">🦴</span><span class="n">0</span></div><div class="chip stars"><span class="icon">⭐</span><span class="n">0</span></div><div class="chip buff"><span class="icon">🍖</span><span class="n"></span></div></div>
   <div id="hud">
     <div class="row"><div class="lives"></div><div class="timer"></div><div class="bones">🦴 <b>0</b></div></div>
     <div class="progress"><div class="bar"><div class="fill"></div></div><div class="dist"></div></div>
@@ -288,24 +604,39 @@
       <div class="title"></div>
       <div class="reason"></div>
       <div class="stats"></div>
-      <div class="buttons"><button class="exit">В меню</button><button class="retry">Ещё раз</button></div>
+      <div class="buttons"><button class="retry">Ещё раз</button><button class="exit">В меню</button></div>
     </div>
   </div>
   <div id="confirm"><div class="box"><div class="text"></div><div class="buttons"><button class="cancel"></button><button class="ok"></button></div></div></div>
   <div id="notchsim"></div>
   <div id="fps"></div>
+  <button id="winbtn" title="Победить (F4)" aria-label="Победить">🏁</button>
+  <div id="coords"></div>
   <div id="ui"></div>
-  <div id="label"></div>
+  <div id="fade"></div>
+  <div id="slides"><div class="pic"></div><div class="text"></div><div class="hint">Нажмите, чтобы продолжить</div></div>
   <div id="info"><span></span><button></button></div>
   <div id="qr"></div>
   <div id="backdrop"></div>
   <div id="settings" class="popup-ui"></div>
   <div id="cheats" class="popup-ui"></div>
+  <div id="lab" class="popup-ui"></div>
   <div id="about" class="popup-ui">
     <div class="head">Об игре</div>
     <div class="plate"><img class="logo" src="ui/qplaze_logo.png" alt="Qplaze" /></div>
     <div class="text">Игра сделана в студии Qplaze</div>
     <div class="foot"><button class="back primary">◀ Назад</button></div>
+  </div>
+  <div id="help" class="popup-ui">
+    <div class="head">Управление</div>
+    <div class="lines"></div>
+    <div class="foot"><button class="back primary">◀ Назад</button></div>
+  </div>
+  <div id="controls" class="popup-ui">
+    <div class="head">Управление</div>
+    <div class="lines"></div>
+    <div class="stub">Здесь будет обучение управлению на телефоне — пока это заглушка.</div>
+    <div class="foot"><button class="ok primary">Понятно</button></div>
   </div>
   <div id="pause"><div class="card"><div class="icon"></div><div class="msg"></div></div></div>
   <div id="rotate"><div class="icon">📱</div><div class="msg">Поверните экран горизонтально</div><button>⛶ На весь экран</button></div>
